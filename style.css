@@ -1204,7 +1204,7 @@ body {
 }
 
 /* Mobile Responsive */
-@media (max-width: 768px) {
+@media (max-width: 820px) {
 
     /* Navigation: Hamburger Drawer */
     .nav {
@@ -1450,6 +1450,15 @@ body {
     .tech-tag {
         font-size: 0.75rem;
         padding: 0.25rem 0.5rem;
+    }
+
+    .step-title {
+        text-align: center;
+
+    }
+
+    .step-desc {
+        text-align: center;
     }
 }
 

@@ -193,7 +193,7 @@ function calculateScore() {
     if (resultScore) resultScore.textContent = Math.round(baseScore);
 
     // Risk level with color coding
-    let risk = 'Cao';
+    let risk = 'High';
     let riskColor = '#ef4444';
     if (baseScore >= 750) {
         risk = 'Very Low';

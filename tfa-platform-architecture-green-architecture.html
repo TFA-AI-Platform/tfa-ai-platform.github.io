@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - TFA AI Platform</title>
+    <link rel="icon" href="public/images/Logo TFA - Final-08.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-logo">
+            <div class="logo-circle"></div>
+            <div class="logo-circle"></div>
+            <div class="logo-circle"></div>
+        </div>
+        <div class="loading-text">Loading TFA AI Platform...</div>
+    </div>
+
+    <!-- Particle Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="tfa-platform-architecture-green-en.html#home">
+                    <img class="logo-image" src="public/images/Logo TFA - Final-08.png" alt="TFA AI Platform">
+                </a>
+            </div>
+            <!-- Mobile Nav Toggle (shared JS controls this) -->
+            <button class="nav-toggle-btn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <ul class="nav-links">
+                <li><a href="tfa-platform-architecture-green-en.html#home" class="nav-link">Home</a></li>
+                <li><a href="tfa-platform-architecture-green-about.html" class="nav-link">About</a></li>
+                <li><a href="tfa-platform-architecture-green-service.html" class="nav-link">Services</a></li>
+                <li><a href="tfa-platform-architecture-green-tfa-scoring.html" class="nav-link">TFA Scoring</a></li>
+                <li class="dropdown">
+                    <a href="tfa-platform-architecture-green-en.html#products" class="nav-link dropdown-toggle">Products <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tfa-platform-architecture-green-atobarai.html" class="dropdown-link">Atobar.ai</a></li>
+                        <li><a href="tfa-platform-architecture-green-ad-housing.html" class="dropdown-link">AD Housing</a></li>
+                        <li><a href="tfa-platform-architecture-green-ad-passport.html" class="dropdown-link">AD Passport</a></li>
+                        <li><a href="tfa-platform-architecture-green-lnpl.html" class="dropdown-link">Live now, Pay later</a></li>
+                        <li><a href="tfa-platform-architecture-green-consumer-finance.html" class="dropdown-link">Consumer Finance Service</a></li>
+                    </ul>
+                </li>
+                <li><a href="tfa-platform-architecture-green-architecture.html" class="nav-link active">Architecture</a></li>
+                <li><a href="tfa-platform-architecture-green-demo.html" class="nav-link">Demo</a></li>
+            </ul>
+            <a href="tfa-platform-architecture-green-en.html#contact" class="cta-button">Contact Consultation</a>
+        </div>
+    </nav>
+
+    <!-- Architecture Section -->
+    <section id="architecture" class="section section-bg">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Technology Architecture</div>
+                <h2 class="section-title">Platform Architecture</h2>
+                <p class="section-subtitle">
+                    Modern microservices architecture, cloud-native with flexible scalability
+                </p>
+            </div>
+
+            <div class="architecture-visual">
+                <div class="arch-layers">
+                    <!-- Layer 1 -->
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">📊</div>
+                            <div>
+                                <h3 class="arch-layer-title">Data Collection Layer</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">Collect and process real-time data from
+                                    multiple sources</p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">Apache Kafka</span>
+                            <span class="tech-tag">Spark Streaming</span>
+                            <span class="tech-tag">CDC</span>
+                            <span class="tech-tag">API Gateway</span>
+                        </div>
+                    </div>
+
+                    <!-- Layer 2 -->
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">🤖</div>
+                            <div>
+                                <h3 class="arch-layer-title">AI/ML Core Platform</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">MLOps platform với model registry và
+                                    feature store</p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">MLflow</span>
+                            <span class="tech-tag">Feature Store</span>
+                            <span class="tech-tag">Model Registry</span>
+                            <span class="tech-tag">A/B Testing</span>
+                        </div>
+                    </div>
+
+                    <!-- Layer 3 -->
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">🎯</div>
+                            <div>
+                                <h3 class="arch-layer-title">AI Services Layer</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">9 specialized AI services for finance
+                                </p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">Microservices</span>
+                            <span class="tech-tag">Container</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">Service Mesh</span>
+                        </div>
+                    </div>
+
+                    <!-- Layer 4 -->
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">🔒</div>
+                            <div>
+                                <h3 class="arch-layer-title">Security & Compliance</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">Multi-layer security and regulatory
+                                    compliance</p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">FISC</span>
+                            <span class="tech-tag">PCI DSS</span>
+                            <span class="tech-tag">GDPR</span>
+                            <span class="tech-tag">Zero Trust</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Architecture 5 Layers and Core Technology Stack -->
+        <div class="container">
+            <h3 class="subsection-title">Architecture 5 Layers (<span style="white-space:nowrap;">&lt;200ms</span>
+                End-to-End)</h3>
+            <div class="architecture-visual">
+                <div class="arch-layers">
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">🗄️</div>
+                            <div>
+                                <h3 class="arch-layer-title">Layer 1: DATA COLLECTION (Real‑time)</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">Collect 600+ variables from 9+ sources</p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">Kafka</span>
+                            <span class="tech-tag">API Gateway</span>
+                            <span class="tech-tag">CDC</span>
+                        </div>
+                    </div>
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">⚙️</div>
+                            <div>
+                                <h3 class="arch-layer-title">Layer 2: DATA PROCESSING (&lt;50ms)</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">Cleaning, normalization, feature engineering</p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">Spark</span>
+                            <span class="tech-tag">Flink</span>
+                        </div>
+                    </div>
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">🤖</div>
+                            <div>
+                                <h3 class="arch-layer-title">Layer 3: AI SCORING ENGINE (&lt;100ms)</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">Compute TFA Score (300–850)</p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">XGBoost</span>
+                            <span class="tech-tag">LightGBM</span>
+                            <span class="tech-tag">Neural Networks</span>
+                        </div>
+                    </div>
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">🔍</div>
+                            <div>
+                                <h3 class="arch-layer-title">Layer 4: EXPLAINABILITY (&lt;30ms)</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">Explanation for each decision</p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">SHAP</span>
+                            <span class="tech-tag">LIME</span>
+                            <span class="tech-tag">Custom XAI</span>
+                        </div>
+                    </div>
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">🚀</div>
+                            <div>
+                                <h3 class="arch-layer-title">Layer 5: DELIVERY (&lt;20ms)</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">Real‑time delivery</p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">GraphQL</span>
+                            <span class="tech-tag">Dashboard</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h3 class="subsection-title">Core Technology Stack</h3>
+            <div class="architecture-visual">
+                <div class="arch-layers">
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">🗄️</div>
+                            <div>
+                                <h3 class="arch-layer-title">Data Collection</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">Collect 600+ variables from 9+ sources</p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">Kafka</span>
+                            <span class="tech-tag">API Gateway</span>
+                            <span class="tech-tag">CDC</span>
+                        </div>
+                    </div>
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">🤖</div>
+                            <div>
+                                <h3 class="arch-layer-title">ML Platform</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">MLOps lifecycle management</p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">MLflow</span>
+                            <span class="tech-tag">Feature Store</span>
+                            <span class="tech-tag">Model Registry</span>
+                        </div>
+                    </div>
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">🎯</div>
+                            <div>
+                                <h3 class="arch-layer-title">AI Services</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">9 independent AI services</p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">Microservices</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Kubernetes</span>
+                        </div>
+                    </div>
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">🔒</div>
+                            <div>
+                                <h3 class="arch-layer-title">Security</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">FISC, PCI DSS, GDPR compliant</p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">mTLS</span>
+                            <span class="tech-tag">OAuth 2.0</span>
+                            <span class="tech-tag">Encryption</span>
+                        </div>
+                    </div>
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">🔌</div>
+                            <div>
+                                <h3 class="arch-layer-title">API</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">Multi‑protocol API gateway</p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">REST</span>
+                            <span class="tech-tag">GraphQL</span>
+                            <span class="tech-tag">gRPC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TFA AI Platform</h3>
+                <p style="color: #6c757d; margin-top: 1rem;">
+                    Leading AI platform for financial digital transformation,
+                    trusted by major financial institutions.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Products</h3>
+                <ul class="footer-links">
+                    <li><a href="tfa-platform-architecture-green-service.html">AI Services Suite</a></li>
+                    <li><a href="tfa-platform-architecture-green-tfa-scoring.html">TFA Scoring</a></li>
+                    <li><a href="tfa-platform-architecture-green-architecture.html">Platform Architecture</a></li>
+                    <li><a href="tfa-platform-architecture-green-demo.html">Live Demo</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Solutions</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Digital Banking</a></li>
+                    <li><a href="#">Fintech</a></li>
+                    <li><a href="#">Insurance</a></li>
+                    <li><a href="#">Asset Management</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul class="footer-links">
+                    <li><a href="mailto:contact@tfa.ai">contact@tfa.ai</a></li>
+                    <li><a href="tel:+84123456789">+84 123 456 789</a></li>
+                    <li><a href="#">Hanoi, Vietnam</a></li>
+                    <li><a href="#">Tokyo, Japan</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 TFA AI Platform. All rights reserved. |
+                <a href="#" style="color: #6c757d;">Privacy Policy</a> |
+                <a href="#" style="color: #6c757d;">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
