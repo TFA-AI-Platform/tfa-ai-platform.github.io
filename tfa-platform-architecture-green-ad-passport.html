@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AD Passport - Comprehensive Immigration Assessment</title>
+    <link rel="icon" href="public/images/Logo TFA - Final-08.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-logo">
+            <div class="logo-circle"></div>
+            <div class="logo-circle"></div>
+            <div class="logo-circle"></div>
+        </div>
+        <div class="loading-text">Loading TFA AI Platform...</div>
+    </div>
+
+    <!-- Particle Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="tfa-platform-architecture-green-en.html#home">
+                    <img class="logo-image" src="public/images/Logo TFA - Final-08.png" alt="TFA AI Platform">    
+                </a>
+            </div>
+            <!-- Mobile Nav Toggle (shared JS controls this) -->
+            <button class="nav-toggle-btn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <ul class="nav-links">
+                <li><a href="tfa-platform-architecture-green-en.html#home" class="nav-link">Home</a></li>
+                <li><a href="tfa-platform-architecture-green-about.html" class="nav-link">About</a></li>
+                <li><a href="tfa-platform-architecture-green-en.html#services" class="nav-link">Services</a></li>
+                <li><a href="tfa-platform-architecture-green-en.html#tfa-score" class="nav-link">TFA Scoring</a></li>
+                <li class="dropdown">
+                    <a href="#products" class="nav-link dropdown-toggle">Products <span class="dropdown-arrow">▾</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tfa-platform-architecture-green-atobarai.html" class="dropdown-link">Atobar.ai</a></li>
+                        <li><a href="tfa-platform-architecture-green-ad-housing.html" class="dropdown-link">AD Housing</a></li>
+                        <li><a href="tfa-platform-architecture-green-ad-passport.html" class="dropdown-link">AD Passport</a></li>
+                        <li><a href="tfa-platform-architecture-green-lnpl.html" class="dropdown-link">Live now, Pay later</a></li>
+                        <li><a href="tfa-platform-architecture-green-consumer-finance.html" class="dropdown-link">Consumer Finance Service</a></li>
+                    </ul>
+                </li>
+                <li><a href="tfa-platform-architecture-green-en.html#architecture" class="nav-link">Architecture</a></li>
+                <li><a href="tfa-platform-architecture-green-en.html#demo" class="nav-link">Demo</a></li>
+            </ul>
+            <a href="tfa-platform-architecture-green-en.html#contact" class="cta-button">Contact Consultation</a>
+        </div>
+    </nav>
+
+    <!-- AD Passport Section -->
+    <section id="ad-passport" class="section section-bg">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge" style="background: rgba(30, 144, 255, 0.1); border: 1px solid rgba(30, 144, 255, 0.3); color: #1E90FF;">IMMIGRATION ASSESSMENT</div>
+                <h2 class="section-title">AD Passport - Comprehensive Immigration Assessment</h2>
+                <p class="section-subtitle">
+                    <strong>Comprehensive immigrant assessment platform using Alternative Data</strong> -
+                    Pioneering solution using AI and 30+ alternative data sources to assess reliability,
+                    financial capability and stability of immigrants, supporting businesses and regulatory agencies
+                    to make accurate decisions with 94% reliability and processing time under 60 seconds.
+                </p>
+            </div>
+
+            <!-- Key Features -->
+            <div class="about-grid" style="margin-bottom: 4rem;">
+                <div class="about-content">
+                    <h3>Outstanding Features of AD Passport</h3>
+                    <div class="about-features" style="margin-top: 2rem;">
+                        <div class="about-feature">
+                            <div class="feature-icon" style="background: rgba(30, 144, 255, 0.1); color: #1E90FF;">🌐</div>
+                            <div>
+                                <strong>Multi-Dimensional Assessment</strong>
+                                <p style="margin-top: 0.5rem; font-size: 0.875rem;">
+                                    Comprehensive analysis of 6 aspects: finance, profession, education,
+                                    migration history, social network and personal information reliability.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon" style="background: rgba(30, 144, 255, 0.1); color: #1E90FF;">🔍</div>
+                            <div>
+                                <strong>30+ International Data Sources</strong>
+                                <p style="margin-top: 0.5rem; font-size: 0.875rem;">
+                                    Integrated data from international banks, government agencies, social networks,
+                                    employment platforms, education systems and global databases.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon" style="background: rgba(30, 144, 255, 0.1); color: #1E90FF;">🛡️</div>
+                            <div>
+                                <strong>Smart Risk Profiling</strong>
+                                <p style="margin-top: 0.5rem; font-size: 0.875rem;">
+                                    Build detailed risk profiles with 15+ indicators, automatically categorized into 5 levels
+                                    and early warning of abnormal signs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-image-box">
+                        <div style="text-align: center;">
+                            <h4 style="margin-bottom: 1.5rem;">Benefits for Stakeholders</h4>
+                            <div style="display: grid; gap: 0.75rem; font-size: 0.875rem;">
+                                <div class="result-card" style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem;">
+                                    <div style="text-align: left;">
+                                        <div class="result-label">🏢 Enterprises</div>
+                                        <div style="color: #6c757d; font-size: 0.75rem;">Reduce screening time</div>
+                                    </div>
+                                    <div style="text-align: right;">
+                                        <div class="result-value" style="color: #1E90FF; font-size: 1rem;">85%</div>
+                                        <div style="color: #6c757d; font-size: 0.75rem;">Improvement</div>
+                                    </div>
+                                </div>
+                                <div class="result-card" style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem;">
+                                    <div style="text-align: left;">
+                                        <div class="result-label">🏛️ Regulatory Agencies</div>
+                                        <div style="color: #6c757d; font-size: 0.75rem;">High risk detection</div>
+                                    </div>
+                                    <div style="text-align: right;">
+                                        <div class="result-value" style="color: #00CED1; font-size: 1rem;">95%</div>
+                                        <div style="color: #6c757d; font-size: 0.75rem;">Accuracy</div>
+                                    </div>
+                                </div>
+                                <div class="result-card" style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem;">
+                                    <div style="text-align: left;">
+                                        <div class="result-label">⚡ Fast Processing</div>
+                                        <div style="color: #6c757d; font-size: 0.75rem;">10x faster than normal</div>
+                                    </div>
+                                    <div style="text-align: right;">
+                                        <div class="result-value" style="color: #15c35a; font-size: 1rem;">10x</div>
+                                        <div style="color: #6c757d; font-size: 0.75rem;">Acceleration</div>
+                                    </div>
+                                </div>
+                                <div class="result-card" style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem;">
+                                    <div style="text-align: left;">
+                                        <div class="result-label">🔒 Reduce Fraud</div>
+                                        <div style="color: #6c757d; font-size: 0.75rem;">Fake profiles</div>
+                                    </div>
+                                    <div style="text-align: right;">
+                                        <div class="result-value" style="color: #FA8C16; font-size: 1rem;">80%</div>
+                                        <div style="color: #6c757d; font-size: 0.75rem;">Reduction</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Use Cases -->
+            <div class="architecture-visual">
+                <h3 style="text-align: center; margin-bottom: 2rem;">Real-World Applications of AD Passport</h3>
+                <div class="score-products" style="grid-template-columns: repeat(4, 1fr);">
+                    <div class="score-product" style="border-color: rgba(30, 144, 255, 0.3);">
+                        <div class="score-product-icon" style="color: #1E90FF;">👔</div>
+                        <h4 class="score-product-name" style="color: #1E90FF;">International Recruitment</h4>
+                        <p class="score-product-desc">
+                            Verify credentials, work experience and assess stability of professional candidates.
+                        </p>
+                    </div>
+                    <div class="score-product" style="border-color: rgba(0, 206, 209, 0.3);">
+                        <div class="score-product-icon" style="color: #00CED1;">🎓</div>
+                        <h4 class="score-product-name" style="color: #00CED1;">Study Abroad Assessment</h4>
+                        <p class="score-product-desc">
+                            Verify academic records, achievements and assess financial capability of international students.
+                        </p>
+                    </div>
+                    <div class="score-product" style="border-color: rgba(21, 195, 90, 0.3);">
+                        <div class="score-product-icon" style="color: #15c35a;">🏠</div>
+                        <h4 class="score-product-name" style="color: #15c35a;">Investment Immigration</h4>
+                        <p class="score-product-desc">
+                            Verify asset origins, investment history and analyze money laundering risks.
+                        </p>
+                    </div>
+                    <div class="score-product" style="border-color: rgba(250, 140, 22, 0.3);">
+                        <div class="score-product-icon" style="color: #FA8C16;">👨‍👩‍👧</div>
+                        <h4 class="score-product-name" style="color: #FA8C16;">Family Reunion</h4>
+                        <p class="score-product-desc">
+                            Verify family relationships and assess financial capability of sponsors.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TFA AI Platform</h3>
+                <p style="color: #6c757d; margin-top: 1rem;">Leading AI platform for financial digital transformation, trusted by major financial institutions.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Products</h3>
+                <ul class="footer-links">
+                    <li><a href="tfa-platform-architecture-green-en.html#services">AI Services Suite</a></li>
+                    <li><a href="tfa-platform-architecture-green-en.html#tfa-score">TFA Scoring</a></li>
+                    <li><a href="tfa-platform-architecture-green-en.html#architecture">Platform Architecture</a></li>
+                    <li><a href="tfa-platform-architecture-green-en.html#demo">Live Demo</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Solutions</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Digital Banking</a></li>
+                    <li><a href="#">Fintech</a></li>
+                    <li><a href="#">Insurance</a></li>
+                    <li><a href="#">Asset Management</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul class="footer-links">
+                    <li><a href="mailto:contact@tfa.ai">contact@tfa.ai</a></li>
+                    <li><a href="tel:+84123456789">+84 123 456 789</a></li>
+                    <li><a href="#">Hanoi, Vietnam</a></li>
+                    <li><a href="#">Tokyo, Japan</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 TFA AI Platform. All rights reserved. | <a href="#" style="color: #6c757d;">Privacy Policy</a> | <a href="#" style="color: #6c757d;">Terms of Service</a></p>
+        </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFA AI Platform - Transforming Finance with AI</title>
+    <link rel="icon" href="public/images/Logo TFA - Final-08.png" type="image/png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-logo">
+            <div class="logo-circle"></div>
+            <div class="logo-circle"></div>
+            <div class="logo-circle"></div>
+        </div>
+        <div class="loading-text">Loading TFA AI Platform...</div>
+    </div>
+
+    <!-- Particle Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home">
+                    <img class="logo-image" src="public/images/Logo TFA - Final-08.png" alt="TFA AI Platform">    
+                </a>
+            </div>
+            <button class="nav-toggle-btn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="tfa-platform-architecture-green-about.html" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#tfa-score" class="nav-link">TFA Scoring</a></li>
+                <li class="dropdown">
+                    <a href="#products" class="nav-link dropdown-toggle">Products <span
+                            class="dropdown-arrow">▾</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tfa-platform-architecture-green-atobarai.html" class="dropdown-link">Atobar.ai</a>
+                        </li>
+                        <li><a href="tfa-platform-architecture-green-ad-housing.html" class="dropdown-link">AD
+                                Housing</a></li>
+                        <li><a href="tfa-platform-architecture-green-ad-passport.html" class="dropdown-link">AD
+                                Passport</a></li>
+                        <li><a href="tfa-platform-architecture-green-lnpl.html" class="dropdown-link">Live now, Pay later</a></li>
+                        <li><a href="tfa-platform-architecture-green-consumer-finance.html" class="dropdown-link">Consumer Finance Service</a></li>
+                    </ul>
+                </li>
+                <li><a href="#architecture" class="nav-link">Architecture</a></li>
+                <li><a href="#demo" class="nav-link">Demo</a></li>
+            </ul>
+            <a href="#contact" class="cta-button">Contact Consultation</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content fade-in-up">
+            <div class="hero-badge">If an A.I scoring defines who you are - are you sure it's fair ?</div>
+            <h1 class="hero-title">True & Fair. Always</h1>
+            <p class="hero-subtitle">
+                TFA is an AI company that applies AI and machine learning to perform scoring based on alternative data.
+                <br> We redefine the world with alternative data.
+            </p>
+
+            <div class="hero-cta">
+                <a href="#" class="cta-button">Our Product</a>
+                <a href="#services" class="cta-button"
+                    style="background: transparent; border: 2px solid #15c35a; color: #15c35a;">Explore Services</a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="score-product">
+                    <div class="score-product-icon">📈</div>
+                    <div class="stat-number">Alternative Data Scoring</div>
+                    <div class="stat-label">AI Accuracy</div>
+                </div>
+                <div class="score-product">
+                    <div class="score-product-icon">💎</div>
+                    <div class="stat-number">Thin-files Customers</div>
+                    <div class="stat-label">Response Time</div>
+                </div>
+                <div class="score-product">
+                    <div class="score-product-icon">🔬</div>
+                    <div class="stat-number">Explainable AI</div>
+                    <div class="stat-label">Data Analysis Variables</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Alternative Data</div>
+                <h2 class="section-title">Importance of Alternative Data for Thin-file Users</h2>
+                <p class="section-subtitle">
+                    Thin-file users are almost in the "blind spot of credit information" within CIC or JICC. By
+                    utilizing alternative data, it becomes possible to evaluate real-life payments and consumer
+                    behavior, enabling fairer credit scoring.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>Importance of Alternative Data for Thin‑file Users</h3>
+                    <div class="ad-importance">
+                        <div class="ad-banner">Alternative Data = <span class="muted">Data outside traditional credit
+                                information systems</span></div>
+                        <div class="ad-grid">
+                            <div class="ad-card">
+                                <div class="ad-card-title">💡 Utility Bill Payment History</div>
+                                <div class="ad-card-sub">Electricity, Water, Gas</div>
+                            </div>
+                            <div class="ad-card">
+                                <div class="ad-card-title">📞 Mobile Phone & Data Plan Payment History</div>
+                                <div class="ad-card-sub">Postpaid usage, on‑time payments</div>
+                            </div>
+                            <div class="ad-card">
+                                <div class="ad-card-title">📲 E‑wallet Transactions</div>
+                                <div class="ad-card-sub">PayPay, LinePay, Rakuten Pay, etc.</div>
+                            </div>
+                            <div class="ad-card">
+                                <div class="ad-card-title">🛒 E‑commerce Purchase History</div>
+                                <div class="ad-card-sub">Frequency, category mix, refund behavior</div>
+                            </div>
+                            <div class="ad-card">
+                                <div class="ad-card-title">🏠 Rent Payments & Subscriptions</div>
+                                <div class="ad-card-sub">Netflix, gym memberships, etc.</div>
+                            </div>
+                        </div>
+                        <div class="ad-banner">Why is Alternative Data important?</div>
+                        <p class="ad-note">Thin‑file users are almost in the <span class="highlight">“blind spot of
+                                credit information”</span> within CIC or JICC.</p>
+                        <p class="ad-note">By utilizing alternative data, it becomes possible to evaluate real‑life
+                            payments and consumer behavior, enabling fairer credit scoring.</p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-image-box">
+                        <div class="floating-icon" style="top: 10%; left: 10%;">🤖</div>
+                        <div class="floating-icon" style="top: 70%; right: 10%; animation-delay: 1s;">📊</div>
+                        <div class="floating-icon" style="bottom: 10%; left: 50%; animation-delay: 2s;">🔒</div>
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2315c35a;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23FA8C16;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='50' y='50' width='300' height='200' rx='20' fill='url(%23grad)' opacity='0.1' stroke='url(%23grad)' stroke-width='2'/%3E%3Ccircle cx='200' cy='150' r='80' fill='none' stroke='url(%23grad)' stroke-width='3' opacity='0.5'/%3E%3Cpath d='M150 150 L250 150 M200 100 L200 200' stroke='url(%23grad)' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E"
+                            alt="TFA AI Platform" style="width: 100%; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Services Section -->
+    <section id="services" class="section section-bg">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">9 Specialized AI Services</div>
+                <h2 class="section-title">Why Using ...TFA Scoring</h2>
+                <p class="section-subtitle">
+                    TFA SCORING applies Alternative Data and advanced AI for ~95% accuracy
+                    and real-time decisions, expanding fair access for thin-file users.
+                    <br>
+                    Part of the TFA AI Platform: Explainable AI (reasons and how to improve),
+                    multi-modal models, federated privacy, &lt;200ms responses, compliant with FISC, PCI DSS, GDPR.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <!-- AI Credit Advisor -->
+                <div class="service-card">
+                    <div class="service-icon">💡</div>
+                    <h3 class="service-name">AI Credit Advisor</h3>
+                    <p class="service-description">
+                        Intelligent credit advisory AI Agent, automatically analyzes applications and provides
+                        suitable product recommendations within 30 seconds. Increases conversion rate by 40%.
+                    </p>
+                    <div class="service-features">
+                        <span class="service-tag">24/7 Advisory</span>
+                        <span class="service-tag">Personalized</span>
+                        <span class="service-tag">Multi-language</span>
+                    </div>
+                </div>
+
+                <!-- AI Risk Predictor -->
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3 class="service-name">AI Risk Predictor</h3>
+                    <p class="service-description">
+                        Risk prediction with Explainable AI, providing probability of default (PD) and
+                        clear explanation of influencing factors. Accuracy >95%.
+                    </p>
+                    <div class="service-features">
+                        <span class="service-tag">Real-time</span>
+                        <span class="service-tag">Explainable AI</span>
+                        <span class="service-tag">Stress Testing</span>
+                    </div>
+                </div>
+
+                <!-- Voice Banking Agent -->
+                <div class="service-card">
+                    <div class="service-icon">🎤</div>
+                    <h3 class="service-name">Voice Banking Agent</h3>
+                    <p class="service-description">
+                        Natural voice banking transactions with multi-language support.
+                        Complete transactions in 45 seconds with 89% success rate.
+                    </p>
+                    <div class="service-features">
+                        <span class="service-tag">Voice Biometric</span>
+                        <span class="service-tag">Multi-dialect</span>
+                        <span class="service-tag">Hands-free</span>
+                    </div>
+                </div>
+
+                <!-- Fraud Detection Pro -->
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3 class="service-name">Fraud Detection Pro</h3>
+                    <p class="service-description">
+                        Advanced ML/DL fraud detection with >95% accuracy, reducing 60%
+                        false positives. Real-time protection for every transaction.
+                    </p>
+                    <div class="service-features">
+                        <span class="service-tag">Real-time</span>
+                        <span class="service-tag">Graph Analytics</span>
+                        <span class="service-tag">Anomaly Detection</span>
+                    </div>
+                </div>
+
+                <!-- Smart KYC Suite -->
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <h3 class="service-name">Smart KYC Suite</h3>
+                    <p class="service-description">
+                        eKYC with Deepfake Detection technology, secure remote identity verification.
+                        Reduces onboarding time from 60 minutes to <5 minutes. </p>
+                            <div class="service-features">
+                                <span class="service-tag">Deepfake Detection</span>
+                                <span class="service-tag">Liveness Check</span>
+                                <span class="service-tag">OCR + AI</span>
+                            </div>
+                </div>
+
+                <!-- Conversational AI -->
+                <div class="service-card">
+                    <div class="service-icon">💬</div>
+                    <h3 class="service-name">Conversational AI</h3>
+                    <p class="service-description">
+                        Smart chatbot with LLM + RAG, understands context and provides accurate responses.
+                        24/7 customer support with 95% satisfaction rate.
+                    </p>
+                    <div class="service-features">
+                        <span class="service-tag">GPT-4/Claude</span>
+                        <span class="service-tag">Context-aware</span>
+                        <span class="service-tag">Multi-channel</span>
+                    </div>
+                </div>
+
+                <!-- Document Intelligence -->
+                <div class="service-card">
+                    <div class="service-icon">📄</div>
+                    <h3 class="service-name">Document Intelligence</h3>
+                    <p class="service-description">
+                        Intelligent document processing with Computer Vision + NLP + OCR.
+                        Automatically extracts and analyzes information with 98% accuracy.
+                    </p>
+                    <div class="service-features">
+                        <span class="service-tag">Multi-format</span>
+                        <span class="service-tag">Auto-extraction</span>
+                        <span class="service-tag">Validation</span>
+                    </div>
+                </div>
+
+                <!-- AI Personalization -->
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3 class="service-name">AI Personalization</h3>
+                    <p class="service-description">
+                        Personalizes financial products based on customer behavior and needs.
+                        Increases offer acceptance rate from 5% to 15%.
+                    </p>
+                    <div class="service-features">
+                        <span class="service-tag">360° View</span>
+                        <span class="service-tag">Next Best Action</span>
+                        <span class="service-tag">A/B Testing</span>
+                    </div>
+                </div>
+
+                <!-- TFA Scoring Engine -->
+                <div class="service-card">
+                    <div class="service-icon">🏆</div>
+                    <h3 class="service-name">TFA Scoring Engine</h3>
+                    <p class="service-description">
+                        AI-native credit scoring system with 5 specialized products.
+                        Analyzes 600+ variables, delivering results in <200ms. </p>
+                            <div class="service-features">
+                                <span class="service-tag">300-850 Score</span>
+                                <span class="service-tag">Multi-source</span>
+                                <span class="service-tag">Explainable</span>
+                            </div>
+                </div>
+
+                <!-- Atobar.ai BNPL Platform -->
+                <div class="service-card">
+                    <div class="service-icon">💳</div>
+                    <h3 class="service-name">Atobar.ai - BNPL Intelligence</h3>
+                    <p class="service-description">
+                        Smart Buy Now Pay Later management platform with Alternative Data Scoring,
+                        solving thin-file and loan stacking issues. Seamless e-commerce integration.
+                    </p>
+                    <div class="service-features">
+                        <span class="service-tag">Alternative Scoring</span>
+                        <span class="service-tag">BNPL Management</span>
+                        <span class="service-tag">Fraud Control</span>
+                    </div>
+                </div>
+                <!-- AD Housing Platform -->
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3 class="service-name">AD Housing - Housing Affordability</h3>
+                    <p class="service-description">
+                        Housing affordability assessment platform with Alternative Data.
+                        Helps guarantee companies and LNPL providers reduce risk by 75%.
+                    </p>
+                    <div class="service-features">
+                        <span class="service-tag">92% Accuracy</span>
+                        <span class="service-tag">30s Processing</span>
+                        <span class="service-tag">20+ Data Sources</span>
+                    </div>
+                </div>
+                <!-- AD Passport Platform -->
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3 class="service-name">AD Passport - Immigration Assessment</h3>
+                    <p class="service-description">
+                        Comprehensive immigrant assessment with 30+ international data sources.
+                        Supports businesses and agencies in making accurate decisions.
+                    </p>
+                    <div class="service-features">
+                        <span class="service-tag">94% Reliability</span>
+                        <span class="service-tag">60s Processing</span>
+                        <span class="service-tag">Global Data</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TFA Scoring Products Section -->
+    <section id="tfa-score" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Flagship Product</div>
+                <h2 class="section-title">TFA Scoring Core Modules</h2>
+                <p class="section-subtitle">
+                    5 specialized products in TFA Scoring Engine, delivering the most
+                    comprehensive and transparent credit scoring solution in the market
+                </p>
+            </div>
+
+            <div class="score-products">
+                <!-- SSE Product -->
+                <div class="score-product">
+                    <div class="score-product-icon">📊</div>
+                    <h4 class="score-product-name">TFA Scoring SSE</h4>
+                    <p class="score-product-desc">
+                        Social Scoring Engine - Multi-dimensional credit scoring system,
+                        combining traditional and social data
+                    </p>
+                </div>
+
+                <!-- RA Product -->
+                <div class="score-product">
+                    <div class="score-product-icon">⚖️</div>
+                    <h4 class="score-product-name">TFA Scoring RA</h4>
+                    <p class="score-product-desc">
+                        Risk Assessment - Comprehensive risk assessment module with
+                        PD, LGD, EAD and stress testing
+                    </p>
+                </div>
+
+                <!-- AE Product -->
+                <div class="score-product">
+                    <div class="score-product-icon">💭</div>
+                    <h4 class="score-product-name">TFA Scoring AE</h4>
+                    <p class="score-product-desc">
+                        Agent Explain - Smart explanation interface using
+                        natural language for all stakeholders
+                    </p>
+                </div>
+
+                <!-- ME Product -->
+                <div class="score-product">
+                    <div class="score-product-icon">🚨</div>
+                    <h4 class="score-product-name">TFA Scoring ME</h4>
+                    <p class="score-product-desc">
+                        Monitoring Engine - Real-time alert system
+                        and collection intelligence
+                    </p>
+                </div>
+            </div>
+
+            <!-- Score Demo Visualization -->
+            <div class="demo-container" style="margin-top: 3rem;">
+                <h3 style="text-align: center; margin-bottom: 2rem;">TFA Scoring FICO</h3>
+                <div class="demo-grid">
+                    <div class="score-visual">
+                        <div class="score-circle">
+                            <svg width="200" height="200" class="score-svg">
+                                <defs>
+                                    <linearGradient id="scoreGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" style="stop-color:#15c35a;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#18d862;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="100" cy="100" r="80" class="score-background"></circle>
+                                <circle cx="100" cy="100" r="80" class="score-progress" id="scoreProgress"></circle>
+                            </svg>
+                            <div class="score-text" id="scoreValue">720</div>
+                        </div>
+                        <p style="text-align: center; margin-top: 1rem; color: #6c757d;">
+                            Credit Score: 300-850
+                        </p>
+                    </div>
+                    <div>
+                        <h4 style="margin-bottom: 1rem;">Influencing Factors</h4>
+                        <div style="display: grid;">
+                            <div class="result-card" style="padding: 1rem;">
+                                <div
+                                    style="display: flex; align-items: center; justify-content: space-between; gap: 0.5rem;">
+                                    <div class="result-label" style="margin: 0; font-size: 0.8rem;">Payment History
+                                    </div>
+                                    <span style="padding: 0.1rem 0.4rem; font-size: 0.875rem; color: #6c757d; margin-left: auto; max-width: 70%; text-align: right; white-space: normal;">Thin-file
+                                        lacks traditional credit history.</span>
+                                </div>
+                                <div class="result-value" style="font-size: 0.95rem; margin-top: 0.25rem;">+25%</div>
+                            </div>
+
+                            <div class="result-card" style="padding: 1rem;">
+                                <div
+                                    style="display: flex; align-items: center; justify-content: space-between; gap: 0.5rem;">
+                                    <div class="result-label" style="margin: 0; font-size: 0.8rem;">Credit Utilization
+                                    </div>
+                                    <span style="padding: 0.1rem 0.4rem; font-size: 0.875rem; color: #6c757d; margin-left: auto; max-width: 70%; text-align: right; white-space: normal;">Limited
+                                        information about traditional credit limits.</span>
+                                </div>
+                                <div class="result-value" style="font-size: 0.95rem; margin-top: 0.25rem;">+20%</div>
+                            </div>
+
+                            <div class="result-card" style="padding: 1rem;">
+                                <div
+                                    style="display: flex; align-items: center; justify-content: space-between; gap: 0.5rem;">
+                                    <div class="result-label" style="margin: 0; font-size: 0.8rem;">Length of Credit
+                                        History</div>
+                                    <span style="padding: 0.1rem 0.4rem; font-size: 0.875rem; color: #6c757d; margin-left: auto; max-width: 70%; text-align: right; white-space: normal;">"Thin
+                                        file" = short credit history.</span>
+                                </div>
+                                <div class="result-value" style="font-size: 0.95rem; margin-top: 0.25rem;">+10%</div>
+                            </div>
+
+                            <div class="result-card" style="padding: 1rem;">
+                                <div
+                                    style="display: flex; align-items: center; justify-content: space-between; gap: 0.5rem;">
+                                    <div class="result-label" style="margin: 0; font-size: 0.8rem;">Credit Mix/Types of
+                                        Credit</div>
+                                    <span
+                                        style="padding: 0.1rem 0.4rem; font-size: 0.875rem; color: #6c757d; margin-left: auto; max-width: 70%; text-align: right; white-space: normal;">Appropriate
+                                        weighting.</span>
+                                </div>
+                                <div class="result-value" style="font-size: 0.95rem; margin-top: 0.25rem;">+10%</div>
+                            </div>
+
+                            <div class="result-card" style="padding: 1rem;">
+                                <div
+                                    style="display: flex; align-items: center; justify-content: space-between; gap: 0.5rem;">
+                                    <div class="result-label" style="margin: 0; font-size: 0.8rem;">New Credit</div>
+                                    <span style="padding: 0.1rem 0.4rem; font-size: 0.875rem; color: #6c757d; margin-left: auto; max-width: 70%; text-align: right; white-space: normal;">Few
+                                        credit inquiries in the thin-file segment.</span>
+                                </div>
+                                <div class="result-value" style="font-size: 0.95rem; margin-top: 0.25rem;">+5%</div>
+                            </div>
+
+                            <div class="result-card" style="padding: 1rem;">
+                                <div
+                                    style="display: flex; align-items: center; justify-content: space-between; gap: 0.5rem;">
+                                    <div class="result-label" style="margin: 0; font-size: 0.8rem;">Digital Identity
+                                    </div>
+                                    <span style="padding: 0.1rem 0.4rem; font-size: 0.875rem; color: #6c757d; margin-left: auto; max-width: 70%; text-align: right; white-space: normal;">+15%
+                                        approval rate for Millennials/Gen Z.</span>
+                                </div>
+                                <div class="result-value" style="font-size: 0.95rem; margin-top: 0.25rem;">+20%</div>
+                            </div>
+
+                            <div class="result-card" style="padding: 1rem;">
+                                <div style="display: flex; justify-content: space-between; gap: 0.5rem;">
+                                    <div class="result-label" style="margin: 0; font-size: 0.8rem;">Alternative Behavior
+                                    </div>
+                                    <span
+                                        style="padding: 0.1rem 0.4rem; font-size: 0.875rem; color: #6c757d; margin-left: auto; max-width: 70%; text-align: right; white-space: normal;">The
+                                        way users shop and make payments on major platforms has a strong correlation
+                                        with their repayment ability.</span>
+                                </div>
+                                <div class="result-value" style="font-size: 0.95rem; margin-top: 0.25rem;">+10%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section id="architecture" class="section section-bg">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Technology Architecture</div>
+                <h2 class="section-title">Platform Architecture</h2>
+                <p class="section-subtitle">
+                    Modern microservices architecture, cloud-native with flexible scalability
+                </p>
+            </div>
+
+            <div class="architecture-visual">
+                <div class="arch-layers">
+                    <!-- Layer 1 -->
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">📊</div>
+                            <div>
+                                <h3 class="arch-layer-title">Data Collection Layer</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">Collect and process real-time data from
+                                    multiple sources</p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">Apache Kafka</span>
+                            <span class="tech-tag">Spark Streaming</span>
+                            <span class="tech-tag">CDC</span>
+                            <span class="tech-tag">API Gateway</span>
+                        </div>
+                    </div>
+
+                    <!-- Layer 2 -->
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">🤖</div>
+                            <div>
+                                <h3 class="arch-layer-title">AI/ML Core Platform</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">MLOps platform với model registry và
+                                    feature store</p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">MLflow</span>
+                            <span class="tech-tag">Feature Store</span>
+                            <span class="tech-tag">Model Registry</span>
+                            <span class="tech-tag">A/B Testing</span>
+                        </div>
+                    </div>
+
+                    <!-- Layer 3 -->
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">🎯</div>
+                            <div>
+                                <h3 class="arch-layer-title">AI Services Layer</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">9 specialized AI services for finance
+                                </p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">Microservices</span>
+                            <span class="tech-tag">Container</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">Service Mesh</span>
+                        </div>
+                    </div>
+
+                    <!-- Layer 4 -->
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">🔒</div>
+                            <div>
+                                <h3 class="arch-layer-title">Security & Compliance</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">Multi-layer security and regulatory
+                                    compliance</p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">FISC</span>
+                            <span class="tech-tag">PCI DSS</span>
+                            <span class="tech-tag">GDPR</span>
+                            <span class="tech-tag">Zero Trust</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Architecture 5 Layers and Core Technology Stack -->
+        <div class="container">
+            <h3 class="subsection-title">Architecture 5 Layers (<span style="white-space:nowrap;">&lt;200ms</span>
+                End-to-End)</h3>
+            <div class="architecture-visual">
+                <div class="arch-layers">
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">🗄️</div>
+                            <div>
+                                <h3 class="arch-layer-title">Layer 1: DATA COLLECTION (Real‑time)</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">Collect 600+ variables from 9+ sources</p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">Kafka</span>
+                            <span class="tech-tag">API Gateway</span>
+                            <span class="tech-tag">CDC</span>
+                        </div>
+                    </div>
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">⚙️</div>
+                            <div>
+                                <h3 class="arch-layer-title">Layer 2: DATA PROCESSING (&lt;50ms)</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">Cleaning, normalization, feature engineering</p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">Spark</span>
+                            <span class="tech-tag">Flink</span>
+                        </div>
+                    </div>
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">🤖</div>
+                            <div>
+                                <h3 class="arch-layer-title">Layer 3: AI SCORING ENGINE (&lt;100ms)</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">Compute TFA Score (300–850)</p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">XGBoost</span>
+                            <span class="tech-tag">LightGBM</span>
+                            <span class="tech-tag">Neural Networks</span>
+                        </div>
+                    </div>
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">🔍</div>
+                            <div>
+                                <h3 class="arch-layer-title">Layer 4: EXPLAINABILITY (&lt;30ms)</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">Explanation for each decision</p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">SHAP</span>
+                            <span class="tech-tag">LIME</span>
+                            <span class="tech-tag">Custom XAI</span>
+                        </div>
+                    </div>
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">🚀</div>
+                            <div>
+                                <h3 class="arch-layer-title">Layer 5: DELIVERY (&lt;20ms)</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">Real‑time delivery</p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">GraphQL</span>
+                            <span class="tech-tag">Dashboard</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h3 class="subsection-title">Core Technology Stack</h3>
+            <div class="architecture-visual">
+                <div class="arch-layers">
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">🗄️</div>
+                            <div>
+                                <h3 class="arch-layer-title">Data Collection</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">Collect 600+ variables from 9+ sources</p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">Kafka</span>
+                            <span class="tech-tag">API Gateway</span>
+                            <span class="tech-tag">CDC</span>
+                        </div>
+                    </div>
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">🤖</div>
+                            <div>
+                                <h3 class="arch-layer-title">ML Platform</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">MLOps lifecycle management</p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">MLflow</span>
+                            <span class="tech-tag">Feature Store</span>
+                            <span class="tech-tag">Model Registry</span>
+                        </div>
+                    </div>
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">🎯</div>
+                            <div>
+                                <h3 class="arch-layer-title">AI Services</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">9 independent AI services</p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">Microservices</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Kubernetes</span>
+                        </div>
+                    </div>
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">🔒</div>
+                            <div>
+                                <h3 class="arch-layer-title">Security</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">FISC, PCI DSS, GDPR compliant</p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">mTLS</span>
+                            <span class="tech-tag">OAuth 2.0</span>
+                            <span class="tech-tag">Encryption</span>
+                        </div>
+                    </div>
+                    <div class="arch-layer">
+                        <div class="arch-layer-header">
+                            <div class="arch-layer-icon">🔌</div>
+                            <div>
+                                <h3 class="arch-layer-title">API</h3>
+                                <p style="color: #6c757d; font-size: 0.875rem;">Multi‑protocol API gateway</p>
+                            </div>
+                        </div>
+                        <div class="arch-layer-tech">
+                            <span class="tech-tag">REST</span>
+                            <span class="tech-tag">GraphQL</span>
+                            <span class="tech-tag">gRPC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Use Cases</div>
+                <h2 class="section-title">Real-world Use Cases</h2>
+                <p class="section-subtitle">
+                    See how TFA AI Platform solves specific business problems
+                </p>
+            </div>
+
+            <div class="use-cases-grid">
+                <!-- Use Case 1 -->
+                <div class="use-case-card">
+                    <div class="use-case-header">
+                        <div class="use-case-icon">🛬</div>
+                        <h3 class="use-case-title">Cross-Border Scoring – New Foreigner in Vietnam</h3>
+                    </div>
+                    <p style="color: #6c757d; margin-bottom: 1rem;">
+                        Raj, an Indian IT engineer who moved to Vietnam two months ago.
+                        TFA Score evaluates creditworthiness using rental and utility payments, mobile data usage, ride
+                        history on Grab and GoJek (400+ trips), and a verified LinkedIn profile with 8 years of
+                        experience.
+                    </p>
+                    <div class="use-case-metrics">
+                        <div class="metric-box">
+                            <div class="metric-value">595</div>
+                            <div class="metric-label">TFA Score</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-value">45M</div>
+                            <div class="metric-label">Approved loan</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Use Case 2 -->
+                <div class="use-case-card">
+                    <div class="use-case-header">
+                        <div class="use-case-icon">🔄</div>
+                        <h3 class="use-case-title">Career Transition – Rebuilding Credit</h3>
+                    </div>
+                    <p style="color: #6c757d; margin-bottom: 1rem;">
+                        Nam, 35 years old, recently switched from an office job to running a small business.
+                        TFA Score analyzes his recent financial behavior, on-time bill payments, regular savings of 5M
+                        VND/month, and completion of business courses to assess financial reliability.
+                    </p>
+                    <div class="use-case-metrics">
+                        <div class="metric-box">
+                            <div class="metric-value">590</div>
+                            <div class="metric-label">TFA Score</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-value">100M</div>
+                            <div class="metric-label">Approved loan</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Use Case 3 -->
+                <div class="use-case-card">
+                    <div class="use-case-header">
+                        <div class="use-case-icon">🏠</div>
+                        <h3 class="use-case-title">First-Time Home Buyer – Young Family</h3>
+                    </div>
+                    <p style="color: #6c757d; margin-bottom: 1rem;">
+                        Tuấn and Mai, both 28 years old, currently renting and planning to buy their first home.
+                        TFA Score evaluates consistent savings of 20M VND/month for three years, on-time rent payments
+                        for 36 months, and stable social insurance history.
+                    </p>
+                    <div class="use-case-metrics">
+                        <div class="metric-box">
+                            <div class="metric-value">640</div>
+                            <div class="metric-label">TFA Score</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-value">3B</div>
+                            <div class="metric-label">Approved mortgage</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Use Case 4 -->
+                <div class="use-case-card">
+                    <div class="use-case-header">
+                        <div class="use-case-icon">🎓</div>
+                        <h3 class="use-case-title">Fresh Graduate - Full Alternative Data</h3>
+                    </div>
+                    <p style="color: #6c757d; margin-bottom: 1rem;">
+                        Tâm, 23 years old, just graduated from university, with no bank account.
+                        TFA Score evaluates creditworthiness using utility bill payment history, e-commerce
+                        transactions, e-wallet usage, and LinkedIn profile.
+                    </p>
+                    <div class="use-case-metrics">
+                        <div class="metric-box">
+                            <div class="metric-value">580</div>
+                            <div class="metric-label">TFA Score</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-value">30M</div>
+                            <div class="metric-label">Approved loan</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Use Case 5 -->
+                <div class="use-case-card">
+                    <div class="use-case-header">
+                        <div class="use-case-icon">💼</div>
+                        <h3 class="use-case-title">Freelancer - Gig Economy Worker</h3>
+                    </div>
+                    <p style="color: #6c757d; margin-bottom: 1rem;">
+                        Linh, 28 years old, a freelance designer with irregular income of 15–25 million VND/month.
+                        TFA Score analyzes cash flow from Upwork and Fiverr, customer ratings, and payment history to
+                        assess creditworthiness.
+                    </p>
+                    <div class="use-case-metrics">
+                        <div class="metric-box">
+                            <div class="metric-value">620</div>
+                            <div class="metric-label">TFA Score</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-value">50M</div>
+                            <div class="metric-label">Credit limit</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Use Case 6 -->
+                <div class="use-case-card">
+                    <div class="use-case-header">
+                        <div class="use-case-icon">🛒</div>
+                        <h3 class="use-case-title">E-Commerce Entrepreneur</h3>
+                    </div>
+                    <p style="color: #6c757d; margin-bottom: 1rem;">
+                        Hùng, 26 years old, an online clothing shop owner seeking to expand his business.
+                        TFA Score evaluates creditworthiness using Shopee/Lazada sales, shop ratings, order fulfillment
+                        rate, monthly order growth, and supplier payment history.
+                    </p>
+                    <div class="use-case-metrics">
+                        <div class="metric-box">
+                            <div class="metric-value">650</div>
+                            <div class="metric-label">TFA Score</div>
+                        </div>
+                        <div class="metric-box">
+                            <div class="metric-value">200M</div>
+                            <div class="metric-label">Business loan</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demo Section -->
+    <section id="demo" class="section section-bg">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Live Demo</div>
+                <h2 class="section-title">Experience TFA Scoring Now</h2>
+                <p class="section-subtitle">
+                    See how our AI evaluates credit in real time
+                </p>
+            </div>
+
+            <div class="demo-container">
+                <div class="demo-grid">
+                    <div class="demo-input-section">
+                        <h3>Customer Information</h3>
+
+                        <div class="form-group">
+                            <label class="form-label">Monthly Income (VND)</label>
+                            <input type="number" class="form-input" id="income" value="30000000" />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Working years</label>
+                            <input type="number" class="form-input" id="employment" value="3" />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Current Number of Loans</label>
+                            <input type="number" class="form-input" id="loans" value="1" />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Digital Activity Score (0-100)</label>
+                            <input type="range" class="form-input" id="digital" min="0" max="100" value="75" />
+                            <div
+                                style="display: flex; justify-content: space-between; font-size: 0.75rem; color: #6c757d; margin-top: 0.25rem;">
+                                <span>0</span>
+                                <span id="digitalValue">75</span>
+                                <span>100</span>
+                            </div>
+                        </div>
+
+                        <button class="btn-primary" onclick="calculateScore()">
+                            <span style="margin-right: 0.5rem;">🚀</span>
+                            Calculate TFA Scoring
+                        </button>
+                    </div>
+
+                    <div class="demo-output-section">
+                        <h3>AI Assessment Results</h3>
+
+                        <div class="result-card">
+                            <div class="result-label">TFA Credit Score</div>
+                            <div class="result-value" id="resultScore">---</div>
+                        </div>
+
+                        <div class="result-card">
+                            <div class="result-label">Risk Level</div>
+                            <div class="result-value" id="resultRisk">---</div>
+                        </div>
+
+                        <div class="result-card">
+                            <div class="result-label">Loan Eligibility</div>
+                            <div class="result-value" id="resultEligibility">---</div>
+                        </div>
+
+                        <div class="result-card">
+                            <div class="result-label">Suggested Interest Rate</div>
+                            <div class="result-value" id="resultRate">---</div>
+                        </div>
+
+                        <div class="result-card">
+                            <div class="result-label">Suggested Credit Limit</div>
+                            <div class="result-value" id="resultLimit">---</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Easy Integration</div>
+                <h2 class="section-title">Connect with all systems</h2>
+                <p class="section-subtitle">
+                    TFA Platform seamlessly integrates with C-NOAH and existing core banking systems
+                </p>
+            </div>
+
+            <div class="integration-flow">
+                <div class="integration-steps">
+                    <div class="integration-step">
+                        <div class="step-icon">🔌</div>
+                        <h4 class="step-title">API Integration</h4>
+                        <p class="step-desc">REST, GraphQL, gRPC with complete documentation</p>
+                    </div>
+                    <div class="integration-step">
+                        <div class="step-icon">🔄</div>
+                        <h4 class="step-title">Real-time Sync</h4>
+                        <p class="step-desc">Real-time data synchronization via Event Bus</p>
+                    </div>
+                    <div class="integration-step">
+                        <div class="step-icon">🛡️</div>
+                        <h4 class="step-title">Security First</h4>
+                        <p class="step-desc">mTLS, OAuth 2.0, API Keys management</p>
+                    </div>
+                    <div class="integration-step">
+                        <div class="step-icon">📊</div>
+                        <h4 class="step-title">Monitoring</h4>
+                        <p class="step-desc">24/7 monitoring dashboard with alerting</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2 class="cta-title">Ready for Digital Transformation with AI?</h2>
+            <p class="cta-subtitle">
+                Let TFA AI Platform help you increase efficiency by 60%, reduce risk by 95%
+                and deliver the best experience for customers
+            </p>
+            <div class="cta-buttons">
+                <a href="#contact" class="cta-button">
+                    <span style="margin-right: 0.5rem;">📞</span>
+                    Schedule Consultation
+                </a>
+                <a href="#demo" class="cta-button" style="background: white; color: #262626;">
+                    <span style="margin-right: 0.5rem;">🎯</span>
+                    Request Demo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TFA AI Platform</h3>
+                <p style="color: #6c757d; margin-top: 1rem;">
+                    Leading AI platform for financial digital transformation,
+                    trusted by major financial institutions.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Products</h3>
+                <ul class="footer-links">
+                    <li><a href="#services">AI Services Suite</a></li>
+                    <li><a href="#tfa-score">TFA Scoring</a></li>
+                    <li><a href="#architecture">Platform Architecture</a></li>
+                    <li><a href="#demo">Live Demo</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Solutions</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Digital Banking</a></li>
+                    <li><a href="#">Fintech</a></li>
+                    <li><a href="#">Insurance</a></li>
+                    <li><a href="#">Asset Management</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul class="footer-links">
+                    <li><a href="mailto:contact@tfa.ai">contact@tfa.ai</a></li>
+                    <li><a href="tel:+84123456789">+84 123 456 789</a></li>
+                    <li><a href="#">Hanoi, Vietnam</a></li>
+                    <li><a href="#">Tokyo, Japan</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 TFA AI Platform. All rights reserved. |
+                <a href="#" style="color: #6c757d;">Privacy Policy</a> |
+                <a href="#" style="color: #6c757d;">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+<script src="app.js"></script>
+</body>
+
+</html>
