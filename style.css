@@ -1634,3 +1634,99 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* Architecture Table Styles - Single White Container with Header */
+.architecture-table {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.arch-table-header {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr;
+    background: transparent;
+    border-bottom: 1px solid rgba(21, 195, 90, 0.2);
+}
+
+.arch-table-header div {
+    padding: 1.25rem 1.5rem;
+    font-weight: 600;
+    color: #262626;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+}
+
+.arch-table-row {
+    background: #ffffff;
+    border-bottom: 1px solid rgba(21, 195, 90, 0.15);
+    transition: all 0.2s ease;
+}
+
+.arch-table-row:last-child {
+    border-bottom: none;
+}
+
+.arch-table-row:hover {
+    background: rgba(248, 249, 250, 0.5);
+}
+
+.arch-table-row-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr;
+    gap: 0;
+    align-items: center;
+}
+
+.arch-table-cell {
+    padding: 1.25rem 1.5rem;
+    color: #262626;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+}
+
+.arch-table-cell.layer {
+    font-weight: 600;
+    color: #15c35a;
+    font-size: 1rem;
+}
+
+.arch-table-cell.technology {
+    color: #262626;
+}
+
+.arch-table-cell.purpose {
+    color: #6c757d;
+}
+
+/* Mobile responsive for architecture table */
+@media (max-width: 768px) {
+    .arch-table-header,
+    .arch-table-row-content {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+    .arch-table-header div,
+    .arch-table-cell {
+        padding: 0.75rem 1rem;
+        border-bottom: 1px solid rgba(21, 195, 90, 0.1);
+    }
+    
+    .arch-table-cell:last-child {
+        border-bottom: none;
+    }
+    
+    .arch-table-cell::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #15c35a;
+        margin-right: 0.75rem;
+        min-width: 80px;
+        font-size: 0.8rem;
+    }
+}
