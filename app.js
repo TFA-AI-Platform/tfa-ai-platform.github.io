@@ -192,47 +192,90 @@ function calculateScore() {
     const resultScore = document.getElementById('resultScore');
     if (resultScore) resultScore.textContent = Math.round(baseScore);
 
-    // Risk level with color coding
-    let risk = 'High';
+    // Detect language from document lang attribute or current page
+    const isJapanese = document.documentElement.lang === 'ja' || 
+                      window.location.pathname.includes('-jp.html');
+
+    // Risk level with color coding (Japanese or English)
+    let risk, eligibility;
     let riskColor = '#ef4444';
-    if (baseScore >= 750) {
-        risk = 'Very Low';
-        riskColor = '#10b981';
-    } else if (baseScore >= 700) {
-        risk = 'Low';
-        riskColor = '#3b82f6';
-    } else if (baseScore >= 600) {
-        risk = 'Medium';
-        riskColor = '#f59e0b';
+    let eligibilityColor = '#ef4444';
+
+    if (isJapanese) {
+        // Japanese translations
+        risk = '高い';
+        eligibility = '条件不足';
+
+        if (baseScore >= 750) {
+            risk = '非常に低い';
+            riskColor = '#10b981';
+        } else if (baseScore >= 700) {
+            risk = '低い';
+            riskColor = '#3b82f6';
+        } else if (baseScore >= 600) {
+            risk = '普通';
+            riskColor = '#f59e0b';
+        }
+
+        if (baseScore >= 650) {
+            eligibility = '条件満たし';
+            eligibilityColor = '#10b981';
+        } else if (baseScore >= 550) {
+            eligibility = '条件付き検討';
+            eligibilityColor = '#f59e0b';
+        }
+    } else {
+        // English translations
+        risk = 'High';
+        eligibility = 'Not Eligible';
+
+        if (baseScore >= 750) {
+            risk = 'Very Low';
+            riskColor = '#10b981';
+        } else if (baseScore >= 700) {
+            risk = 'Low';
+            riskColor = '#3b82f6';
+        } else if (baseScore >= 600) {
+            risk = 'Medium';
+            riskColor = '#f59e0b';
+        }
+
+        if (baseScore >= 650) {
+            eligibility = 'Eligible';
+            eligibilityColor = '#10b981';
+        } else if (baseScore >= 550) {
+            eligibility = 'Conditional Review';
+            eligibilityColor = '#f59e0b';
+        }
     }
+
     const riskElement = document.getElementById('resultRisk');
     if (riskElement) {
         riskElement.textContent = risk;
         riskElement.style.color = riskColor;
     }
 
-    // Eligibility
-    let eligibility = 'Not Eligible';
-    let eligibilityColor = '#ef4444';
-    if (baseScore >= 650) {
-        eligibility = 'Eligible';
-        eligibilityColor = '#10b981';
-    } else if (baseScore >= 550) {
-        eligibility = 'Conditional Review';
-        eligibilityColor = '#f59e0b';
-    }
     const eligibilityElement = document.getElementById('resultEligibility');
     if (eligibilityElement) {
         eligibilityElement.textContent = eligibility;
         eligibilityElement.style.color = eligibilityColor;
     }
 
-    // Interest rate
-    let rate = '18-20%/year';
-    if (baseScore >= 750) rate = '8-10%/year';
-    else if (baseScore >= 700) rate = '10-12%/year';
-    else if (baseScore >= 650) rate = '12-15%/year';
-    else if (baseScore >= 600) rate = '15-18%/year';
+    // Interest rate (Japanese or English)
+    let rate;
+    if (isJapanese) {
+        rate = '18-20%/年';
+        if (baseScore >= 750) rate = '8-10%/年';
+        else if (baseScore >= 700) rate = '10-12%/年';
+        else if (baseScore >= 650) rate = '12-15%/年';
+        else if (baseScore >= 600) rate = '15-18%/年';
+    } else {
+        rate = '18-20%/year';
+        if (baseScore >= 750) rate = '8-10%/year';
+        else if (baseScore >= 700) rate = '10-12%/year';
+        else if (baseScore >= 650) rate = '12-15%/year';
+        else if (baseScore >= 600) rate = '15-18%/year';
+    }
     const resultRate = document.getElementById('resultRate');
     if (resultRate) resultRate.textContent = rate;
 

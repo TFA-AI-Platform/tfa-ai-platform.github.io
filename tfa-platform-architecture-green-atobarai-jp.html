@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atobar.ai - 次世代信用スコアリングソリューション</title>
+    <link rel="icon" href="public/images/Logo TFA - Final-08.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-logo">
+            <div class="logo-circle"></div>
+            <div class="logo-circle"></div>
+            <div class="logo-circle"></div>
+        </div>
+        <div class="loading-text">TFA AI Platformを読み込み中...</div>
+    </div>
+
+    <!-- Particle Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="tfa-platform-architecture-green-jp.html#home">
+                    <img class="logo-image" src="public/images/Logo TFA - Final-08.png" alt="TFA AI Platform">    
+                </a>
+            </div>
+            <!-- Mobile Nav Toggle (shared JS controls this) -->
+            <button class="nav-toggle-btn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <ul class="nav-links">
+                <li><a href="tfa-platform-architecture-green-jp.html#home" class="nav-link">ホーム</a></li>
+                <li><a href="tfa-platform-architecture-green-about-jp.html" class="nav-link">会社概要</a></li>
+                <li><a href="tfa-platform-architecture-green-service-jp.html" class="nav-link">AIサービス</a></li>
+                <li><a href="tfa-platform-architecture-green-tfa-scoring-jp.html" class="nav-link">TFA Scoring</a></li>
+                <li class="dropdown">
+                    <a href="#products" class="nav-link dropdown-toggle">製品 <span class="dropdown-arrow">▾</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tfa-platform-architecture-green-atobarai-jp.html" class="dropdown-link active">Atobar.ai</a></li>
+                        <li><a href="tfa-platform-architecture-green-ad-housing-jp.html" class="dropdown-link">AD Housing</a></li>
+                        <li><a href="tfa-platform-architecture-green-ad-passport-jp.html" class="dropdown-link">AD Passport</a></li>
+                        <li><a href="tfa-platform-architecture-green-lnpl-jp.html" class="dropdown-link">Live now, Pay later</a></li>
+                        <li><a href="tfa-platform-architecture-green-consumer-finance-jp.html" class="dropdown-link">消費者金融サービス</a></li>
+                    </ul>
+                </li>
+                <li><a href="tfa-platform-architecture-green-architecture-jp.html" class="nav-link">アーキテクチャ</a></li>
+                <li><a href="tfa-platform-architecture-green-demo-jp.html" class="nav-link">Demo</a></li>
+            </ul>
+            <a href="https://reactplus.com/contact" class="cta-button">お問い合わせ</a>
+        </div>
+    </nav>
+
+    <!-- Atobar.ai Section -->
+    <section id="atobar" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge" style="background: rgba(250, 140, 22, 0.1); border: 1px solid rgba(250, 140, 22, 0.3); color: #FA8C16;">BNPL革新</div>
+                <h2 class="section-title">Atobar.ai - 次世代信用スコアリングソリューション</h2>
+                <p class="section-subtitle">
+                    <strong>代替データベースの次世代信用スコアリングソリューション</strong> - 伝統的データ（CIC、JICC等）の限界を超えて、
+                    Atobar.aiは15以上の代替データソースと先進AIを使用して95％の精度で信用評価を実現。
+                    1日100万件の取引を処理し、日本の3000万人以上の「thin-file」の方々に公平な金融機会を提供。
+                    早期リスク検知とUX最適化機能を備えたインテリジェントBNPL（Buy Now Pay Later）統合管理プラットフォーム。
+                </p>
+            </div>
+
+            <!-- Key Performance Metrics -->
+            <div class="hero-stats" style="margin-bottom: 4rem;">
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number">92.3%</div>
+                    <div class="stat-label">承認率</div>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number">1.2%</div>
+                    <div class="stat-label">不良債権率</div>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number">685</div>
+                    <div class="stat-label">TFAスコア平均</div>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number">&lt;200ms</div>
+                    <div class="stat-label">APIレスポンス時間</div>
+                </div>
+            </div>
+
+            <!-- User Journey Process -->
+            <div class="architecture-visual" style="margin-bottom: 4rem;">
+                <h3 style="text-align: center; margin-bottom: 2rem;">Atobar.aiユーザージャーニー</h3>
+                <div class="integration-steps">
+                    <div class="integration-step">
+                        <div class="step-icon" style="background: linear-gradient(135deg, rgba(21, 195, 90, 0.2), rgba(24, 216, 98, 0.2));">
+                            <span style="color: #15c35a;">1</span>
+                        </div>
+                        <h4 class="step-title">登録</h4>
+                        <p class="step-desc">
+                            eKYCで2分で無料アカウント作成。
+                            ⚡ 高速 - 🔒 絶対セキュリティ - 📊 完全透明
+                        </p>
+                    </div>
+
+                    <div class="integration-step">
+                        <div class="step-icon" style="background: linear-gradient(135deg, rgba(74, 144, 226, 0.2), rgba(92, 160, 242, 0.2));">
+                            <span style="color: #4A90E2;">2</span>
+                        </div>
+                        <h4 class="step-title">信用プロファイル構築</h4>
+                        <p class="step-desc">
+                            15以上の代替データソースに接続：公共料金請求書、
+                            電子ウォレット、モバイル決済で信用プロファイルを構築。
+                        </p>
+                    </div>
+
+                    <div class="integration-step">
+                        <div class="step-icon" style="background: linear-gradient(135deg, rgba(139, 69, 255, 0.2), rgba(155, 89, 255, 0.2));">
+                            <span style="color: #8B45FF;">3</span>
+                        </div>
+                        <h4 class="step-title">BNPLでお買い物</h4>
+                        <p class="step-desc">
+                            インテリジェントAIで30秒で即時承認。
+                            💰 隠れた手数料なし - 完全透明な条件。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>Atobar.aiのコアバリュー</h3>
+
+                    <div class="about-features" style="margin-top: 2rem;">
+                        <div class="about-feature">
+                            <div class="feature-icon" style="background: rgba(21, 195, 90, 0.1); color: #15c35a;">👤</div>
+                            <div>
+                                <strong>ユーザー向け</strong>
+                                <p style="margin-top: 0.5rem; font-size: 0.875rem;">
+                                    📊 <strong>個人信用スコアの確認・モニタリング</strong> - 直感的ダッシュボード、リアルタイム更新。
+                                    💡 <strong>信用スコア改善提案</strong> - AI分析によるパーソナライズドアドバイス。
+                                    🏪 <strong>統一BNPLハブによるすべてのBNPLサービスの集中管理</strong>。
+                                    🛒 <strong>スマートで便利、安全なショッピング体験</strong> - 柔軟な決済、絶対的なセキュリティ。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="feature-icon" style="background: rgba(74, 144, 226, 0.1); color: #4A90E2;">🏦</div>
+                            <div>
+                                <strong>BNPLプロバイダー向け</strong>
+                                <p style="margin-top: 0.5rem; font-size: 0.875rem;">
+                                    🎯 <strong>より正確な信用リスク評価</strong> - 代替データによる95%の精度。
+                                    ⚡ <strong>支払い遅延の早期発見</strong> - ML/DLによるAI不良債権リスク予測。
+                                    📈 <strong>承認率40%向上</strong> - 以前拒否されたシンファイル顧客の評価が可能。
+                                    💰 <strong>運用コスト70%削減</strong> - プロセス自動化、処理時間を30秒未満に短縮。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="feature-icon" style="background: rgba(245, 34, 45, 0.1); color: #F5222D;">🚀</div>
+                            <div>
+                                <strong>先進的な代替データ技術</strong>
+                                <p style="margin-top: 0.5rem; font-size: 0.875rem;">
+                                    🔄 <strong>15以上の代替データソース</strong>: 公共料金請求書、電子ウォレット、モバイル決済、Eコマース、ソーシャルコマース。
+                                    🤖 <strong>AI/MLエンジン</strong>: 機械学習、深層学習、NLP、グラフニューラルネットワーク。
+                                    ⚡ <strong>リアルタイム処理</strong>: 200ms未満の応答時間、99.9%稼働時間SLA。
+                                    🔒 <strong>プライバシーファースト</strong>: ゼロ知識証明、準同型暗号化、GDPR/CCPA準拠。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <div class="about-image-box">
+                        <div style="text-align: center;">
+                            <h4 style="margin-bottom: 1.5rem;">代替データスコアリングシステム</h4>
+
+                            <div style="display: grid; gap: 0.75rem; font-size: 0.875rem;">
+                                <div class="result-card" style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem;">
+                                    <div style="text-align: left;">
+                                        <div class="result-label">📱 モバイル決済</div>
+                                        <div style="color: #6c757d; font-size: 0.75rem;">Weight: 35% | Real-time</div>
+                                    </div>
+                                    <div style="text-align: right;">
+                                        <div class="result-value" style="color: #15c35a; font-size: 1rem;">98.5%</div>
+                                        <div style="color: #6c757d; font-size: 0.75rem;">精度</div>
+                                    </div>
+                                </div>
+
+                                <div class="result-card" style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem;">
+                                    <div style="text-align: left;">
+                                        <div class="result-label">💳 電子ウォレット</div>
+                                        <div style="color: #6c757d; font-size: 0.75rem;">Weight: 25% | Daily sync</div>
+                                    </div>
+                                    <div style="text-align: right;">
+                                        <div class="result-value" style="color: #4A90E2; font-size: 1rem;">95.2%</div>
+                                        <div style="color: #6c757d; font-size: 0.75rem;">信頼性</div>
+                                    </div>
+                                </div>
+
+                                <div class="result-card" style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem;">
+                                    <div style="text-align: left;">
+                                        <div class="result-label">🏪 E-commerce</div>
+                                        <div style="color: #6c757d; font-size: 0.75rem;">Weight: 20% | API sync</div>
+                                    </div>
+                                    <div style="text-align: right;">
+                                        <div class="result-value" style="color: #FA8C16; font-size: 1rem;">92.8%</div>
+                                        <div style="color: #6c757d; font-size: 0.75rem;">Coverage</div>
+                                    </div>
+                                </div>
+
+                                <div class="result-card" style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem;">
+                                    <div style="text-align: left;">
+                                        <div class="result-label">💡 公共料金請求書</div>
+                                        <div style="color: #6c757d; font-size: 0.75rem;">Weight: 20% | Monthly</div>
+                                    </div>
+                                    <div style="text-align: right;">
+                                        <div class="result-value" style="color: #8B45FF; font-size: 1rem;">89.5%</div>
+                                        <div style="color: #6c757d; font-size: 0.75rem;">Predictive</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TFA Scoring Requirements Matrix -->
+            <div class="architecture-visual" style="margin-top: 4rem;">
+                <h3 style="text-align: center; margin-bottom: 2rem;">代替データ信用スコア分類</h3>
+                <div class="score-products" style="grid-template-columns: repeat(4, 1fr);">
+                    <div class="score-product" style="border-color: rgba(21, 195, 90, 0.3);">
+                        <div class="score-product-icon">🏆</div>
+                        <h4 class="score-product-name" style="color: #15c35a;">Excellent (750-850)</h4>
+                        <p class="score-product-desc">
+                            あらゆるローンに最適金利。最高限度額。優遇条件。
+                        </p>
+                    </div>
+
+                    <div class="score-product" style="border-color: rgba(74, 144, 226, 0.3);">
+                        <div class="score-product-icon">⭐</div>
+                        <h4 class="score-product-name" style="color: #4A90E2;">Good (700-749)</h4>
+                        <p class="score-product-desc">
+                            競争力のある金利。多様な製品選択。迅速な手続き。
+                        </p>
+                    </div>
+
+                    <div class="score-product" style="border-color: rgba(250, 140, 22, 0.3);">
+                        <div class="score-product-icon">📊</div>
+                        <h4 class="score-product-name" style="color: #FA8C16;">Fair (650-699)</h4>
+                        <p class="score-product-desc">
+                            標準金利。中程度の限度額。標準条件。
+                        </p>
+                    </div>
+
+                    <div class="score-product" style="border-color: rgba(139, 69, 255, 0.3);">
+                        <div class="score-product-icon">🔄</div>
+                        <h4 class="score-product-name" style="color: #8B45FF;">Below Fair (550-649)</h4>
+                        <p class="score-product-desc">
+                            限定的な選択肢。より高い金利。追加条件が必要。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Atobar Roadmap -->
+            <div class="architecture-visual" style="margin-top: 4rem;">
+                <h3 style="text-align: center; margin-bottom: 2rem;">Atobar.ai開発ロードマップ</h3>
+
+                <div class="integration-steps" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                    <div class="integration-step">
+                        <div class="step-icon" style="background: linear-gradient(135deg, rgba(21, 195, 90, 0.2), rgba(24, 216, 98, 0.2));">
+                            <span style="color: #15c35a;">2025</span>
+                        </div>
+                        <h4 class="step-title">フェーズ1: BNPL Hub</h4>
+                        <p class="step-desc">
+                            集中管理BNPLのApp/Webプラットフォーム。
+                            XAIガイダンス付きスマートダッシュボード。
+                        </p>
+                    </div>
+
+                    <div class="integration-step">
+                        <div class="step-icon" style="background: linear-gradient(135deg, rgba(74, 144, 226, 0.2), rgba(92, 160, 242, 0.2));">
+                            <span style="color: #4A90E2;">2026</span>
+                        </div>
+                        <h4 class="step-title">フェーズ2: Checkout Layer</h4>
+                        <p class="step-desc">
+                            Eコマースプラットフォームへの統合。
+                            不正検出機能付きリアルタイムAPI。
+                        </p>
+                    </div>
+
+                    <div class="integration-step">
+                        <div class="step-icon" style="background: linear-gradient(135deg, rgba(139, 69, 255, 0.2), rgba(155, 89, 255, 0.2));">
+                            <span style="color: #8B45FF;">2027+</span>
+                        </div>
+                        <h4 class="step-title">フェーズ3: Credit Platform</h4>
+                        <p class="step-desc">
+                            シンファイル信用評価B2B APIプラットフォーム。
+                            ユーザー制御のデータエコシステム。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Features -->
+            <div style="margin-top: 4rem;">
+                <h3 style="text-align: center; margin-bottom: 2rem;">Atobar.aiの競争優位性</h3>
+
+                <div class="score-products" style="grid-template-columns: repeat(4, 1fr);">
+                    <div class="score-product">
+                        <div class="score-product-icon">🎯</div>
+                        <h4 class="score-product-name" style="color: #FA8C16;">First-mover</h4>
+                        <p class="score-product-desc">
+                            日本初の代替信用データセット
+                        </p>
+                    </div>
+
+                    <div class="score-product">
+                        <div class="score-product-icon">🔗</div>
+                        <h4 class="score-product-name" style="color: #15c35a;">Plug & Play</h4>
+                        <p class="score-product-desc">
+                            現在のBNPLシステムを中断しない
+                        </p>
+                    </div>
+
+                    <div class="score-product">
+                        <div class="score-product-icon">🤖</div>
+                        <h4 class="score-product-name" style="color: #4A90E2;">Explainable AI</h4>
+                        <p class="score-product-desc">
+                            説明可能AIがユーザー信頼を構築
+                        </p>
+                    </div>
+
+                    <div class="score-product">
+                        <div class="score-product-icon">🏦</div>
+                        <h4 class="score-product-name" style="color: #8B45FF;">B2B Platform</h4>
+                        <p class="score-product-desc">
+                            銀行および金融機関への価値提供
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comprehensive Features for Users and Providers -->
+            <div style="margin-top: 4rem;">
+                <h3 style="text-align: center; margin-bottom: 2rem;">詳細機能・メリット</h3>
+
+                <div class="about-grid">
+                    <div class="about-content" style="background: linear-gradient(135deg, rgba(21, 195, 90, 0.05), rgba(24, 216, 98, 0.05)); padding: 2rem; border-radius: 20px; border: 1px solid rgba(21, 195, 90, 0.2);">
+                        <h4 style="color: #15c35a; margin-bottom: 1.5rem;">🎯 個人ユーザー向け</h4>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <strong style="color: #262626;">📊 信用スコアのモニタリング・管理</strong>
+                            <ul style="margin-top: 0.5rem; color: #6c757d; list-style: none; padding-left: 1rem;">
+                                <li>✓ リアルタイムスコア表示の個人ダッシュボード</li>
+                                <li>✓ 詳細な信用スコア変更履歴</li>
+                                <li>✓ 市場平均との比較</li>
+                                <li>✓ スコア急落時のアラート</li>
+                            </ul>
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <strong style="color: #262626;">💡 AIスコア改善アドバイザー</strong>
+                            <ul style="margin-top: 0.5rem; color: #6c757d; list-style: none; padding-left: 1rem;">
+                                <li>✓ 信用プロファイルの弱点分析</li>
+                                <li>✓ スコア向上のための具体的アクション提案</li>
+                                <li>✓ 提案実行後のスコア予測</li>
+                                <li>✓ 段階別スコア改善計画</li>
+                            </ul>
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <strong style="color: #262626;">🏪 BNPL Hub - 統合管理</strong>
+                            <ul style="margin-top: 0.5rem; color: #6c757d; list-style: none; padding-left: 1rem;">
+                                <li>✓ 全プロバイダーからのBNPL統合集約</li>
+                                <li>✓ リマインダー付きスマート支払いスケジュール</li>
+                                <li>✓ 支出最適化と予算管理</li>
+                                <li>✓ 詳細な月次支出レポート</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <strong style="color: #262626;">🛒 スマートショッピング体験</strong>
+                            <ul style="margin-top: 0.5rem; color: #6c757d; list-style: none; padding-left: 1rem;">
+                                <li>✓ 複数プロバイダーのBNPL金利比較</li>
+                                <li>✓ 購入前の支払い能力計算</li>
+                                <li>✓ 絶対的なセキュリティでワンタッチ決済</li>
+                                <li>✓ メンバー限定キャッシュバックと特典</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="about-content" style="background: linear-gradient(135deg, rgba(250, 140, 22, 0.05), rgba(255, 150, 32, 0.05)); padding: 2rem; border-radius: 20px; border: 1px solid rgba(250, 140, 22, 0.2);">
+                        <h4 style="color: #FA8C16; margin-bottom: 1.5rem;">🏢 BNPLプロバイダー向け</h4>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <strong style="color: #262626;">🎯 高精度リスク評価</strong>
+                            <ul style="margin-top: 0.5rem; color: #6c757d; list-style: none; padding-left: 1rem;">
+                                <li>✓ 15+のAlternative Dataソース分析</li>
+                                <li>✓ 95%の精度を誇るAIモデル</li>
+                                <li>✓ シンファイル顧客向けCredit Scoring</li>
+                                <li>✓ リアルタイム返済能力評価</li>
+                            </ul>
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <strong style="color: #262626;">⚠️ 早期リスク発見</strong>
+                            <ul style="margin-top: 0.5rem; color: #6c757d; list-style: none; padding-left: 1rem;">
+                                <li>✓ ローンスタッキング行動の早期警告</li>
+                                <li>✓ 90日以内の不良債権確率予測</li>
+                                <li>✓ AI/MLによる不正発見</li>
+                                <li>✓ 自動アラート付き24/7モニタリング</li>
+                            </ul>
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <strong style="color: #262626;">📈 ポートフォリオ最適化</strong>
+                            <ul style="margin-top: 0.5rem; color: #6c757d; list-style: none; padding-left: 1rem;">
+                                <li>✓ スマート顧客セグメンテーション</li>
+                                <li>✓ 最適な与信限度・金利提案</li>
+                                <li>✓ 信用ポリシーのA/Bテスト</li>
+                                <li>✓ 詳細なアナリティクスダッシュボード</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <strong style="color: #262626;">🔌 高速統合</strong>
+                            <ul style="margin-top: 0.5rem; color: #6c757d; list-style: none; padding-left: 1rem;">
+                                <li>✓ 完全なドキュメント付きRESTful API</li>
+                                <li>✓ 全主要プラットフォーム対応SDK</li>
+                                <li>✓ Webhook real-time notifications</li>
+                                <li>✓ 即座導入可能なホワイトラベルソリューション</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alternative Data Sources Detail -->
+            <div style="margin-top: 4rem;">
+                <h3 style="text-align: center; margin-bottom: 2rem;">多様なAlternative Dataソース</h3>
+
+                <div class="services-grid" style="grid-template-columns: repeat(4, 1fr);">
+                    <div class="service-card animate-on-scroll" style="padding: 1.5rem;">
+                        <div class="service-icon" style="width: 60px; height: 60px; font-size: 2rem;">📱</div>
+                        <h5 style="font-size: 1rem; margin-bottom: 0.5rem;">Mobile Payment</h5>
+                        <p style="font-size: 0.75rem; color: #6c757d;">PayPay, Line Pay, Merpay, Rakuten Pay</p>
+                    </div>
+
+                    <div class="service-card animate-on-scroll" style="padding: 1.5rem;">
+                        <div class="service-icon" style="width: 60px; height: 60px; font-size: 2rem;">💳</div>
+                        <h5 style="font-size: 1rem; margin-bottom: 0.5rem;">E-wallet</h5>
+                        <p style="font-size: 0.75rem; color: #6c757d;">Suica, Pasmo, WAON, nanaco</p>
+                    </div>
+
+                    <div class="service-card animate-on-scroll" style="padding: 1.5rem;">
+                        <div class="service-icon" style="width: 60px; height: 60px; font-size: 2rem;">🏪</div>
+                        <h5 style="font-size: 1rem; margin-bottom: 0.5rem;">E-commerce</h5>
+                        <p style="font-size: 0.75rem; color: #6c757d;">Amazon, Rakuten, Yahoo!, Mercari</p>
+                    </div>
+
+                    <div class="service-card animate-on-scroll" style="padding: 1.5rem;">
+                        <div class="service-icon" style="width: 60px; height: 60px; font-size: 2rem;">💡</div>
+                        <h5 style="font-size: 1rem; margin-bottom: 0.5rem;">Utility Bills</h5>
+                        <p style="font-size: 0.75rem; color: #6c757d;">電気、水道、ガス、インターネット、電話</p>
+                    </div>
+
+                    <div class="service-card animate-on-scroll" style="padding: 1.5rem;">
+                        <div class="service-icon" style="width: 60px; height: 60px; font-size: 2rem;">🏦</div>
+                        <h5 style="font-size: 1rem; margin-bottom: 0.5rem;">Banking</h5>
+                        <p style="font-size: 0.75rem; color: #6c757d;">Transaction history, savings pattern</p>
+                    </div>
+
+                    <div class="service-card animate-on-scroll" style="padding: 1.5rem;">
+                        <div class="service-icon" style="width: 60px; height: 60px; font-size: 2rem;">📲</div>
+                        <h5 style="font-size: 1rem; margin-bottom: 0.5rem;">Telco Data</h5>
+                        <p style="font-size: 0.75rem; color: #6c757d;">Payment history, usage pattern</p>
+                    </div>
+
+                    <div class="service-card animate-on-scroll" style="padding: 1.5rem;">
+                        <div class="service-icon" style="width: 60px; height: 60px; font-size: 2rem;">🏠</div>
+                        <h5 style="font-size: 1rem; margin-bottom: 0.5rem;">Rent Payment</h5>
+                        <p style="font-size: 0.75rem; color: #6c757d;">Monthly rent, timeliness</p>
+                    </div>
+
+                    <div class="service-card animate-on-scroll" style="padding: 1.5rem;">
+                        <div class="service-icon" style="width: 60px; height: 60px; font-size: 2rem;">🎮</div>
+                        <h5 style="font-size: 1rem; margin-bottom: 0.5rem;">Subscription</h5>
+                        <p style="font-size: 0.75rem; color: #6c757d;">Netflix, Spotify, gaming services</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TFA AI Platform</h3>
+                <p style="color: #6c757d; margin-top: 1rem;">金融デジタルトランスフォーメーションのための主要AIプラットフォーム、大手金融機関に信頼されています。</p>
+            </div>
+            <div class="footer-section">
+                <h3>製品</h3>
+                <ul class="footer-links">
+                    <li><a href="tfa-platform-architecture-green-service-jp.html">AIサービススイート</a></li>
+                    <li><a href="tfa-platform-architecture-green-tfa-scoring-jp.html">TFAスコアリング</a></li>
+                    <li><a href="tfa-platform-architecture-green-architecture-jp.html">プラットフォームアーキテクチャ</a></li>
+                    <li><a href="tfa-platform-architecture-green-demo-jp.html">ライブデモ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>ソリューション</h3>
+                <ul class="footer-links">
+                    <li><a href="#">デジタルバンキング</a></li>
+                    <li><a href="#">フィンテック</a></li>
+                    <li><a href="#">保険</a></li>
+                    <li><a href="#">資産管理</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>お問い合わせ</h3>
+                <ul class="footer-links">
+                    <li><a href="mailto:contact@reactplus.com">contact@reactplus.com</a></li>
+                    <li><a href="tel:+817089886363">+81 70 8988 6363</a></li>
+                    <li><a href="#">ハノイ、ベトナム</a></li>
+                    <li><a href="#">東京、日本</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 TFA AI Platform. All rights reserved. | <a href="#" style="color: #6c757d;">プライバシーポリシー</a> | <a href="#" style="color: #6c757d;">利用規約</a></p>
+        </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+
+</html>
