@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atobar.ai - Next Generation Credit Scoring Solution</title>
+    <link rel="icon" href="public/images/Logo TFA - Final-08.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-logo">
+            <div class="logo-circle"></div>
+            <div class="logo-circle"></div>
+            <div class="logo-circle"></div>
+        </div>
+        <div class="loading-text">Loading TFA AI Platform...</div>
+    </div>
+
+    <!-- Particle Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="tfa-platform-architecture-green-en.html#home">
+                    <img class="logo-image" src="public/images/Logo TFA - Final-08.png" alt="TFA AI Platform">    
+                </a>
+            </div>
+            <!-- Mobile Nav Toggle (shared JS controls this) -->
+            <button class="nav-toggle-btn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <ul class="nav-links">
+                <li><a href="tfa-platform-architecture-green-en.html#home" class="nav-link">Home</a></li>
+                <li><a href="tfa-platform-architecture-green-about.html" class="nav-link">About</a></li>
+                <li><a href="tfa-platform-architecture-green-service.html" class="nav-link">Services</a></li>
+                <li><a href="tfa-platform-architecture-green-tfa-scoring.html" class="nav-link">TFA Scoring</a></li>
+                <li class="dropdown">
+                    <a href="#products" class="nav-link dropdown-toggle">Products <span class="dropdown-arrow">▾</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tfa-platform-architecture-green-atobarai.html" class="dropdown-link">Atobar.ai</a></li>
+                        <li><a href="tfa-platform-architecture-green-ad-housing.html" class="dropdown-link">AD Housing</a></li>
+                        <li><a href="tfa-platform-architecture-green-ad-passport.html" class="dropdown-link">AD Passport</a></li>
+                        <li><a href="tfa-platform-architecture-green-lnpl.html" class="dropdown-link">Live now, Pay later</a></li>
+                        <li><a href="tfa-platform-architecture-green-consumer-finance.html" class="dropdown-link">Consumer Finance Service</a></li>
+                    </ul>
+                </li>
+                <li><a href="tfa-platform-architecture-green-architecture.html" class="nav-link">Architecture</a></li>
+                <li><a href="tfa-platform-architecture-green-demo.html" class="nav-link">Demo</a></li>
+            </ul>
+            <a href="https://reactplus.com/contact" class="cta-button">Contact Consultation</a>
+        </div>
+    </nav>
+
+    <!-- Atobar.ai Section -->
+    <section id="atobar" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge" style="background: rgba(250, 140, 22, 0.1); border: 1px solid rgba(250, 140, 22, 0.3); color: #FA8C16;">BNPL Innovation</div>
+                <h2 class="section-title">Atobar.ai - Next Generation Credit Scoring Solution</h2>
+                <p class="section-subtitle">
+                    <strong>Next generation credit scoring solution based on Alternative Data</strong> - Beyond the limits of traditional data (CIC, JICC,...),
+                    Atobar.ai uses 15+ alternative data sources with advanced AI to evaluate credit with 95% accuracy,
+                    processing 1 million transactions/day, bringing fair financial opportunities to 30+ million "thin-file" people in Japan.
+                    Smart centralized Buy Now Pay Later (BNPL) management platform with early risk detection and optimized user experience.
+                </p>
+            </div>
+
+            <!-- Key Performance Metrics -->
+            <div class="hero-stats" style="margin-bottom: 4rem;">
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number">92.3%</div>
+                    <div class="stat-label">Approval Rate</div>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number">1.2%</div>
+                    <div class="stat-label">Bad Debt Rate</div>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number">685</div>
+                    <div class="stat-label">Average TFA Scoring</div>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number">&lt;200ms</div>
+                    <div class="stat-label">API Response Time</div>
+                </div>
+            </div>
+
+            <!-- User Journey Process -->
+            <div class="architecture-visual" style="margin-bottom: 4rem;">
+                <h3 style="text-align: center; margin-bottom: 2rem;">Atobar.ai User Journey</h3>
+                <div class="integration-steps">
+                    <div class="integration-step">
+                        <div class="step-icon" style="background: linear-gradient(135deg, rgba(21, 195, 90, 0.2), rgba(24, 216, 98, 0.2));">
+                            <span style="color: #15c35a;">1</span>
+                        </div>
+                        <h4 class="step-title">Sign Up</h4>
+                        <p class="step-desc">
+                            Create a free account in 2 minutes with eKYC.
+                            ⚡ Fast - 🔒 Absolute Security - 📊 Complete Transparency
+                        </p>
+                    </div>
+
+                    <div class="integration-step">
+                        <div class="step-icon" style="background: linear-gradient(135deg, rgba(74, 144, 226, 0.2), rgba(92, 160, 242, 0.2));">
+                            <span style="color: #4A90E2;">2</span>
+                        </div>
+                        <h4 class="step-title">Build Credit Profile</h4>
+                        <p class="step-desc">
+                            Connect 15+ alternative data sources: utility bills,
+                            e-wallets, mobile payments to build credit profile.
+                        </p>
+                    </div>
+
+                    <div class="integration-step">
+                        <div class="step-icon" style="background: linear-gradient(135deg, rgba(139, 69, 255, 0.2), rgba(155, 89, 255, 0.2));">
+                            <span style="color: #8B45FF;">3</span>
+                        </div>
+                        <h4 class="step-title">Shopping with BNPL</h4>
+                        <p class="step-desc">
+                            Instant approval in 30 seconds with smart AI.
+                            💰 No hidden fees - Completely transparent terms.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>Core Value Atobar.ai Brings</h3>
+
+                    <div class="about-features" style="margin-top: 2rem;">
+                        <div class="about-feature">
+                            <div class="feature-icon" style="background: rgba(21, 195, 90, 0.1); color: #15c35a;">👤</div>
+                            <div>
+                                <strong>For Users</strong>
+                                <p style="margin-top: 0.5rem; font-size: 0.875rem;">
+                                    📊 <strong>Know and track personal credit score</strong> - Visual dashboard, real-time updates.
+                                    💡 <strong>Get credit improvement suggestions</strong> - AI analyzes and provides personalized advice.
+                                    🏪 <strong>Centrally manage all BNPL services</strong> through unified BNPL Hub.
+                                    🛒 <strong>Smart, convenient and secure shopping experience</strong> - Flexible payment, absolute security.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="feature-icon" style="background: rgba(74, 144, 226, 0.1); color: #4A90E2;">🏦</div>
+                            <div>
+                                <strong>For BNPL Provider</strong>
+                                <p style="margin-top: 0.5rem; font-size: 0.875rem;">
+                                    🎯 <strong>More accurate credit risk assessment</strong> - 95% accuracy thanks to Alternative Data.
+                                    ⚡ <strong>Early detection of payment delays</strong> - AI predicts bad debt risk with ML/DL.
+                                    📈 <strong>Increase approval rate 40%</strong> - Evaluate thin-file customers previously rejected.
+                                    💰 <strong>Reduce operating costs 70%</strong> - Automate process, reduce processing time to < 30s. </p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="feature-icon" style="background: rgba(245, 34, 45, 0.1); color: #F5222D;">🚀</div>
+                            <div>
+                                <strong>Advanced Alternative Data Technology</strong>
+                                <p style="margin-top: 0.5rem; font-size: 0.875rem;">
+                                    🔄 <strong>15+ alternative data sources</strong>: Utility bills, e-wallets, mobile payments, e-commerce, social commerce.
+                                    🤖 <strong>AI/ML Engine</strong>: Machine Learning, Deep Learning, NLP, Graph Neural Networks.
+                                    ⚡ <strong>Real-time Processing</strong>: < 200ms response time, 99.9% uptime SLA. 🔒 <strong>Privacy-first</strong>: Zero-knowledge proof, Homomorphic encryption, GDPR/CCPA compliant.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <div class="about-image-box">
+                        <div style="text-align: center;">
+                            <h4 style="margin-bottom: 1.5rem;">Alternative Data Scoring System</h4>
+
+                            <div style="display: grid; gap: 0.75rem; font-size: 0.875rem;">
+                                <div class="result-card" style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem;">
+                                    <div style="text-align: left;">
+                                        <div class="result-label">📱 Mobile Payment</div>
+                                        <div style="color: #6c757d; font-size: 0.75rem;">Weight: 35% | Real-time</div>
+                                    </div>
+                                    <div style="text-align: right;">
+                                        <div class="result-value" style="color: #15c35a; font-size: 1rem;">98.5%</div>
+                                        <div style="color: #6c757d; font-size: 0.75rem;">Accuracy</div>
+                                    </div>
+                                </div>
+
+                                <div class="result-card" style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem;">
+                                    <div style="text-align: left;">
+                                        <div class="result-label">💳 E-wallet</div>
+                                        <div style="color: #6c757d; font-size: 0.75rem;">Weight: 25% | Daily sync</div>
+                                    </div>
+                                    <div style="text-align: right;">
+                                        <div class="result-value" style="color: #4A90E2; font-size: 1rem;">95.2%</div>
+                                        <div style="color: #6c757d; font-size: 0.75rem;">Reliability</div>
+                                    </div>
+                                </div>
+
+                                <div class="result-card" style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem;">
+                                    <div style="text-align: left;">
+                                        <div class="result-label">🏪 E-commerce</div>
+                                        <div style="color: #6c757d; font-size: 0.75rem;">Weight: 20% | API sync</div>
+                                    </div>
+                                    <div style="text-align: right;">
+                                        <div class="result-value" style="color: #FA8C16; font-size: 1rem;">92.8%</div>
+                                        <div style="color: #6c757d; font-size: 0.75rem;">Coverage</div>
+                                    </div>
+                                </div>
+
+                                <div class="result-card" style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem;">
+                                    <div style="text-align: left;">
+                                        <div class="result-label">💡 Utility Bills</div>
+                                        <div style="color: #6c757d; font-size: 0.75rem;">Weight: 20% | Monthly</div>
+                                    </div>
+                                    <div style="text-align: right;">
+                                        <div class="result-value" style="color: #8B45FF; font-size: 1rem;">89.5%</div>
+                                        <div style="color: #6c757d; font-size: 0.75rem;">Predictive</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TFA Scoring Requirements Matrix -->
+            <div class="architecture-visual" style="margin-top: 4rem;">
+                <h3 style="text-align: center; margin-bottom: 2rem;">Alternative Data Credit Score Classification</h3>
+                <div class="score-products" style="grid-template-columns: repeat(4, 1fr);">
+                    <div class="score-product" style="border-color: rgba(21, 195, 90, 0.3);">
+                        <div class="score-product-icon">🏆</div>
+                        <h4 class="score-product-name" style="color: #15c35a;">Excellent (750-850)</h4>
+                        <p class="score-product-desc">
+                            Best interest rates for all loan types. Highest credit limit. Preferential terms.
+                        </p>
+                    </div>
+
+                    <div class="score-product" style="border-color: rgba(74, 144, 226, 0.3);">
+                        <div class="score-product-icon">⭐</div>
+                        <h4 class="score-product-name" style="color: #4A90E2;">Good (700-749)</h4>
+                        <p class="score-product-desc">
+                            Competitive interest rates. Multiple product options. Quick process.
+                        </p>
+                    </div>
+
+                    <div class="score-product" style="border-color: rgba(250, 140, 22, 0.3);">
+                        <div class="score-product-icon">📊</div>
+                        <h4 class="score-product-name" style="color: #FA8C16;">Fair (650-699)</h4>
+                        <p class="score-product-desc">
+                            Standard interest rates. Average credit limit. Standard conditions.
+                        </p>
+                    </div>
+
+                    <div class="score-product" style="border-color: rgba(139, 69, 255, 0.3);">
+                        <div class="score-product-icon">🔄</div>
+                        <h4 class="score-product-name" style="color: #8B45FF;">Below Fair (550-649)</h4>
+                        <p class="score-product-desc">
+                            Limited options. Higher interest rates. Additional conditions required.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Atobar Roadmap -->
+            <div class="architecture-visual" style="margin-top: 4rem;">
+                <h3 style="text-align: center; margin-bottom: 2rem;">Atobar.ai Development Roadmap</h3>
+
+                <div class="integration-steps" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                    <div class="integration-step">
+                        <div class="step-icon" style="background: linear-gradient(135deg, rgba(21, 195, 90, 0.2), rgba(24, 216, 98, 0.2));">
+                            <span style="color: #15c35a;">2025</span>
+                        </div>
+                        <h4 class="step-title">Phase 1: BNPL Hub</h4>
+                        <p class="step-desc">
+                            App/Web platform for centralized BNPL management.
+                            Smart Dashboard with XAI guidance.
+                        </p>
+                    </div>
+
+                    <div class="integration-step">
+                        <div class="step-icon" style="background: linear-gradient(135deg, rgba(74, 144, 226, 0.2), rgba(92, 160, 242, 0.2));">
+                            <span style="color: #4A90E2;">2026</span>
+                        </div>
+                        <h4 class="step-title">Phase 2: Checkout Layer</h4>
+                        <p class="step-desc">
+                            Integrate into e-commerce platforms.
+                            Real-time API with fraud detection.
+                        </p>
+                    </div>
+
+                    <div class="integration-step">
+                        <div class="step-icon" style="background: linear-gradient(135deg, rgba(139, 69, 255, 0.2), rgba(155, 89, 255, 0.2));">
+                            <span style="color: #8B45FF;">2027+</span>
+                        </div>
+                        <h4 class="step-title">Phase 3: Credit Platform</h4>
+                        <p class="step-desc">
+                            Thin-file credit B2B API platform.
+                            User-controlled data ecosystem.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Features -->
+            <div style="margin-top: 4rem;">
+                <h3 style="text-align: center; margin-bottom: 2rem;">Atobar.ai Competitive Advantages</h3>
+
+                <div class="score-products" style="grid-template-columns: repeat(4, 1fr);">
+                    <div class="score-product">
+                        <div class="score-product-icon">🎯</div>
+                        <h4 class="score-product-name" style="color: #FA8C16;">First-mover</h4>
+                        <p class="score-product-desc">
+                            First alternative credit dataset in Japan
+                        </p>
+                    </div>
+
+                    <div class="score-product">
+                        <div class="score-product-icon">🔗</div>
+                        <h4 class="score-product-name" style="color: #15c35a;">Plug & Play</h4>
+                        <p class="score-product-desc">
+                            No disruption to existing BNPL system
+                        </p>
+                    </div>
+
+                    <div class="score-product">
+                        <div class="score-product-icon">🤖</div>
+                        <h4 class="score-product-name" style="color: #4A90E2;">Explainable AI</h4>
+                        <p class="score-product-desc">
+                            Explainable AI builds user trust
+                        </p>
+                    </div>
+
+                    <div class="score-product">
+                        <div class="score-product-icon">🏦</div>
+                        <h4 class="score-product-name" style="color: #8B45FF;">B2B Platform</h4>
+                        <p class="score-product-desc">
+                            Value for banks and financial institutions
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comprehensive Features for Users and Providers -->
+            <div style="margin-top: 4rem;">
+                <h3 style="text-align: center; margin-bottom: 2rem;">Detailed Features & Benefits</h3>
+
+                <div class="about-grid">
+                    <div class="about-content" style="background: linear-gradient(135deg, rgba(21, 195, 90, 0.05), rgba(24, 216, 98, 0.05)); padding: 2rem; border-radius: 20px; border: 1px solid rgba(21, 195, 90, 0.2);">
+                        <h4 style="color: #15c35a; margin-bottom: 1.5rem;">🎯 For Individual Users</h4>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <strong style="color: #262626;">📊 Track & Manage Credit Score</strong>
+                            <ul style="margin-top: 0.5rem; color: #6c757d; list-style: none; padding-left: 1rem;">
+                                <li>✓ Personal dashboard with real-time score</li>
+                                <li>✓ Detailed credit score change history</li>
+                                <li>✓ Compare with market average</li>
+                                <li>✓ Alert when score drops suddenly</li>
+                            </ul>
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <strong style="color: #262626;">💡 AI Credit Improvement Advisor</strong>
+                            <ul style="margin-top: 0.5rem; color: #6c757d; list-style: none; padding-left: 1rem;">
+                                <li>✓ Analyze weaknesses in credit profile</li>
+                                <li>✓ Suggest specific actions to increase score</li>
+                                <li>✓ Predict score after implementing suggestions</li>
+                                <li>✓ Phased credit improvement plan</li>
+                            </ul>
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <strong style="color: #262626;">🏪 BNPL Hub - Centralized Management</strong>
+                            <ul style="margin-top: 0.5rem; color: #6c757d; list-style: none; padding-left: 1rem;">
+                                <li>✓ Consolidate all BNPL from every provider</li>
+                                <li>✓ Smart payment schedule with reminders</li>
+                                <li>✓ Optimize spending and budget management</li>
+                                <li>✓ Detailed monthly spending reports</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <strong style="color: #262626;">🛒 Smart Shopping Experience</strong>
+                            <ul style="margin-top: 0.5rem; color: #6c757d; list-style: none; padding-left: 1rem;">
+                                <li>✓ Compare BNPL rates from multiple providers</li>
+                                <li>✓ Calculate affordability before purchase</li>
+                                <li>✓ One-touch payment with absolute security</li>
+                                <li>✓ Exclusive cashback and offers for members</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="about-content" style="background: linear-gradient(135deg, rgba(250, 140, 22, 0.05), rgba(255, 150, 32, 0.05)); padding: 2rem; border-radius: 20px; border: 1px solid rgba(250, 140, 22, 0.2);">
+                        <h4 style="color: #FA8C16; margin-bottom: 1.5rem;">🏢 For BNPL Provider</h4>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <strong style="color: #262626;">🎯 Accurate Risk Assessment</strong>
+                            <ul style="margin-top: 0.5rem; color: #6c757d; list-style: none; padding-left: 1rem;">
+                                <li>✓ Analyze 15+ Alternative Data sources</li>
+                                <li>✓ AI model with 95% accuracy</li>
+                                <li>✓ Credit scoring for thin-file customers</li>
+                                <li>✓ Real-time repayment capability assessment</li>
+                            </ul>
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <strong style="color: #262626;">⚠️ Early Risk Detection</strong>
+                            <ul style="margin-top: 0.5rem; color: #6c757d; list-style: none; padding-left: 1rem;">
+                                <li>✓ Early warning for loan stacking behavior</li>
+                                <li>✓ Predict bad debt probability within 90 days</li>
+                                <li>✓ Fraud detection with AI/ML</li>
+                                <li>✓ 24/7 monitoring with automatic alerts</li>
+                            </ul>
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <strong style="color: #262626;">📈 Portfolio Optimization</strong>
+                            <ul style="margin-top: 0.5rem; color: #6c757d; list-style: none; padding-left: 1rem;">
+                                <li>✓ Smart customer segmentation</li>
+                                <li>✓ Optimal limit and interest rate suggestions</li>
+                                <li>✓ A/B testing for credit policies</li>
+                                <li>✓ Detailed analytics dashboard</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <strong style="color: #262626;">🔌 Quick Integration</strong>
+                            <ul style="margin-top: 0.5rem; color: #6c757d; list-style: none; padding-left: 1rem;">
+                                <li>✓ RESTful API with complete documentation</li>
+                                <li>✓ SDK for all popular platforms</li>
+                                <li>✓ Webhook real-time notifications</li>
+                                <li>✓ Ready white-label solution</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alternative Data Sources Detail -->
+            <div style="margin-top: 4rem;">
+                <h3 style="text-align: center; margin-bottom: 2rem;">Diverse Alternative Data Sources</h3>
+
+                <div class="services-grid" style="grid-template-columns: repeat(4, 1fr);">
+                    <div class="service-card animate-on-scroll" style="padding: 1.5rem;">
+                        <div class="service-icon" style="width: 60px; height: 60px; font-size: 2rem;">📱</div>
+                        <h5 style="font-size: 1rem; margin-bottom: 0.5rem;">Mobile Payment</h5>
+                        <p style="font-size: 0.75rem; color: #6c757d;">PayPay, Line Pay, Merpay, Rakuten Pay</p>
+                    </div>
+
+                    <div class="service-card animate-on-scroll" style="padding: 1.5rem;">
+                        <div class="service-icon" style="width: 60px; height: 60px; font-size: 2rem;">💳</div>
+                        <h5 style="font-size: 1rem; margin-bottom: 0.5rem;">E-wallet</h5>
+                        <p style="font-size: 0.75rem; color: #6c757d;">Suica, Pasmo, WAON, nanaco</p>
+                    </div>
+
+                    <div class="service-card animate-on-scroll" style="padding: 1.5rem;">
+                        <div class="service-icon" style="width: 60px; height: 60px; font-size: 2rem;">🏪</div>
+                        <h5 style="font-size: 1rem; margin-bottom: 0.5rem;">E-commerce</h5>
+                        <p style="font-size: 0.75rem; color: #6c757d;">Amazon, Rakuten, Yahoo!, Mercari</p>
+                    </div>
+
+                    <div class="service-card animate-on-scroll" style="padding: 1.5rem;">
+                        <div class="service-icon" style="width: 60px; height: 60px; font-size: 2rem;">💡</div>
+                        <h5 style="font-size: 1rem; margin-bottom: 0.5rem;">Utility Bills</h5>
+                        <p style="font-size: 0.75rem; color: #6c757d;">Electricity, water, gas, internet, phone</p>
+                    </div>
+
+                    <div class="service-card animate-on-scroll" style="padding: 1.5rem;">
+                        <div class="service-icon" style="width: 60px; height: 60px; font-size: 2rem;">🏦</div>
+                        <h5 style="font-size: 1rem; margin-bottom: 0.5rem;">Banking</h5>
+                        <p style="font-size: 0.75rem; color: #6c757d;">Transaction history, savings pattern</p>
+                    </div>
+
+                    <div class="service-card animate-on-scroll" style="padding: 1.5rem;">
+                        <div class="service-icon" style="width: 60px; height: 60px; font-size: 2rem;">📲</div>
+                        <h5 style="font-size: 1rem; margin-bottom: 0.5rem;">Telco Data</h5>
+                        <p style="font-size: 0.75rem; color: #6c757d;">Payment history, usage pattern</p>
+                    </div>
+
+                    <div class="service-card animate-on-scroll" style="padding: 1.5rem;">
+                        <div class="service-icon" style="width: 60px; height: 60px; font-size: 2rem;">🏠</div>
+                        <h5 style="font-size: 1rem; margin-bottom: 0.5rem;">Rent Payment</h5>
+                        <p style="font-size: 0.75rem; color: #6c757d;">Monthly rent, timeliness</p>
+                    </div>
+
+                    <div class="service-card animate-on-scroll" style="padding: 1.5rem;">
+                        <div class="service-icon" style="width: 60px; height: 60px; font-size: 2rem;">🎮</div>
+                        <h5 style="font-size: 1rem; margin-bottom: 0.5rem;">Subscription</h5>
+                        <p style="font-size: 0.75rem; color: #6c757d;">Netflix, Spotify, gaming services</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TFA AI Platform</h3>
+                <p style="color: #6c757d; margin-top: 1rem;">Leading AI platform for financial digital transformation, trusted by major financial institutions.</p>
+                <div class="language-switcher">
+                    <a href="tfa-platform-architecture-green-en.html" class="lang-flag" title="English">🇬🇧</a>
+                    <a href="tfa-platform-architecture-green-jp.html" class="lang-flag" title="日本語">🇯🇵</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Products</h3>
+                <ul class="footer-links">
+                    <li><a href="tfa-platform-architecture-green-service.html">AI Services Suite</a></li>
+                    <li><a href="tfa-platform-architecture-green-tfa-scoring.html">TFA Scoring</a></li>
+                    <li><a href="tfa-platform-architecture-green-architecture.html">Platform Architecture</a></li>
+                    <li><a href="tfa-platform-architecture-green-demo.html">Live Demo</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Solutions</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Digital Banking</a></li>
+                    <li><a href="#">Fintech</a></li>
+                    <li><a href="#">Insurance</a></li>
+                    <li><a href="#">Asset Management</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul class="footer-links">
+                    <li><a href="mailto:contact@reactplus.com">contact@reactplus.com</a></li>
+                    <li><a href="tel:+817089886363">+81 70 8988 6363</a></li>
+                    <li><a href="#">Hanoi, Vietnam</a></li>
+                    <li><a href="#">Tokyo, Japan</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 TFA AI Platform. All rights reserved. | <a href="#" style="color: #6c757d;">Privacy Policy</a> | <a href="#" style="color: #6c757d;">Terms of Service</a></p>
+        </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+
+</html>

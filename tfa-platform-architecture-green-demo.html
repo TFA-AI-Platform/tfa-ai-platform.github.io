@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Demo - TFA AI Platform</title>
+    <link rel="icon" href="public/images/Logo TFA - Final-08.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-logo">
+            <div class="logo-circle"></div>
+            <div class="logo-circle"></div>
+            <div class="logo-circle"></div>
+        </div>
+        <div class="loading-text">Loading TFA AI Platform...</div>
+    </div>
+
+    <!-- Particle Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="tfa-platform-architecture-green-en.html#home">
+                    <img class="logo-image" src="public/images/Logo TFA - Final-08.png" alt="TFA AI Platform">
+                </a>
+            </div>
+            <!-- Mobile Nav Toggle (shared JS controls this) -->
+            <button class="nav-toggle-btn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <ul class="nav-links">
+                <li><a href="tfa-platform-architecture-green-en.html#home" class="nav-link">Home</a></li>
+                <li><a href="tfa-platform-architecture-green-about.html" class="nav-link">About</a></li>
+                <li><a href="tfa-platform-architecture-green-service.html" class="nav-link">Services</a></li>
+                <li><a href="tfa-platform-architecture-green-tfa-scoring.html" class="nav-link">TFA Scoring</a></li>
+                <li class="dropdown">
+                    <a href="tfa-platform-architecture-green-en.html#products" class="nav-link dropdown-toggle">Products <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tfa-platform-architecture-green-atobarai.html" class="dropdown-link">Atobar.ai</a></li>
+                        <li><a href="tfa-platform-architecture-green-ad-housing.html" class="dropdown-link">AD Housing</a></li>
+                        <li><a href="tfa-platform-architecture-green-ad-passport.html" class="dropdown-link">AD Passport</a></li>
+                        <li><a href="tfa-platform-architecture-green-lnpl.html" class="dropdown-link">Live now, Pay later</a></li>
+                        <li><a href="tfa-platform-architecture-green-consumer-finance.html" class="dropdown-link">Consumer Finance Service</a></li>
+                    </ul>
+                </li>
+                <li><a href="tfa-platform-architecture-green-architecture.html" class="nav-link">Architecture</a></li>
+                <li><a href="tfa-platform-architecture-green-demo.html" class="nav-link active">Demo</a></li>
+            </ul>
+            <a href="https://reactplus.com/contact" class="cta-button">Contact Consultation</a>
+        </div>
+    </nav>
+
+    <!-- Interactive Demo Section -->
+    <section id="demo" class="section section-bg">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Live Demo</div>
+                <h2 class="section-title">Experience TFA Scoring Now</h2>
+                <p class="section-subtitle">
+                    See how our AI evaluates credit in real time
+                </p>
+            </div>
+
+            <div class="demo-container">
+                <div class="demo-grid">
+                    <div class="demo-input-section">
+                        <h3>Customer Information</h3>
+
+                        <div class="form-group">
+                            <label class="form-label">Monthly Income (VND)</label>
+                            <input type="number" class="form-input" id="income" value="30000000" />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Working years</label>
+                            <input type="number" class="form-input" id="employment" value="3" />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Current Number of Loans</label>
+                            <input type="number" class="form-input" id="loans" value="1" />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Digital Activity Score (0-100)</label>
+                            <input type="range" class="form-input" id="digital" min="0" max="100" value="75" />
+                            <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: #6c757d; margin-top: 0.25rem;">
+                                <span>0</span>
+                                <span id="digitalValue">75</span>
+                                <span>100</span>
+                            </div>
+                        </div>
+
+                        <button class="btn-primary" onclick="calculateScore()">
+                            <span style="margin-right: 0.5rem;">🚀</span>
+                            Calculate TFA Scoring
+                        </button>
+                    </div>
+
+                    <div class="demo-output-section">
+                        <h3>AI Assessment Results</h3>
+
+                        <div class="result-card">
+                            <div class="result-label">TFA Credit Score</div>
+                            <div class="result-value" id="resultScore">---</div>
+                        </div>
+
+                        <div class="result-card">
+                            <div class="result-label">Risk Level</div>
+                            <div class="result-value" id="resultRisk">---</div>
+                        </div>
+
+                        <div class="result-card">
+                            <div class="result-label">Loan Eligibility</div>
+                            <div class="result-value" id="resultEligibility">---</div>
+                        </div>
+
+                        <div class="result-card">
+                            <div class="result-label">Suggested Interest Rate</div>
+                            <div class="result-value" id="resultRate">---</div>
+                        </div>
+
+                        <div class="result-card">
+                            <div class="result-label">Suggested Credit Limit</div>
+                            <div class="result-value" id="resultLimit">---</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TFA AI Platform</h3>
+                <p style="color: #6c757d; margin-top: 1rem;">
+                    Leading AI platform for financial digital transformation,
+                    trusted by major financial institutions.
+                </p>
+                <div class="language-switcher">
+                    <a href="tfa-platform-architecture-green-en.html" class="lang-flag" title="English">🇬🇧</a>
+                    <a href="tfa-platform-architecture-green-jp.html" class="lang-flag" title="日本語">🇯🇵</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Products</h3>
+                <ul class="footer-links">
+                    <li><a href="tfa-platform-architecture-green-service.html">AI Services Suite</a></li>
+                    <li><a href="tfa-platform-architecture-green-tfa-scoring.html">TFA Scoring</a></li>
+                    <li><a href="tfa-platform-architecture-green-architecture.html">Platform Architecture</a></li>
+                    <li><a href="tfa-platform-architecture-green-demo.html">Live Demo</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Solutions</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Digital Banking</a></li>
+                    <li><a href="#">Fintech</a></li>
+                    <li><a href="#">Insurance</a></li>
+                    <li><a href="#">Asset Management</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul class="footer-links">
+                    <li><a href="mailto:contact@reactplus.com">contact@reactplus.com</a></li>
+                    <li><a href="tel:+817089886363">+81 70 8988 6363</a></li>
+                    <li><a href="#">Hanoi, Vietnam</a></li>
+                    <li><a href="#">Tokyo, Japan</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 TFA AI Platform. All rights reserved. |
+                <a href="#" style="color: #6c757d;">Privacy Policy</a> |
+                <a href="#" style="color: #6c757d;">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Atobar.ai - Next Generation Credit Scoring Solution based on Alternative Data. BNPL Innovation for fair financial opportunities.">
+    <meta name="keywords" content="credit scoring, alternative data, BNPL, AI, machine learning, fintech, atobar">
+    <meta name="author" content="TFA AI Platform">
+    <title>Atobar AI - Next Generation Credit Scoring | TFA AI Platform</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png">
+    <link rel="stylesheet" href="./assets/css/plugins.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/colors/green.css">
+    <link rel="preload" href="./assets/css/fonts/thicccboi.css" as="style" onload="this.rel='stylesheet'">
+    <style>
+        /* Keep header with solid background */
+        header.wrapper.bg-soft-primary {
+            background: #ffffff !important;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="particles-canvas"></canvas>
+    <div class="content-wrapper">
+        <header class="wrapper bg-soft-primary">
+            <nav class="navbar navbar-expand-lg center-nav transparent navbar-light">
+                <div class="container flex-lg-row flex-nowrap align-items-center">
+                    <div class="navbar-brand w-100">
+                        <a href="./index.html" class="navbar-logo">
+                            <img src="./assets/img/Logo TFA - Final-08.png" srcset="./assets/img/logo-dark@2x.png 2x"
+                                alt="" />
+                        </a>
+                    </div>
+                    <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+                        <div class="offcanvas-header d-lg-none">
+                            <h3 class="text-white fs-30 mb-0">Sandbox</h3>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+                            <ul class="navbar-nav">
+                                <!-- <li class="nav-item dropdown dropdown-mega">
+                          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Demos</a>
+                          <ul class="dropdown-menu mega-menu mega-menu-dark mega-menu-img">
+                            <li class="mega-menu-content mega-menu-scroll">
+                              <ul class="row row-cols-1 row-cols-lg-6 gx-0 gx-lg-4 gy-lg-2 list-unstyled">
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo1.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi1.jpg"
+                                        srcset="./assets/img/demos/mi1@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 1</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo2.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi2.jpg"
+                                        srcset="./assets/img/demos/mi2@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 2</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo3.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi3.jpg"
+                                        srcset="./assets/img/demos/mi3@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 3</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo4.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi4.jpg"
+                                        srcset="./assets/img/demos/mi4@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 4</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo5.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi5.jpg"
+                                        srcset="./assets/img/demos/mi5@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 5</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo6.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi6.jpg"
+                                        srcset="./assets/img/demos/mi6@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 6</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo7.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi7.jpg"
+                                        srcset="./assets/img/demos/mi7@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 7</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo8.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi8.jpg"
+                                        srcset="./assets/img/demos/mi8@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 8</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo9.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi9.jpg"
+                                        srcset="./assets/img/demos/mi9@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 9</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo10.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi10.jpg"
+                                        srcset="./assets/img/demos/mi10@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 10</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo11.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi11.jpg"
+                                        srcset="./assets/img/demos/mi11@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 11</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo12.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi12.jpg"
+                                        srcset="./assets/img/demos/mi12@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 12</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo13.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi13.jpg"
+                                        srcset="./assets/img/demos/mi13@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 13</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo14.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi14.jpg"
+                                        srcset="./assets/img/demos/mi14@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 14</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo15.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi15.jpg"
+                                        srcset="./assets/img/demos/mi15@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 15</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo16.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi16.jpg"
+                                        srcset="./assets/img/demos/mi16@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 16</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo17.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi17.jpg"
+                                        srcset="./assets/img/demos/mi17@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 17</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo18.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi18.jpg"
+                                        srcset="./assets/img/demos/mi18@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 18</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo19.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi19.jpg"
+                                        srcset="./assets/img/demos/mi19@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 19</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo20.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi20.jpg"
+                                        srcset="./assets/img/demos/mi20@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 20</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo21.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi21.jpg"
+                                        srcset="./assets/img/demos/mi21@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 21</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo22.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi22.jpg"
+                                        srcset="./assets/img/demos/mi22@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 22</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo23.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi23.jpg"
+                                        srcset="./assets/img/demos/mi23@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 23</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo24.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi24.jpg"
+                                        srcset="./assets/img/demos/mi24@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 24</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo25.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi25.jpg"
+                                        srcset="./assets/img/demos/mi25@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 25</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo26.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi26.jpg"
+                                        srcset="./assets/img/demos/mi26@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 26</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo27.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi27.jpg"
+                                        srcset="./assets/img/demos/mi27@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 27</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo28.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi28.jpg"
+                                        srcset="./assets/img/demos/mi28@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 28</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo29.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi29.jpg"
+                                        srcset="./assets/img/demos/mi29@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 29</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo30.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi30.jpg"
+                                        srcset="./assets/img/demos/mi30@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 30</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo31.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi31.jpg"
+                                        srcset="./assets/img/demos/mi31@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 31</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo32.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi32.jpg"
+                                        srcset="./assets/img/demos/mi32@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 32</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo33.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi33.jpg"
+                                        srcset="./assets/img/demos/mi33@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 33</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo34.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi34.jpg"
+                                        srcset="./assets/img/demos/mi34@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 34</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo35.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi35.jpg"
+                                        srcset="./assets/img/demos/mi35@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 35</span>
+                                  </a>
+                                </li>
+                                <li class="col">
+                                  <a class="dropdown-item" href="./demo36.html">
+                                    <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi36.jpg"
+                                        srcset="./assets/img/demos/mi36@2x.jpg 2x" alt=""></figure>
+                                    <span class="d-lg-none">Demo 36</span>
+                                  </a>
+                                </li>
+                              </ul> -->
+                                <!--/.row -->
+                                <!-- <span class="d-none d-lg-flex"><i class="uil uil-direction"></i><strong>Scroll to view -->
+                                <!-- more</strong></span> -->
+                                <!-- </li> -->
+                                <!--/.mega-menu-content-->
+                                <!-- </ul> -->
+                                <!--/.dropdown-menu -->
+                                <!-- </li> -->
+                                <!-- <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
+                          <ul class="dropdown-menu">
+                            <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#"
+                                data-bs-toggle="dropdown">Services</a>
+                              <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="dropdown-item" href="./services.html">Services I</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="./services2.html">Services II</a></li>
+                              </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#"
+                                data-bs-toggle="dropdown">About</a>
+                              <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="dropdown-item" href="./about.html">About I</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="./about2.html">About II</a></li>
+                              </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#"
+                                data-bs-toggle="dropdown">Shop</a>
+                              <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="dropdown-item" href="./shop.html">Shop I</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="./shop2.html">Shop II</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="./shop-product.html">Product Page</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="./shop-cart.html">Shopping Cart</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="./shop-checkout.html">Checkout</a></li>
+                              </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#"
+                                data-bs-toggle="dropdown">Contact</a>
+                              <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="dropdown-item" href="./contact.html">Contact I</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="./contact2.html">Contact II</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="./contact3.html">Contact III</a></li>
+                              </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#"
+                                data-bs-toggle="dropdown">Career</a>
+                              <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="dropdown-item" href="./career.html">Job Listing I</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="./career2.html">Job Listing II</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="./career-job.html">Job Description</a></li>
+                              </ul>
+                            </li>
+                            <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#"
+                                data-bs-toggle="dropdown">Utility</a>
+                              <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="dropdown-item" href="./404.html">404 Not Found</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="./page-loader.html">Page Loader</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="./signin.html">Sign In I</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="./signin2.html">Sign In II</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="./signup.html">Sign Up I</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="./signup2.html">Sign Up II</a></li>
+                                <li class="nav-item"><a class="dropdown-item" href="./terms.html">Terms</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item"><a class="dropdown-item" href="./pricing.html">Pricing</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="./onepage.html">One Page</a></li>
+                          </ul>
+                        </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./demo1.html">Home</a>
+                                </li>
+                                <!-- <li class="nav-item">
+                          <a class="nav-link" href="./about.html">About</a>
+                        </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./services.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./tfa-scoring.html">TFA Scoring</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+                                    <div class="dropdown-menu dropdown-lg">
+                                        <div class="dropdown-lg-content">
+                                            <div>
+                                                <h6 class="dropdown-header">Product Pages</h6>
+                                                <ul class="list-unstyled">
+                                                    <!-- <li><a class="dropdown-item" href="./projects.html">Projects I</a></li> -->
+                                                    <!-- <li><a class="dropdown-item" href="./projects2.html">Projects II</a></li> -->
+                                                    <!-- <li><a class="dropdown-item" href="./projects3.html">Projects III</a></li> -->
+                                                    <!-- <li><a class="dropdown-item" href="./projects4.html">Projects IV</a></li> -->
+                                                    <li><a class="dropdown-item" href="./atobar-ai.html">Atobar AI</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="./ad-housing.html">AD Housing</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="./ad-passport.html">AD
+                                                            Passport</a></li>
+                                                    <li><a class="dropdown-item" href="./lnpl.html">Live now, Pay
+                                                            later</a></li>
+                                                    <li><a class="dropdown-item" href="./consumer-finance.html">Consumer
+                                                            Finance Service</a></li>
+                                                </ul>
+                                            </div>
+                                            <!-- /.column -->
+                                            <!-- <div>
+                                <h6 class="dropdown-header">Single Projects</h6>
+                                <ul class="list-unstyled">
+                                  <li><a class="dropdown-item" href="./single-project.html">Single Project I</a></li>
+                                  <li><a class="dropdown-item" href="./single-project2.html">Single Project II</a></li>
+                                  <li><a class="dropdown-item" href="./single-project3.html">Single Project III</a></li>
+                                  <li><a class="dropdown-item" href="./single-project4.html">Single Project IV</a></li>
+                                </ul>
+                              </div> -->
+                                            <!-- /.column -->
+                                        </div>
+                                        <!-- /auto-column -->
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./architecture.html">Architecture</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./live-demo.html">Live Demo</a>
+                                </li>
+                                <!-- <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
+                          <ul class="dropdown-menu">
+                            <li class="nav-item"><a class="dropdown-item" href="./blog.html">Blog without Sidebar</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="./blog2.html">Blog with Sidebar</a></li>
+                            <li class="nav-item"><a class="dropdown-item" href="./blog3.html">Blog with Left Sidebar</a></li>
+                            <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#"
+                                data-bs-toggle="dropdown">Blog Posts</a>
+                              <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="dropdown-item" href="./blog-post.html">Post without Sidebar</a>
+                                </li>
+                                <li class="nav-item"><a class="dropdown-item" href="./blog-post2.html">Post with Sidebar</a>
+                                </li>
+                                <li class="nav-item"><a class="dropdown-item" href="./blog-post3.html">Post with Left
+                                    Sidebar</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li> -->
+                                <!-- <li class="nav-item dropdown dropdown-mega">
+                          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blocks</a>
+                          <ul class="dropdown-menu mega-menu mega-menu-dark mega-menu-img">
+                            <li class="mega-menu-content">
+                              <ul class="row row-cols-1 row-cols-lg-6 gx-0 gx-lg-6 gy-lg-4 list-unstyled">
+                                <li class="col"><a class="dropdown-item" href="./docs/blocks/about.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                        src="./assets/img/demos/block1.svg" alt=""></div>
+                                    <span>About</span>
+                                  </a>
+                                </li>
+                                <li class="col"><a class="dropdown-item" href="./docs/blocks/blog.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                        src="./assets/img/demos/block2.svg" alt=""></div>
+                                    <span>Blog</span>
+                                  </a>
+                                </li>
+                                <li class="col"><a class="dropdown-item" href="./docs/blocks/call-to-action.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                        src="./assets/img/demos/block3.svg" alt=""></div>
+                                    <span>Call to Action</span>
+                                  </a>
+                                </li>
+                                <li class="col"><a class="dropdown-item" href="./docs/blocks/clients.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                        src="./assets/img/demos/block4.svg" alt=""></div>
+                                    <span>Clients</span>
+                                  </a>
+                                </li>
+                                <li class="col"><a class="dropdown-item" href="./docs/blocks/contact.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                        src="./assets/img/demos/block5.svg" alt=""></div>
+                                    <span>Contact</span>
+                                  </a>
+                                </li>
+                                <li class="col"><a class="dropdown-item" href="./docs/blocks/facts.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                        src="./assets/img/demos/block6.svg" alt=""></div>
+                                    <span>Facts</span>
+                                  </a>
+                                </li>
+                                <li class="col"><a class="dropdown-item" href="./docs/blocks/faq.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                        src="./assets/img/demos/block7.svg" alt=""></div>
+                                    <span>FAQ</span>
+                                  </a>
+                                </li>
+                                <li class="col"><a class="dropdown-item" href="./docs/blocks/features.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                        src="./assets/img/demos/block8.svg" alt=""></div>
+                                    <span>Features</span>
+                                  </a>
+                                </li>
+                                <li class="col"><a class="dropdown-item" href="./docs/blocks/footer.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                        src="./assets/img/demos/block9.svg" alt=""></div>
+                                    <span>Footer</span>
+                                  </a>
+                                </li>
+                                <li class="col"><a class="dropdown-item" href="./docs/blocks/hero.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                        src="./assets/img/demos/block10.svg" alt=""></div>
+                                    <span>Hero</span>
+                                  </a>
+                                </li>
+                                <li class="col"><a class="dropdown-item" href="./docs/blocks/misc.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                        src="./assets/img/demos/block17.svg" alt=""></div>
+                                    <span>Misc</span>
+                                  </a>
+                                </li>
+                                <li class="col"><a class="dropdown-item" href="./docs/blocks/navbar.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                        src="./assets/img/demos/block11.svg" alt=""></div>
+                                    <span>Navbar</span>
+                                  </a>
+                                </li>
+                                <li class="col"><a class="dropdown-item" href="./docs/blocks/portfolio.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                        src="./assets/img/demos/block12.svg" alt=""></div>
+                                    <span>Portfolio</span>
+                                  </a>
+                                </li>
+                                <li class="col"><a class="dropdown-item" href="./docs/blocks/pricing.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                        src="./assets/img/demos/block13.svg" alt=""></div>
+                                    <span>Pricing</span>
+                                  </a>
+                                </li>
+                                <li class="col"><a class="dropdown-item" href="./docs/blocks/process.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                        src="./assets/img/demos/block14.svg" alt=""></div>
+                                    <span>Process</span>
+                                  </a>
+                                </li>
+                                <li class="col"><a class="dropdown-item" href="./docs/blocks/team.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                        src="./assets/img/demos/block15.svg" alt=""></div>
+                                    <span>Team</span>
+                                  </a>
+                                </li>
+                                <li class="col"><a class="dropdown-item" href="./docs/blocks/testimonials.html">
+                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                        src="./assets/img/demos/block16.svg" alt=""></div>
+                                    <span>Testimonials</span>
+                                  </a>
+                                </li>
+                              </ul> -->
+                                <!--/.row -->
+                                <!-- </li> -->
+                                <!--/.mega-menu-content-->
+                            </ul>
+                            <!--/.dropdown-menu -->
+                            </li>
+                            <!-- <li class="nav-item dropdown dropdown-mega">
+                          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Documentation</a>
+                          <ul class="dropdown-menu mega-menu">
+                            <li class="mega-menu-content">
+                              <div class="row gx-0 gx-lg-3">
+                                <div class="col-lg-4">
+                                  <h6 class="dropdown-header">Usage</h6>
+                                  <ul class="list-unstyled cc-2 pb-lg-1">
+                                    <li><a class="dropdown-item" href="./docs/index.html">Get Started</a></li>
+                                    <li><a class="dropdown-item" href="./docs/forms.html">Forms</a></li>
+                                    <li><a class="dropdown-item" href="./docs/faq.html">FAQ</a></li>
+                                    <li><a class="dropdown-item" href="./docs/changelog.html">Changelog</a></li>
+                                    <li><a class="dropdown-item" href="./docs/credits.html">Credits</a></li>
+                                  </ul>
+                                  <h6 class="dropdown-header mt-lg-6">Styleguide</h6>
+                                  <ul class="list-unstyled cc-2">
+                                    <li><a class="dropdown-item" href="./docs/styleguide/colors.html">Colors</a></li>
+                                    <li><a class="dropdown-item" href="./docs/styleguide/fonts.html">Fonts</a></li>
+                                    <li><a class="dropdown-item" href="./docs/styleguide/icons-svg.html">SVG Icons</a></li>
+                                    <li><a class="dropdown-item" href="./docs/styleguide/icons-font.html">Font Icons</a></li>
+                                    <li><a class="dropdown-item" href="./docs/styleguide/illustrations.html">Illustrations</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./docs/styleguide/backgrounds.html">Backgrounds</a></li>
+                                    <li><a class="dropdown-item" href="./docs/styleguide/misc.html">Misc</a></li>
+                                  </ul>
+                                </div> -->
+                            <!--/column -->
+                            <!-- <div class="col-lg-8">
+                                  <h6 class="dropdown-header">Elements</h6>
+                                  <ul class="list-unstyled cc-3">
+                                    <li><a class="dropdown-item" href="./docs/elements/accordion.html">Accordion</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/alerts.html">Alerts</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/animations.html">Animations</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/avatars.html">Avatars</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/background.html">Background</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/badges.html">Badges</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/buttons.html">Buttons</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/card.html">Card</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/carousel.html">Carousel</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/dividers.html">Dividers</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/form-elements.html">Form Elements</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./docs/elements/image-hover.html">Image Hover</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/image-mask.html">Image Mask</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/lightbox.html">Lightbox</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/player.html">Media Player</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/modal.html">Modal</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/pagination.html">Pagination</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/progressbar.html">Progressbar</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/shadows.html">Shadows</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/shapes.html">Shapes</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/tables.html">Tables</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/tabs.html">Tabs</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/text-animations.html">Text Animations</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./docs/elements/text-highlight.html">Text Highlight</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./docs/elements/tiles.html">Tiles</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/tooltips-popovers.html">Tooltips &
+                                        Popovers</a></li>
+                                    <li><a class="dropdown-item" href="./docs/elements/typography.html">Typography</a></li>
+                                  </ul>
+                                </div> -->
+                            <!--/column -->
+                            <!-- </div> -->
+                            <!--/.row -->
+                            <!-- </li> -->
+                            <!--/.mega-menu-content-->
+                            </ul>
+                            <!--/.dropdown-menu -->
+                            </li>
+                            </ul>
+                            <!-- /.navbar-nav -->
+                            <div class="offcanvas-footer d-lg-none">
+                                <div>
+                                    <a href="mailto:first.last@email.com" class="link-inverse">info@email.com</a>
+                                    <br /> 00 (123) 456 78 90 <br />
+                                    <nav class="nav social social-white mt-4">
+                                        <a href="#"><i class="uil uil-twitter"></i></a>
+                                        <a href="#"><i class="uil uil-facebook-f"></i></a>
+                                        <a href="#"><i class="uil uil-dribbble"></i></a>
+                                        <a href="#"><i class="uil uil-instagram"></i></a>
+                                        <a href="#"><i class="uil uil-youtube"></i></a>
+                                    </nav>
+                                    <!-- /.social -->
+                                </div>
+                            </div>
+                            <!-- /.offcanvas-footer -->
+                        </div>
+                        <!-- /.offcanvas-body -->
+                    </div>
+                    <!-- /.navbar-collapse -->
+                    <div class="navbar-other w-100 d-flex ms-auto">
+                        <ul class="navbar-nav flex-row align-items-center ms-auto">
+                            <li class="nav-item dropdown language-select text-uppercase">
+                                <a class="nav-link dropdown-item dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">En</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="dropdown-item" href="#">En</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="#">De</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="#">Es</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvas-info"><i class="uil uil-info-circle"></i></a></li>
+                            <li class="nav-item d-lg-none">
+                                <button class="hamburger offcanvas-nav-btn"><span></span></button>
+                            </li>
+                        </ul>
+                        <!-- /.navbar-nav -->
+                    </div>
+                    <!-- /.navbar-other -->
+                </div>
+                <!-- /.container -->
+            </nav>
+            <!-- /.navbar -->
+            <div class="offcanvas offcanvas-end text-inverse" id="offcanvas-info" data-bs-scroll="true">
+                <div class="offcanvas-header">
+                    <h3 class="text-white fs-30 mb-0">Sandbox</h3>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body pb-6">
+                    <div class="widget mb-8">
+                        <p>Sandbox is a multipurpose HTML5 template with various layouts which will be a great solution
+                            for your
+                            business.</p>
+                    </div>
+                    <!-- /.widget -->
+                    <div class="widget mb-8">
+                        <h4 class="widget-title text-white mb-3">Contact Info</h4>
+                        <address> Moonshine St. 14/05 <br /> Light City, London </address>
+                        <a href="mailto:first.last@email.com">info@email.com</a><br /> 00 (123) 456 78 90
+                    </div>
+                    <!-- /.widget -->
+                    <div class="widget mb-8">
+                        <h4 class="widget-title text-white mb-3">Learn More</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.widget -->
+                    <div class="widget">
+                        <h4 class="widget-title text-white mb-3">Follow Us</h4>
+                        <nav class="nav social social-white">
+                            <a href="#"><i class="uil uil-twitter"></i></a>
+                            <a href="#"><i class="uil uil-facebook-f"></i></a>
+                            <a href="#"><i class="uil uil-dribbble"></i></a>
+                            <a href="#"><i class="uil uil-instagram"></i></a>
+                            <a href="#"><i class="uil uil-youtube"></i></a>
+                        </nav>
+                        <!-- /.social -->
+                    </div>
+                    <!-- /.widget -->
+                </div>
+                <!-- /.offcanvas-body -->
+            </div>
+        </header>
+        <!-- /header -->
+
+        <!-- Hero Section -->
+        <section class="wrapper">
+            <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+                <div class="row">
+                    <div class="col-lg-8 col-xl-7 col-xxl-6 mx-auto">
+                        <h2 class="fs-16 text-uppercase text-muted mb-3">BNPL Innovation</h2>
+                        <h1 class="display-1 mb-4 section-title">Atobar.ai</h1>
+                        <p class="lead fs-lg mb-7 px-md-10 px-lg-0">
+                            Next generation credit scoring solution based on Alternative Data - Beyond the limits of
+                            traditional data (CIC, JICC,...), Atobar.ai uses <strong>15+ alternative data
+                                sources</strong> with advanced AI to evaluate credit with <strong>95% accuracy</strong>.
+                        </p>
+                        <div>
+                            <a href="#features" class="btn btn-lg btn-primary rounded-pill me-2">Explore Features</a>
+                            <a href="#" class="btn btn-lg btn-outline-primary rounded-pill">Contact Sales</a>
+                        </div>
+                    </div>
+                    <!-- /column -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /section -->
+
+        <!-- Key Stats Section -->
+        <section class="wrapper">
+            <div class="container py-14 py-md-16">
+                <div class="row mb-10">
+                    <div class="col-md-10 col-xl-9 col-xxl-7 mx-auto text-center">
+                        <img src="./assets/img/icons/lineal/analytics.svg" class="svg-inject icon-svg icon-svg-md mb-4"
+                            alt="" />
+                        <h2 class="display-4 mb-3 px-lg-14 section-title">Key Performance Metrics</h2>
+                        <p class="lead fs-lg">Processing 1 million transactions/day, bringing fair financial
+                            opportunities to 30+ million "thin-file" people in Japan</p>
+                    </div>
+                    <!-- /column -->
+                </div>
+                <!-- /.row -->
+                <div class="row gx-lg-8 gx-xl-12 gy-8 text-center">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card shadow-lg lift">
+                            <div class="card-body">
+                                <img src="./assets/img/icons/lineal/check.svg"
+                                    class="svg-inject icon-svg icon-svg-lg text-lime-green mb-3" alt="" />
+                                <h3 class="counter">92.3</h3>
+                                <p class="mb-0"><strong>%</strong> Approval Rate</p>
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!--/.card -->
+                    </div>
+                    <!--/column -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card shadow-lg lift">
+                            <div class="card-body">
+                                <img src="./assets/img/icons/lineal/shield.svg"
+                                    class="svg-inject icon-svg icon-svg-lg text-lime-green mb-3" alt="" />
+                                <h3 class="counter">1.2</h3>
+                                <p class="mb-0"><strong>%</strong> Bad Debt Rate</p>
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!--/.card -->
+                    </div>
+                    <!--/column -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card shadow-lg lift">
+                            <div class="card-body">
+                                <img src="./assets/img/icons/lineal/award-2.svg"
+                                    class="svg-inject icon-svg icon-svg-lg text-lime-green mb-3" alt="" />
+                                <h3 class="counter">685</h3>
+                                <p class="mb-0">Average TFA Scoring</p>
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!--/.card -->
+                    </div>
+                    <!--/column -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card shadow-lg lift">
+                            <div class="card-body">
+                                <img src="./assets/img/icons/lineal/rocket.svg"
+                                    class="svg-inject icon-svg icon-svg-lg text-lime-green mb-3" alt="" />
+                                <h3><span class="counter">200</span>ms</h3>
+                                <p class="mb-0">API Response Time</p>
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!--/.card -->
+                    </div>
+                    <!--/column -->
+                </div>
+                <!--/.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /section -->
+
+        <!-- User Journey Section -->
+        <section class="wrapper angled upper-end lower-end">
+            <div class="container py-14 py-md-16">
+                <div class="row mb-5">
+                    <div class="col-md-10 col-xl-8 col-xxl-7 mx-auto text-center">
+                        <img src="./assets/img/icons/lineal/list.svg" class="svg-inject icon-svg icon-svg-md mb-4"
+                            alt="" />
+                        <h2 class="display-4 mb-4 px-lg-14 section-title">Atobar.ai User Journey</h2>
+                        <p class="lead fs-lg">Simple 3-step process to get started with Atobar.ai</p>
+                    </div>
+                    <!--/column -->
+                </div>
+                <!--/.row -->
+                <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="card lift me-lg-6">
+                            <div class="card-body p-6">
+                                <div class="d-flex flex-row">
+                                    <div>
+                                        <span class="icon btn btn-circle btn-lg service-number pe-none me-4"><span
+                                                class="number">01</span></span>
+                                    </div>
+                                    <div>
+                                        <h4 class="mb-1">Sign Up</h4>
+                                        <p class="mb-0">Create a free account in 2 minutes with eKYC. Fast, absolutely
+                                            secure, and completely transparent.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!--/.card -->
+                        <div class="card lift ms-lg-13 mt-6">
+                            <div class="card-body p-6">
+                                <div class="d-flex flex-row">
+                                    <div>
+                                        <span class="icon btn btn-circle btn-lg service-number pe-none me-4"><span
+                                                class="number">02</span></span>
+                                    </div>
+                                    <div>
+                                        <h4 class="mb-1">Build Credit Profile</h4>
+                                        <p class="mb-0">Connect 15+ alternative data sources: utility bills, e-wallets,
+                                            mobile payments to build credit profile.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!--/.card -->
+                        <div class="card lift mx-lg-6 mt-6">
+                            <div class="card-body p-6">
+                                <div class="d-flex flex-row">
+                                    <div>
+                                        <span class="icon btn btn-circle btn-lg service-number pe-none me-4"><span
+                                                class="number">03</span></span>
+                                    </div>
+                                    <div>
+                                        <h4 class="mb-1">Shopping with BNPL</h4>
+                                        <p class="mb-0">Instant approval in 30 seconds with smart AI. No hidden fees,
+                                            completely transparent terms.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!--/.card -->
+                    </div>
+                    <!--/column -->
+                    <div class="col-lg-6">
+                        <h2 class="fs-16 text-uppercase text-muted mb-3">How It Works?</h2>
+                        <h3 class="display-6 mb-3 section-title">Simple & Powerful</h3>
+                        <p class="lead fs-lg pe-lg-5">Smart centralized Buy Now Pay Later (BNPL) management platform
+                            with early risk detection and optimized user experience.</p>
+                        <p>Atobar.ai revolutionizes credit scoring by leveraging alternative data to assess
+                            creditworthiness beyond traditional credit bureaus. Our AI-powered platform provides instant
+                            decisions while maintaining the highest accuracy standards.</p>
+                        <a href="#" class="btn btn-primary rounded-pill mt-3">Learn More</a>
+                    </div>
+                    <!--/column -->
+                </div>
+                <!--/.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /section -->
+
+        <!-- Core Values Section -->
+        <section id="features" class="wrapper">
+            <div class="container pb-14 pb-md-16">
+                <div class="row text-center">
+                    <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                        <h2 class="fs-16 text-uppercase text-muted mb-3">Core Value</h2>
+                        <h3 class="display-4 mb-10 px-xl-10 section-title">What Atobar.ai Brings</h3>
+                    </div>
+                    <!-- /column -->
+                </div>
+                <!-- /.row -->
+                <div class="row gx-lg-8 gx-xl-12 gy-10 mb-14 mb-md-17 align-items-center">
+                    <div class="col-lg-6 position-relative order-lg-2">
+                        <div class="shape bg-dot primary rellax w-16 h-20" data-rellax-speed="1"
+                            style="top: 3rem; left: 5.5rem"></div>
+                        <figure><img class="w-auto" src="./assets/img/illustrations/i8.png"
+                                srcset="./assets/img/illustrations/i8@2x.png 2x" alt="" /></figure>
+                    </div>
+                    <!--/column -->
+                    <div class="col-lg-6">
+                        <img src="./assets/img/icons/lineal/user.svg" class="svg-inject icon-svg icon-svg-md mb-4"
+                            alt="" />
+                        <h2 class="display-4 mb-3 section-title">For Individual Users</h2>
+                        <p class="lead fs-lg">Empower yourself with complete credit visibility and control</p>
+                        <div class="row gy-3 gx-xl-8">
+                            <div class="col-xl-6">
+                                <ul class="icon-list bullet-bg bullet-soft-green mb-0">
+                                    <li><span><i class="uil uil-chart-line"></i></span><span><strong>Track & Manage
+                                                Credit Score</strong> - Personal dashboard with real-time score
+                                            updates</span></li>
+                                    <li class="mt-3"><span><i class="uil uil-brain"></i></span><span><strong>AI Credit
+                                                Improvement Advisor</strong> - Personalized recommendations to boost
+                                            your score</span></li>
+                                </ul>
+                            </div>
+                            <!--/column -->
+                            <div class="col-xl-6">
+                                <ul class="icon-list bullet-bg bullet-soft-green mb-0">
+                                    <li><span><i class="uil uil-store"></i></span><span><strong>BNPL Hub</strong> -
+                                            Centralized management for all BNPL services</span></li>
+                                    <li class="mt-3"><span><i
+                                                class="uil uil-shopping-cart"></i></span><span><strong>Smart
+                                                Shopping</strong> - Compare rates and calculate affordability</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/column -->
+                        </div>
+                        <!--/.row -->
+                    </div>
+                    <!--/column -->
+                </div>
+                <!--/.row -->
+                <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+                    <div class="col-lg-6 position-relative">
+                        <div class="shape bg-dot primary rellax w-16 h-20" data-rellax-speed="1"
+                            style="top: 3rem; right: 5.5rem"></div>
+                        <figure><img class="w-auto" src="./assets/img/illustrations/i3.png"
+                                srcset="./assets/img/illustrations/i3@2x.png 2x" alt="" /></figure>
+                    </div>
+                    <!--/column -->
+                    <div class="col-lg-6">
+                        <img src="./assets/img/icons/lineal/briefcase.svg" class="svg-inject icon-svg icon-svg-md mb-4"
+                            alt="" />
+                        <h2 class="display-4 mb-3 section-title">For BNPL Providers</h2>
+                        <p class="lead fs-lg">Advanced risk assessment and portfolio optimization tools</p>
+                        <div class="row gy-3 gx-xl-8">
+                            <div class="col-xl-6">
+                                <ul class="icon-list bullet-bg bullet-soft-blue mb-0">
+                                    <li><span><i class="uil uil-crosshairs"></i></span><span><strong>Accurate Risk
+                                                Assessment</strong> - 95% accuracy with AI model</span></li>
+                                    <li class="mt-3"><span><i
+                                                class="uil uil-exclamation-triangle"></i></span><span><strong>Early Risk
+                                                Detection</strong> - Predict bad debt probability within 90 days</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/column -->
+                            <div class="col-xl-6">
+                                <ul class="icon-list bullet-bg bullet-soft-blue mb-0">
+                                    <li><span><i class="uil uil-chart-growth"></i></span><span><strong>Portfolio
+                                                Optimization</strong> - Smart customer segmentation & analytics</span>
+                                    </li>
+                                    <li class="mt-3"><span><i class="uil uil-plug"></i></span><span><strong>Quick
+                                                Integration</strong> - RESTful API with complete documentation</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--/column -->
+                        </div>
+                        <!--/.row -->
+                    </div>
+                    <!--/column -->
+                </div>
+                <!--/.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /section -->
+
+        <!-- Alternative Data Sources -->
+        <section class="wrapper">
+            <div class="container pt-14 pt-md-16">
+                <div class="row text-center">
+                    <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                        <h2 class="fs-16 text-uppercase text-muted mb-3">Alternative Data</h2>
+                        <h3 class="display-4 mb-3 px-xl-10 section-title">Diverse Alternative Data Sources</h3>
+                        <p class="lead fs-lg mb-10">
+                            Atobar.ai analyzes 15+ data sources to provide comprehensive credit assessment
+                        </p>
+                    </div>
+                    <!-- /column -->
+                </div>
+                <!-- /.row -->
+                <div class="position-relative">
+                    <div class="shape rounded-circle bg-soft-yellow rellax w-16 h-16" data-rellax-speed="1"
+                        style="bottom: 0.5rem; right: -1.7rem; z-index: 0;"></div>
+                    <div class="shape bg-line red rellax w-16 h-16" data-rellax-speed="1"
+                        style="top: 0.5rem; left: -1.7rem; z-index: 0;"></div>
+                    <div class="row gx-md-5 gy-5 text-center">
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card shadow-lg lift">
+                                <div class="card-body">
+                                    <img src="./assets/img/icons/lineal/smartphone-2.svg"
+                                        class="svg-inject icon-svg icon-svg-md text-lime-green mb-3" alt="" />
+                                    <h4>Mobile Payment</h4>
+                                    <p class="mb-2">PayPay, Line Pay, Merpay, Rakuten Pay</p>
+                                </div>
+                                <!--/.card-body -->
+                            </div>
+                            <!--/.card -->
+                        </div>
+                        <!--/column -->
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card shadow-lg lift">
+                                <div class="card-body">
+                                    <img src="./assets/img/icons/lineal/wallet.svg"
+                                        class="svg-inject icon-svg icon-svg-md text-lime-green mb-3" alt="" />
+                                    <h4>E-wallet</h4>
+                                    <p class="mb-2">Suica, Pasmo, WAON, nanaco</p>
+                                </div>
+                                <!--/.card-body -->
+                            </div>
+                            <!--/.card -->
+                        </div>
+                        <!--/column -->
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card shadow-lg lift">
+                                <div class="card-body">
+                                    <img src="./assets/img/icons/lineal/shopping-basket.svg"
+                                        class="svg-inject icon-svg icon-svg-md text-lime-green mb-3" alt="" />
+                                    <h4>E-commerce</h4>
+                                    <p class="mb-2">Amazon, Rakuten, Yahoo!, Mercari</p>
+                                </div>
+                                <!--/.card-body -->
+                            </div>
+                            <!--/.card -->
+                        </div>
+                        <!--/column -->
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card shadow-lg lift">
+                                <div class="card-body">
+                                    <img src="./assets/img/icons/lineal/invoice.svg"
+                                        class="svg-inject icon-svg icon-svg-md text-lime-green mb-3" alt="" />
+                                    <h4>Utility Bills</h4>
+                                    <p class="mb-2">Electricity, water, gas, internet, phone</p>
+                                </div>
+                                <!--/.card-body -->
+                            </div>
+                            <!--/.card -->
+                        </div>
+                        <!--/column -->
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card shadow-lg lift">
+                                <div class="card-body">
+                                    <img src="./assets/img/icons/lineal/savings.svg"
+                                        class="svg-inject icon-svg icon-svg-md text-lime-green mb-3" alt="" />
+                                    <h4>Banking</h4>
+                                    <p class="mb-2">Transaction history, savings pattern</p>
+                                </div>
+                                <!--/.card-body -->
+                            </div>
+                            <!--/.card -->
+                        </div>
+                        <!--/column -->
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card shadow-lg lift">
+                                <div class="card-body">
+                                    <img src="./assets/img/icons/lineal/telephone-2.svg"
+                                        class="svg-inject icon-svg icon-svg-md text-lime-green mb-3" alt="" />
+                                    <h4>Telco Data</h4>
+                                    <p class="mb-2">Payment history, usage pattern</p>
+                                </div>
+                                <!--/.card-body -->
+                            </div>
+                            <!--/.card -->
+                        </div>
+                        <!--/column -->
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card shadow-lg lift">
+                                <div class="card-body">
+                                    <img src="./assets/img/icons/lineal/home.svg"
+                                        class="svg-inject icon-svg icon-svg-md text-lime-green mb-3" alt="" />
+                                    <h4>Rent Payment</h4>
+                                    <p class="mb-2">Monthly rent, timeliness, consistency</p>
+                                </div>
+                                <!--/.card-body -->
+                            </div>
+                            <!--/.card -->
+                        </div>
+                        <!--/column -->
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card shadow-lg lift">
+                                <div class="card-body">
+                                    <img src="./assets/img/icons/lineal/video-camera.svg"
+                                        class="svg-inject icon-svg icon-svg-md text-lime-green mb-3" alt="" />
+                                    <h4>Subscription</h4>
+                                    <p class="mb-2">Netflix, Spotify, gaming services</p>
+                                </div>
+                                <!--/.card-body -->
+                            </div>
+                            <!--/.card -->
+                        </div>
+                        <!--/column -->
+                    </div>
+                    <!--/.row -->
+                </div>
+                <!-- /.position-relative -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /section -->
+
+        <!-- Credit Score Classification -->
+        <section class="wrapper">
+            <div class="container py-14 py-md-16">
+                <div class="row mb-8">
+                    <div class="col-lg-10 col-xl-9 col-xxl-8 mx-auto text-center">
+                        <img src="./assets/img/icons/lineal/target.svg" class="svg-inject icon-svg icon-svg-md mb-4"
+                            alt="" />
+                        <h2 class="display-4 mb-3 section-title ">Alternative Data Credit Score Classification</h2>
+                        <p class="lead fs-lg mb-0">Understanding your credit score range and benefits</p>
+                    </div>
+                    <!-- /column -->
+                </div>
+                <!-- /.row -->
+                <div class="row gx-lg-8 gx-xl-12 gy-8">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card shadow-lg lift h-100">
+                            <div class="card-body">
+                                <div class="icon btn btn-circle btn-lg btn-soft-green pe-none mb-4">
+                                    <i class="uil uil-award"></i>
+                                </div>
+                                <h4>Excellent</h4>
+                                <h5 class="text-green mb-3">750-850</h5>
+                                <p class="mb-0">Best interest rates for all loan types. Highest credit limit.
+                                    Preferential terms.</p>
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!--/.card -->
+                    </div>
+                    <!--/column -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card shadow-lg lift h-100">
+                            <div class="card-body">
+                                <div class="icon btn btn-circle btn-lg btn-soft-blue pe-none mb-4">
+                                    <i class="uil uil-star"></i>
+                                </div>
+                                <h4>Good</h4>
+                                <h5 class="text-blue mb-3">700-749</h5>
+                                <p class="mb-0">Competitive interest rates. Multiple product options. Quick process.</p>
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!--/.card -->
+                    </div>
+                    <!--/column -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card shadow-lg lift h-100">
+                            <div class="card-body">
+                                <div class="icon btn btn-circle btn-lg btn-soft-yellow pe-none mb-4">
+                                    <i class="uil uil-chart-pie"></i>
+                                </div>
+                                <h4>Fair</h4>
+                                <h5 class="text-yellow mb-3">650-699</h5>
+                                <p class="mb-0">Standard interest rates. Average credit limit. Standard conditions.</p>
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!--/.card -->
+                    </div>
+                    <!--/column -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card shadow-lg lift h-100">
+                            <div class="card-body">
+                                <div class="icon btn btn-circle btn-lg btn-soft-purple pe-none mb-4">
+                                    <i class="uil uil-refresh"></i>
+                                </div>
+                                <h4>Below Fair</h4>
+                                <h5 class="text-purple mb-3">550-649</h5>
+                                <p class="mb-0">Limited options. Higher interest rates. Additional conditions required.
+                                </p>
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!--/.card -->
+                    </div>
+                    <!--/column -->
+                </div>
+                <!--/.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /section -->
+
+        <!-- Competitive Advantages -->
+        <section class="wrapper">
+            <div class="container py-14 py-md-16">
+                <div class="row text-center">
+                    <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                        <h2 class="fs-16 text-uppercase text-muted mb-3">Why Choose Us</h2>
+                        <h3 class="display-4 mb-10 px-xl-10 section-title">Atobar.ai Competitive Advantages</h3>
+                    </div>
+                    <!-- /column -->
+                </div>
+                <!-- /.row -->
+                <div class="row gx-md-8 gy-8 text-center">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card lift h-100">
+                            <div class="card-body">
+                                <img src="./assets/img/icons/lineal/rocket.svg"
+                                    class="svg-inject icon-svg icon-svg-md text-lime-green mb-3" alt="" />
+                                <h4>First-mover</h4>
+                                <p class="mb-2">First alternative credit dataset in Japan</p>
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!--/.card -->
+                    </div>
+                    <!--/column -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card lift h-100">
+                            <div class="card-body">
+                                <img src="./assets/img/icons/lineal/puzzle.svg"
+                                    class="svg-inject icon-svg icon-svg-md text-lime-green mb-3" alt="" />
+                                <h4>Plug & Play</h4>
+                                <p class="mb-2">No disruption to existing BNPL system</p>
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!--/.card -->
+                    </div>
+                    <!--/column -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card lift h-100">
+                            <div class="card-body">
+                                <img src="./assets/img/icons/lineal/light-bulb.svg"
+                                    class="svg-inject icon-svg icon-svg-md text-lime-green mb-3" alt="" />
+                                <h4>Explainable AI</h4>
+                                <p class="mb-2">Explainable AI builds user trust</p>
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!--/.card -->
+                    </div>
+                    <!--/column -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card lift h-100">
+                            <div class="card-body">
+                                <img src="./assets/img/icons/lineal/money.svg"
+                                    class="svg-inject icon-svg icon-svg-md text-lime-green mb-3" alt="" />
+                                <h4>B2B Platform</h4>
+                                <p class="mb-2">Value for banks and financial institutions</p>
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!--/.card -->
+                    </div>
+                    <!--/column -->
+                </div>
+                <!--/.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /section -->
+
+        <!-- Detailed Features Section -->
+        <section class="wrapper angled upper-end lower-end">
+            <div class="container py-14 py-md-16">
+                <div class="row text-center mb-12">
+                    <div class="col-lg-9 mx-auto">
+                        <h2 class="fs-16 text-uppercase text-muted mb-3">Complete Features</h2>
+                        <h3 class="display-4 mb-3 section-title">Detailed Features & Benefits</h3>
+                    </div>
+                </div>
+
+                <div class="row gx-lg-8 gx-xl-12 gy-10">
+                    <!-- User Features -->
+                    <div class="col-lg-6">
+                        <div class="card bg-soft-green lift mb-6">
+                            <div class="card-body p-6">
+                                <div class="d-flex flex-row">
+                                    <div>
+                                        <img src="./assets/img/icons/lineal/user.svg"
+                                            class="svg-inject icon-svg icon-svg-sm text-lime-green me-4" alt="" />
+                                    </div>
+                                    <div>
+                                        <h4 class="mb-3">For Individual Users</h4>
+
+                                        <h5 class="mb-2 fs-18">Track & Manage Credit Score</h5>
+                                        <ul class="icon-list bullet-bg bullet-soft-green mb-4">
+                                            <li><span><i class="uil uil-check"></i></span><span>Personal dashboard with
+                                                    real-time score</span></li>
+                                            <li><span><i class="uil uil-check"></i></span><span>Detailed credit score
+                                                    change history</span></li>
+                                            <li><span><i class="uil uil-check"></i></span><span>Compare with market
+                                                    average</span></li>
+                                            <li><span><i class="uil uil-check"></i></span><span>Alert when score drops
+                                                    suddenly</span></li>
+                                        </ul>
+
+                                        <h5 class="mb-2 fs-18">AI Credit Improvement Advisor</h5>
+                                        <ul class="icon-list bullet-bg bullet-soft-green mb-4">
+                                            <li><span><i class="uil uil-check"></i></span><span>Analyze weaknesses in
+                                                    credit profile</span></li>
+                                            <li><span><i class="uil uil-check"></i></span><span>Suggest specific actions
+                                                    to increase score</span></li>
+                                            <li><span><i class="uil uil-check"></i></span><span>Predict score after
+                                                    implementing suggestions</span></li>
+                                            <li><span><i class="uil uil-check"></i></span><span>Phased credit
+                                                    improvement plan</span></li>
+                                        </ul>
+
+                                        <h5 class="mb-2 fs-18">BNPL Hub - Centralized Management</h5>
+                                        <ul class="icon-list bullet-bg bullet-soft-green mb-4">
+                                            <li><span><i class="uil uil-check"></i></span><span>Consolidate all BNPL
+                                                    from every provider</span></li>
+                                            <li><span><i class="uil uil-check"></i></span><span>Smart payment schedule
+                                                    with reminders</span></li>
+                                            <li><span><i class="uil uil-check"></i></span><span>Optimize spending and
+                                                    budget management</span></li>
+                                            <li><span><i class="uil uil-check"></i></span><span>Detailed monthly
+                                                    spending reports</span></li>
+                                        </ul>
+
+                                        <h5 class="mb-2 fs-18">Smart Shopping Experience</h5>
+                                        <ul class="icon-list bullet-bg bullet-soft-green mb-0">
+                                            <li><span><i class="uil uil-check"></i></span><span>Compare BNPL rates from
+                                                    multiple providers</span></li>
+                                            <li><span><i class="uil uil-check"></i></span><span>Calculate affordability
+                                                    before purchase</span></li>
+                                            <li><span><i class="uil uil-check"></i></span><span>One-touch payment with
+                                                    absolute security</span></li>
+                                            <li><span><i class="uil uil-check"></i></span><span>Exclusive cashback and
+                                                    offers for members</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!--/.card -->
+                    </div>
+                    <!--/column -->
+
+                    <!-- Provider Features -->
+                    <div class="col-lg-6">
+                        <div class="card bg-soft-orange lift mb-6">
+                            <div class="card-body p-6">
+                                <div class="d-flex flex-row">
+                                    <div>
+                                        <img src="./assets/img/icons/lineal/briefcase.svg"
+                                            class="svg-inject icon-svg icon-svg-sm text-lime-green me-4" alt="" />
+                                    </div>
+                                    <div>
+                                        <h4 class="mb-3">For BNPL Providers</h4>
+
+                                        <h5 class="mb-2 fs-18">Accurate Risk Assessment</h5>
+                                        <ul class="icon-list bullet-bg bullet-soft-orange mb-4">
+                                            <li><span><i class="uil uil-check"></i></span><span>Analyze 15+ Alternative
+                                                    Data sources</span></li>
+                                            <li><span><i class="uil uil-check"></i></span><span>AI model with 95%
+                                                    accuracy</span></li>
+                                            <li><span><i class="uil uil-check"></i></span><span>Credit scoring for
+                                                    thin-file customers</span></li>
+                                            <li><span><i class="uil uil-check"></i></span><span>Real-time repayment
+                                                    capability assessment</span></li>
+                                        </ul>
+
+                                        <h5 class="mb-2 fs-18">Early Risk Detection</h5>
+                                        <ul class="icon-list bullet-bg bullet-soft-orange mb-4">
+                                            <li><span><i class="uil uil-check"></i></span><span>Early warning for loan
+                                                    stacking behavior</span></li>
+                                            <li><span><i class="uil uil-check"></i></span><span>Predict bad debt
+                                                    probability within 90 days</span></li>
+                                            <li><span><i class="uil uil-check"></i></span><span>Fraud detection with
+                                                    AI/ML</span></li>
+                                            <li><span><i class="uil uil-check"></i></span><span>24/7 monitoring with
+                                                    automatic alerts</span></li>
+                                        </ul>
+
+                                        <h5 class="mb-2 fs-18">Portfolio Optimization</h5>
+                                        <ul class="icon-list bullet-bg bullet-soft-orange mb-4">
+                                            <li><span><i class="uil uil-check"></i></span><span>Smart customer
+                                                    segmentation</span></li>
+                                            <li><span><i class="uil uil-check"></i></span><span>Optimal limit and
+                                                    interest rate suggestions</span></li>
+                                            <li><span><i class="uil uil-check"></i></span><span>A/B testing for credit
+                                                    policies</span></li>
+                                            <li><span><i class="uil uil-check"></i></span><span>Detailed analytics
+                                                    dashboard</span></li>
+                                        </ul>
+
+                                        <h5 class="mb-2 fs-18">Quick Integration</h5>
+                                        <ul class="icon-list bullet-bg bullet-soft-orange mb-0">
+                                            <li><span><i class="uil uil-check"></i></span><span>RESTful API with
+                                                    complete documentation</span></li>
+                                            <li><span><i class="uil uil-check"></i></span><span>SDK for all popular
+                                                    platforms</span></li>
+                                            <li><span><i class="uil uil-check"></i></span><span>Webhook real-time
+                                                    notifications</span></li>
+                                            <li><span><i class="uil uil-check"></i></span><span>Ready white-label
+                                                    solution</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!--/.card -->
+                    </div>
+                    <!--/column -->
+                </div>
+                <!--/.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /section -->
+
+        <!-- Alternative Data Scoring System -->
+        <section class="wrapper">
+            <div class="container py-14 py-md-16">
+                <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+                    <div class="col-lg-7">
+                        <figure><img class="w-auto" src="./assets/img/illustrations/i5.png"
+                                srcset="./assets/img/illustrations/i5@2x.png 2x" alt="" /></figure>
+                    </div>
+                    <!--/column -->
+                    <div class="col-lg-5">
+                        <h2 class="fs-16 text-uppercase text-muted mb-3">Advanced Technology</h2>
+                        <h3 class="display-4 mb-5 section-title">Alternative Data Scoring System</h3>
+                        <p class="mb-6">Our AI-powered scoring system analyzes multiple data sources with different
+                            weights to provide the most accurate credit assessment.</p>
+
+                        <div class="d-flex flex-row mb-4">
+                            <div>
+                                <img src="./assets/img/icons/lineal/smartphone-2.svg"
+                                    class="svg-inject icon-svg icon-svg-sm text-lime-green me-4" alt="" />
+                            </div>
+                            <div>
+                                <h4 class="mb-1">Mobile Payment - 35%</h4>
+                                <p class="mb-0">Real-time data with 98.5% accuracy</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row mb-4">
+                            <div>
+                                <img src="./assets/img/icons/lineal/wallet.svg"
+                                    class="svg-inject icon-svg icon-svg-sm text-lime-green me-4" alt="" />
+                            </div>
+                            <div>
+                                <h4 class="mb-1">E-wallet - 25%</h4>
+                                <p class="mb-0">Daily sync with 95.2% reliability</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row mb-4">
+                            <div>
+                                <img src="./assets/img/icons/lineal/shopping-basket.svg"
+                                    class="svg-inject icon-svg icon-svg-sm text-lime-green me-4" alt="" />
+                            </div>
+                            <div>
+                                <h4 class="mb-1">E-commerce - 20%</h4>
+                                <p class="mb-0">API sync with 92.8% coverage</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <div>
+                                <img src="./assets/img/icons/lineal/savings.svg"
+                                    class="svg-inject icon-svg icon-svg-sm text-lime-green me-4" alt="" />
+                            </div>
+                            <div>
+                                <h4 class="mb-1">Utility Bills - 20%</h4>
+                                <p class="mb-0">Monthly updates with 89.5% predictive power</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/column -->
+                </div>
+                <!--/.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /section -->
+
+        <!-- Technology Stack -->
+        <section class="wrapper">
+            <div class="container py-14 py-md-16">
+                <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="fs-16 text-uppercase text-muted mb-3">Innovation</h2>
+                        <h3 class="display-4 mb-5 section-title">Advanced Alternative Data Technology</h3>
+                        <p class="mb-6">Built on cutting-edge technology stack to ensure accuracy, speed, and security
+                        </p>
+
+                        <div class="accordion accordion-wrapper" id="accordionTech">
+                            <div class="card plain accordion-item">
+                                <div class="card-header" id="headingOne">
+                                    <button class="accordion-button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        15+ Alternative Data Sources
+                                    </button>
+                                </div>
+                                <!--/.card-header -->
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionTech">
+                                    <div class="card-body">
+                                        <p>Utility bills, e-wallets, mobile payments, e-commerce, social commerce,
+                                            banking transactions, telco data, rent payments, and subscription services.
+                                        </p>
+                                    </div>
+                                    <!--/.card-body -->
+                                </div>
+                                <!--/.accordion-collapse -->
+                            </div>
+                            <!--/.accordion-item -->
+                            <div class="card plain accordion-item">
+                                <div class="card-header" id="headingTwo">
+                                    <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
+                                        AI/ML Engine
+                                    </button>
+                                </div>
+                                <!--/.card-header -->
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionTech">
+                                    <div class="card-body">
+                                        <p>Machine Learning, Deep Learning, Natural Language Processing, and Graph
+                                            Neural Networks for comprehensive analysis and prediction.</p>
+                                    </div>
+                                    <!--/.card-body -->
+                                </div>
+                                <!--/.accordion-collapse -->
+                            </div>
+                            <!--/.accordion-item -->
+                            <div class="card plain accordion-item">
+                                <div class="card-header" id="headingThree">
+                                    <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                        aria-expanded="false" aria-controls="collapseThree">
+                                        Real-time Processing
+                                    </button>
+                                </div>
+                                <!--/.card-header -->
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionTech">
+                                    <div class="card-body">
+                                        <p>Sub-200ms response time with 99.9% uptime SLA. High-performance
+                                            infrastructure built for scale.</p>
+                                    </div>
+                                    <!--/.card-body -->
+                                </div>
+                                <!--/.accordion-collapse -->
+                            </div>
+                            <!--/.accordion-item -->
+                            <div class="card plain accordion-item">
+                                <div class="card-header" id="headingFour">
+                                    <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseFour">
+                                        Privacy-first Security
+                                    </button>
+                                </div>
+                                <!--/.card-header -->
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionTech">
+                                    <div class="card-body">
+                                        <p>Zero-knowledge proof, Homomorphic encryption, and full compliance with
+                                            GDPR/CCPA regulations.</p>
+                                    </div>
+                                    <!--/.card-body -->
+                                </div>
+                                <!--/.accordion-collapse -->
+                            </div>
+                            <!--/.accordion-item -->
+                        </div>
+                        <!--/.accordion -->
+                    </div>
+                    <!--/column -->
+                    <div class="col-lg-6">
+                        <figure><img class="w-auto" src="./assets/img/illustrations/i2.png"
+                                srcset="./assets/img/illustrations/i2@2x.png 2x" alt="" /></figure>
+                    </div>
+                    <!--/column -->
+                </div>
+                <!--/.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /section -->
+
+        <!-- Development Roadmap -->
+        <section class="wrapper">
+            <div class="container py-14 py-md-16">
+                <div class="row mb-5">
+                    <div class="col-md-10 col-xl-8 col-xxl-7 mx-auto text-center">
+                        <img src="./assets/img/icons/lineal/compass.svg" class="svg-inject icon-svg icon-svg-md mb-4"
+                            alt="" />
+                        <h2 class="display-4 mb-4 px-lg-14 section-title">Atobar.ai Development Roadmap</h2>
+                    </div>
+                    <!-- /column -->
+                </div>
+                <!-- /.row -->
+                <div class="row gx-lg-8 gx-xl-12 gy-6 process-wrapper line text-center justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <span class="icon btn btn-circle btn-lg btn-soft-green pe-none mb-4"><span
+                                class="number">2025</span></span>
+                        <h4 class="mb-1">Phase 1: BNPL Hub</h4>
+                        <p class="mb-0">App/Web platform for centralized BNPL management. Smart Dashboard with XAI
+                            guidance.</p>
+                    </div>
+                    <!--/column -->
+                    <div class="col-md-6 col-lg-4">
+                        <span class="icon btn btn-circle btn-lg btn-soft-blue pe-none mb-4"><span
+                                class="number">2026</span></span>
+                        <h4 class="mb-1">Phase 2: Checkout Layer</h4>
+                        <p class="mb-0">Integrate into e-commerce platforms. Real-time API with fraud detection.</p>
+                    </div>
+                    <!--/column -->
+                    <div class="col-md-6 col-lg-4">
+                        <span class="icon btn btn-circle btn-lg btn-soft-purple pe-none mb-4"><span
+                                class="number">2027+</span></span>
+                        <h4 class="mb-1">Phase 3: Credit Platform</h4>
+                        <p class="mb-0">Thin-file credit B2B API platform. User-controlled data ecosystem.</p>
+                    </div>
+                    <!--/column -->
+                </div>
+                <!--/.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /section -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <footer class="bg-light">
+        <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
+            <div class="d-lg-flex flex-row align-items-lg-center">
+                <h3 class="display-4 mb-6 mb-lg-0 pe-lg-20 pe-xl-22 pe-xxl-25">Join our community by using our services
+                    and grow
+                    your business.</h3>
+                <a href="#" class="btn btn-primary rounded-pill mb-0 text-nowrap">Try It For Free</a>
+            </div>
+            <!--/div -->
+            <hr class="mt-11 mb-12" />
+            <div class="row gy-6 gy-lg-0">
+                <div class="col-md-4 col-lg-3">
+                    <div class="widget">
+                        <img class="mb-4" src="./assets/img/logo-light.png" srcset="./assets/img/logo-light@2x.png 2x"
+                            alt="" />
+                        <p class="mb-4">©
+                            <script>
+                                document.write(new Date().getUTCFullYear());
+                            </script> Sandbox. <br class="d-none d-lg-block" />All rights reserved.
+                        </p>
+                        <nav class="nav social">
+                            <a href="#"><i class="uil uil-twitter"></i></a>
+                            <a href="#"><i class="uil uil-facebook-f"></i></a>
+                            <a href="#"><i class="uil uil-dribbble"></i></a>
+                            <a href="#"><i class="uil uil-instagram"></i></a>
+                            <a href="#"><i class="uil uil-youtube"></i></a>
+                        </nav>
+                        <!-- /.social -->
+                    </div>
+                    <!-- /.widget -->
+                </div>
+                <!-- /column -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="widget">
+                        <h4 class="widget-title text-white mb-3">Get in Touch</h4>
+                        <address class="pe-xl-15 pe-xxl-17">Moonshine St. 14/05 Light City, London, United Kingdom
+                        </address>
+                        <a href="mailto:#">info@email.com</a><br /> 00 (123) 456 78 90
+                    </div>
+                    <!-- /.widget -->
+                </div>
+                <!-- /column -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="widget">
+                        <h4 class="widget-title text-white mb-3">Learn More</h4>
+                        <ul class="list-unstyled  mb-0">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.widget -->
+                </div>
+                <!-- /column -->
+                <div class="col-md-12 col-lg-3">
+                    <div class="widget">
+                        <h4 class="widget-title text-white mb-3">Our Newsletter</h4>
+                        <p class="mb-5">Subscribe to our newsletter to get our news & deals delivered to you.</p>
+                        <div class="newsletter-wrapper">
+                            <!-- Begin Mailchimp Signup Form -->
+                            <div id="mc_embed_signup2">
+                                <form
+                                    action="https://elemisfreebies.us20.list-manage.com/subscribe/post?u=aa4947f70a475ce162057838d&amp;id=b49ef47a9a"
+                                    method="post" id="mc-embedded-subscribe-form2" name="mc-embedded-subscribe-form"
+                                    class="validate dark-fields" target="_blank" novalidate>
+                                    <div id="mc_embed_signup_scroll2">
+                                        <div class="mc-field-group input-group form-floating">
+                                            <input type="email" value="" name="EMAIL"
+                                                class="required email form-control" placeholder="Email Address"
+                                                id="mce-EMAIL2">
+                                            <label for="mce-EMAIL2">Email Address</label>
+                                            <input type="submit" value="Join" name="subscribe"
+                                                id="mc-embedded-subscribe2" class="btn btn-primary ">
+                                        </div>
+                                        <div id="mce-responses2" class="clear">
+                                            <div class="response" id="mce-error-response2" style="display:none"></div>
+                                            <div class="response" id="mce-success-response2" style="display:none"></div>
+                                        </div>
+                                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input
+                                                type="text" name="b_ddc180777a163e0f9f66ee014_4b1bcfa0bc" tabindex="-1"
+                                                value=""></div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--End mc_embed_signup-->
+                        </div>
+                        <!-- /.newsletter-wrapper -->
+                    </div>
+                    <!-- /.widget -->
+                </div>
+                <!-- /column -->
+            </div>
+            <!--/.row -->
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/theme.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
