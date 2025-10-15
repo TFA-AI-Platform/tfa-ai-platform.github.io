@@ -86,93 +86,93 @@ class AntSlider {
         this.max = options.max || 100;
         this.value = options.value || 75;
         this.step = options.step || 1;
-        
+
         this.rail = element.querySelector('.ant-slider-rail');
         this.track = element.querySelector('.ant-slider-track');
         this.handle = element.querySelector('.ant-slider-handle');
-        
+
         this.isDragging = false;
         this.init();
     }
-    
+
     init() {
         this.updateSlider(this.value);
         this.bindEvents();
     }
-    
+
     bindEvents() {
         this.handle.addEventListener('mousedown', this.startDrag.bind(this));
         this.rail.addEventListener('click', this.handleRailClick.bind(this));
         document.addEventListener('mousemove', this.onDrag.bind(this));
         document.addEventListener('mouseup', this.endDrag.bind(this));
-        
+
         // Touch events for mobile
         this.handle.addEventListener('touchstart', this.startDrag.bind(this));
         this.rail.addEventListener('touchstart', this.handleRailClick.bind(this));
         document.addEventListener('touchmove', this.onDrag.bind(this));
         document.addEventListener('touchend', this.endDrag.bind(this));
     }
-    
+
     startDrag(e) {
         e.preventDefault();
         this.isDragging = true;
         this.handle.style.cursor = 'grabbing';
     }
-    
+
     endDrag(e) {
         if (this.isDragging) {
             this.isDragging = false;
             this.handle.style.cursor = 'grab';
         }
     }
-    
+
     onDrag(e) {
         if (!this.isDragging) return;
-        
+
         const rect = this.rail.getBoundingClientRect();
         const clientX = e.clientX || (e.touches && e.touches[0].clientX);
-        
+
         if (clientX) {
             const percentage = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
             const newValue = Math.round(this.min + percentage * (this.max - this.min));
             this.setValue(newValue);
         }
     }
-    
+
     handleRailClick(e) {
         if (this.isDragging) return;
-        
+
         const rect = this.rail.getBoundingClientRect();
         const clientX = e.clientX || (e.touches && e.touches[0].clientX);
-        
+
         if (clientX) {
             const percentage = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
             const newValue = Math.round(this.min + percentage * (this.max - this.min));
             this.setValue(newValue);
         }
     }
-    
+
     setValue(value) {
         this.value = Math.max(this.min, Math.min(this.max, value));
         this.updateSlider(this.value);
-        
+
         // Trigger custom event
         const event = new CustomEvent('sliderChange', {
             detail: { value: this.value }
         });
         this.element.dispatchEvent(event);
     }
-    
+
     updateSlider(value) {
         const percentage = ((value - this.min) / (this.max - this.min)) * 100;
-        
+
         this.track.style.width = `${percentage}%`;
         this.handle.style.left = `${percentage}%`;
     }
 }
 
 // Initialize slider on page load
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const sliderElement = document.getElementById('antSlider');
     if (sliderElement) {
         const slider = new AntSlider(sliderElement, {
@@ -180,9 +180,9 @@ document.addEventListener('DOMContentLoaded', function() {
             max: 100,
             value: 75
         });
-        
+
         // Listen for slider changes
-        sliderElement.addEventListener('sliderChange', function(e) {
+        sliderElement.addEventListener('sliderChange', function (e) {
             const value = e.detail.value;
             document.getElementById('digitalValue').textContent = value;
         });
@@ -227,8 +227,8 @@ function calculateScore() {
     if (resultScore) resultScore.textContent = Math.round(baseScore);
 
     // Detect language from document lang attribute or current page
-    const isJapanese = document.documentElement.lang === 'ja' || 
-                      window.location.pathname.includes('-jp.html');
+    const isJapanese = document.documentElement.lang === 'ja' ||
+        window.location.pathname.includes('-jp.html');
 
     // Risk level with color coding (Japanese or English)
     let risk, eligibility;
@@ -332,5 +332,13 @@ function calculateScore() {
         setTimeout(() => {
             card.classList.add('animate__animated', 'animate__fadeInUp');
         }, index * 100);
+    });
+}
+
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/assets/js/service-worker.js')
+            .then(reg => console.log('Service Worker registered:', reg.scope))
+            .catch(err => console.error('Service Worker registration failed:', err));
     });
 }

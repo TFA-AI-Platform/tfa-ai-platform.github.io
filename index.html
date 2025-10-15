@@ -4,285 +4,369 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="An impressive and flawless site template that includes various UI elements and countless features, attractive ready-made blocks and rich pages, basically everything you need to create a unique and professional website.">
-  <meta name="keywords" content="bootstrap 5, business, corporate, creative, gulp, marketing, minimal, modern, multipurpose, one page, responsive, saas, sass, seo, startup, html5 template, site template">
+  <meta name="description"
+    content="An impressive and flawless site template that includes various UI elements and countless features, attractive ready-made blocks and rich pages, basically everything you need to create a unique and professional website.">
+  <meta name="keywords"
+    content="bootstrap 5, business, corporate, creative, gulp, marketing, minimal, modern, multipurpose, one page, responsive, saas, sass, seo, startup, html5 template, site template">
   <meta name="author" content="elemis">
   <title>Sandbox - Modern & Multipurpose Bootstrap 5 Template</title>
   <link rel="shortcut icon" href="./assets/img/favicon.png">
   <link rel="stylesheet" href="./assets/css/plugins.css">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/colors/grape.css">
-  <link rel="preload" href="./assets/css/fonts/space.css" as="style" onload="this.rel='stylesheet'">
+  <!-- REVOLUTION SLIDER CSS -->
+  <link rel="stylesheet" type="text/css" href="./assets/revslider/css/rs6.css">
+  <style>
+    #rev_slider_6_1_wrapper {
+      transform: translateX(-500px);
+      transform-origin: top left;
+      scale: 0.9;
+    }
+
+    /* iPad Pro (1024px and up) */
+    @media (min-width: 1024px) and (max-width: 1366px) {
+      #rev_slider_6_1_wrapper {
+        transform: translateX(-400px);
+        transform-origin: top left;
+        scale: 0.9;
+      }
+    }
+
+    /* iPad (768px to 1024px) */
+    @media (min-width: 768px) and (max-width: 1023px) {
+      #rev_slider_6_1_wrapper {
+        transform: translate(-300px, -150px);
+        transform-origin: top left;
+        scale: 1.5;
+      }
+    }
+
+    /* iPad Mini and smaller tablets */
+    @media (min-width: 576px) and (max-width: 767px) {
+      #rev_slider_6_1_wrapper {
+        transform: translateX(-150px);
+      }
+    }
+
+    /* Mobile devices */
+    @media (max-width: 575px) {
+      .iq-banner {
+        display: none;
+      }
+    }
+
+    /* Keep header with solid background - no gradient */
+    header.wrapper.bg-soft-primary {
+      background: #ffffff !important;
+    }
+  </style>
+  <link rel="stylesheet" href="./assets/css/colors/green.css">
+  <link rel="preload" href="./assets/css/fonts/thicccboi.css" as="style" onload="this.rel='stylesheet'">
 </head>
 
-<body class="bg-soft-primary">
+<body>
+  <canvas id="particles-canvas"></canvas>
   <div class="content-wrapper">
-    <header class="position-absolute w-100">
-      <div class="gradient-5 text-white fw-bold fs-15 mb-2 position-relative" style="z-index: 1;">
-        <div class="container py-2 text-center">
-          <p class="mb-0">✨ Wordpress version of Sandbox is released! Grab a copy <a href="https://1.envato.market/0Jg6NN" class="link-white hover d-inline-flex align-items-center" target="_blank">here <i class="uil uil-arrow-up-right"></i></a></p>
-        </div>
-        <!-- /.container -->
-      </div>
+    <header class="wrapper bg-soft-primary">
       <nav class="navbar navbar-expand-lg center-nav transparent navbar-light">
         <div class="container flex-lg-row flex-nowrap align-items-center">
           <div class="navbar-brand w-100">
-            <a href="./index.html">
-              <img src="./assets/img/logo-dark.png" srcset="./assets/img/logo-dark@2x.png 2x" alt="" />
+            <a href="./index.html" class="navbar-logo">
+              <img src="./assets/img/Logo TFA - Final-08.png" srcset="./assets/img/logo-dark@2x.png 2x" alt="" />
             </a>
           </div>
           <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
             <div class="offcanvas-header d-lg-none">
               <h3 class="text-white fs-30 mb-0">Sandbox</h3>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
             </div>
             <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
               <ul class="navbar-nav">
-                <li class="nav-item dropdown dropdown-mega">
+                <!-- <li class="nav-item dropdown dropdown-mega">
                   <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Demos</a>
                   <ul class="dropdown-menu mega-menu mega-menu-dark mega-menu-img">
                     <li class="mega-menu-content mega-menu-scroll">
                       <ul class="row row-cols-1 row-cols-lg-6 gx-0 gx-lg-4 gy-lg-2 list-unstyled">
                         <li class="col">
                           <a class="dropdown-item" href="./demo1.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi1.jpg" srcset="./assets/img/demos/mi1@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi1.jpg"
+                                srcset="./assets/img/demos/mi1@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 1</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo2.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi2.jpg" srcset="./assets/img/demos/mi2@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi2.jpg"
+                                srcset="./assets/img/demos/mi2@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 2</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo3.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi3.jpg" srcset="./assets/img/demos/mi3@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi3.jpg"
+                                srcset="./assets/img/demos/mi3@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 3</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo4.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi4.jpg" srcset="./assets/img/demos/mi4@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi4.jpg"
+                                srcset="./assets/img/demos/mi4@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 4</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo5.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi5.jpg" srcset="./assets/img/demos/mi5@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi5.jpg"
+                                srcset="./assets/img/demos/mi5@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 5</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo6.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi6.jpg" srcset="./assets/img/demos/mi6@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi6.jpg"
+                                srcset="./assets/img/demos/mi6@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 6</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo7.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi7.jpg" srcset="./assets/img/demos/mi7@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi7.jpg"
+                                srcset="./assets/img/demos/mi7@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 7</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo8.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi8.jpg" srcset="./assets/img/demos/mi8@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi8.jpg"
+                                srcset="./assets/img/demos/mi8@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 8</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo9.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi9.jpg" srcset="./assets/img/demos/mi9@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi9.jpg"
+                                srcset="./assets/img/demos/mi9@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 9</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo10.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi10.jpg" srcset="./assets/img/demos/mi10@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi10.jpg"
+                                srcset="./assets/img/demos/mi10@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 10</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo11.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi11.jpg" srcset="./assets/img/demos/mi11@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi11.jpg"
+                                srcset="./assets/img/demos/mi11@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 11</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo12.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi12.jpg" srcset="./assets/img/demos/mi12@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi12.jpg"
+                                srcset="./assets/img/demos/mi12@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 12</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo13.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi13.jpg" srcset="./assets/img/demos/mi13@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi13.jpg"
+                                srcset="./assets/img/demos/mi13@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 13</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo14.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi14.jpg" srcset="./assets/img/demos/mi14@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi14.jpg"
+                                srcset="./assets/img/demos/mi14@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 14</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo15.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi15.jpg" srcset="./assets/img/demos/mi15@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi15.jpg"
+                                srcset="./assets/img/demos/mi15@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 15</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo16.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi16.jpg" srcset="./assets/img/demos/mi16@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi16.jpg"
+                                srcset="./assets/img/demos/mi16@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 16</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo17.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi17.jpg" srcset="./assets/img/demos/mi17@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi17.jpg"
+                                srcset="./assets/img/demos/mi17@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 17</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo18.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi18.jpg" srcset="./assets/img/demos/mi18@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi18.jpg"
+                                srcset="./assets/img/demos/mi18@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 18</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo19.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi19.jpg" srcset="./assets/img/demos/mi19@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi19.jpg"
+                                srcset="./assets/img/demos/mi19@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 19</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo20.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi20.jpg" srcset="./assets/img/demos/mi20@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi20.jpg"
+                                srcset="./assets/img/demos/mi20@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 20</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo21.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi21.jpg" srcset="./assets/img/demos/mi21@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi21.jpg"
+                                srcset="./assets/img/demos/mi21@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 21</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo22.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi22.jpg" srcset="./assets/img/demos/mi22@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi22.jpg"
+                                srcset="./assets/img/demos/mi22@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 22</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo23.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi23.jpg" srcset="./assets/img/demos/mi23@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi23.jpg"
+                                srcset="./assets/img/demos/mi23@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 23</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo24.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi24.jpg" srcset="./assets/img/demos/mi24@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi24.jpg"
+                                srcset="./assets/img/demos/mi24@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 24</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo25.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi25.jpg" srcset="./assets/img/demos/mi25@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi25.jpg"
+                                srcset="./assets/img/demos/mi25@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 25</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo26.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi26.jpg" srcset="./assets/img/demos/mi26@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi26.jpg"
+                                srcset="./assets/img/demos/mi26@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 26</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo27.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi27.jpg" srcset="./assets/img/demos/mi27@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi27.jpg"
+                                srcset="./assets/img/demos/mi27@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 27</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo28.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi28.jpg" srcset="./assets/img/demos/mi28@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi28.jpg"
+                                srcset="./assets/img/demos/mi28@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 28</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo29.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi29.jpg" srcset="./assets/img/demos/mi29@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi29.jpg"
+                                srcset="./assets/img/demos/mi29@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 29</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo30.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi30.jpg" srcset="./assets/img/demos/mi30@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi30.jpg"
+                                srcset="./assets/img/demos/mi30@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 30</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo31.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi31.jpg" srcset="./assets/img/demos/mi31@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi31.jpg"
+                                srcset="./assets/img/demos/mi31@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 31</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo32.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi32.jpg" srcset="./assets/img/demos/mi32@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi32.jpg"
+                                srcset="./assets/img/demos/mi32@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 32</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo33.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi33.jpg" srcset="./assets/img/demos/mi33@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi33.jpg"
+                                srcset="./assets/img/demos/mi33@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 33</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo34.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi34.jpg" srcset="./assets/img/demos/mi34@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi34.jpg"
+                                srcset="./assets/img/demos/mi34@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 34</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo35.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi35.jpg" srcset="./assets/img/demos/mi35@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi35.jpg"
+                                srcset="./assets/img/demos/mi35@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 35</span>
                           </a>
                         </li>
                         <li class="col">
                           <a class="dropdown-item" href="./demo36.html">
-                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi36.jpg" srcset="./assets/img/demos/mi36@2x.jpg 2x" alt=""></figure>
+                            <figure class="rounded lift d-none d-lg-block"><img src="./assets/img/demos/mi36.jpg"
+                                srcset="./assets/img/demos/mi36@2x.jpg 2x" alt=""></figure>
                             <span class="d-lg-none">Demo 36</span>
                           </a>
                         </li>
-                      </ul>
-                      <!--/.row -->
-                      <span class="d-none d-lg-flex"><i class="uil uil-direction"></i><strong>Scroll to view more</strong></span>
-                    </li>
-                    <!--/.mega-menu-content-->
-                  </ul>
-                  <!--/.dropdown-menu -->
-                </li>
-                <li class="nav-item dropdown">
+                      </ul> -->
+                <!--/.row -->
+                <!-- <span class="d-none d-lg-flex"><i class="uil uil-direction"></i><strong>Scroll to view -->
+                <!-- more</strong></span> -->
+                <!-- </li> -->
+                <!--/.mega-menu-content-->
+                <!-- </ul> -->
+                <!--/.dropdown-menu -->
+                <!-- </li> -->
+                <!-- <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
                   <ul class="dropdown-menu">
-                    <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+                    <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#"
+                        data-bs-toggle="dropdown">Services</a>
                       <ul class="dropdown-menu">
                         <li class="nav-item"><a class="dropdown-item" href="./services.html">Services I</a></li>
                         <li class="nav-item"><a class="dropdown-item" href="./services2.html">Services II</a></li>
                       </ul>
                     </li>
-                    <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">About</a>
+                    <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#"
+                        data-bs-toggle="dropdown">About</a>
                       <ul class="dropdown-menu">
                         <li class="nav-item"><a class="dropdown-item" href="./about.html">About I</a></li>
                         <li class="nav-item"><a class="dropdown-item" href="./about2.html">About II</a></li>
                       </ul>
                     </li>
-                    <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Shop</a>
+                    <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#"
+                        data-bs-toggle="dropdown">Shop</a>
                       <ul class="dropdown-menu">
                         <li class="nav-item"><a class="dropdown-item" href="./shop.html">Shop I</a></li>
                         <li class="nav-item"><a class="dropdown-item" href="./shop2.html">Shop II</a></li>
@@ -291,21 +375,24 @@
                         <li class="nav-item"><a class="dropdown-item" href="./shop-checkout.html">Checkout</a></li>
                       </ul>
                     </li>
-                    <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Contact</a>
+                    <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#"
+                        data-bs-toggle="dropdown">Contact</a>
                       <ul class="dropdown-menu">
                         <li class="nav-item"><a class="dropdown-item" href="./contact.html">Contact I</a></li>
                         <li class="nav-item"><a class="dropdown-item" href="./contact2.html">Contact II</a></li>
                         <li class="nav-item"><a class="dropdown-item" href="./contact3.html">Contact III</a></li>
                       </ul>
                     </li>
-                    <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Career</a>
+                    <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#"
+                        data-bs-toggle="dropdown">Career</a>
                       <ul class="dropdown-menu">
                         <li class="nav-item"><a class="dropdown-item" href="./career.html">Job Listing I</a></li>
                         <li class="nav-item"><a class="dropdown-item" href="./career2.html">Job Listing II</a></li>
                         <li class="nav-item"><a class="dropdown-item" href="./career-job.html">Job Description</a></li>
                       </ul>
                     </li>
-                    <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Utility</a>
+                    <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#"
+                        data-bs-toggle="dropdown">Utility</a>
                       <ul class="dropdown-menu">
                         <li class="nav-item"><a class="dropdown-item" href="./404.html">404 Not Found</a></li>
                         <li class="nav-item"><a class="dropdown-item" href="./page-loader.html">Page Loader</a></li>
@@ -319,22 +406,39 @@
                     <li class="nav-item"><a class="dropdown-item" href="./pricing.html">Pricing</a></li>
                     <li class="nav-item"><a class="dropdown-item" href="./onepage.html">One Page</a></li>
                   </ul>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="./demo1.html">Home</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="./services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./tfa-scoring.html">TFA Scoring</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Projects</a>
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
                   <div class="dropdown-menu dropdown-lg">
                     <div class="dropdown-lg-content">
                       <div>
-                        <h6 class="dropdown-header">Project Pages</h6>
+                        <h6 class="dropdown-header">Product Pages</h6>
                         <ul class="list-unstyled">
-                          <li><a class="dropdown-item" href="./projects.html">Projects I</a></li>
-                          <li><a class="dropdown-item" href="./projects2.html">Projects II</a></li>
-                          <li><a class="dropdown-item" href="./projects3.html">Projects III</a></li>
-                          <li><a class="dropdown-item" href="./projects4.html">Projects IV</a></li>
+                          <!-- <li><a class="dropdown-item" href="./projects.html">Projects I</a></li> -->
+                          <!-- <li><a class="dropdown-item" href="./projects2.html">Projects II</a></li> -->
+                          <!-- <li><a class="dropdown-item" href="./projects3.html">Projects III</a></li> -->
+                          <!-- <li><a class="dropdown-item" href="./projects4.html">Projects IV</a></li> -->
+                          <li><a class="dropdown-item" href="./atobar-ai.html">Atobar AI</a></li>
+                          <li><a class="dropdown-item" href="./ad-housing.html">AD Housing</a></li>
+                          <li><a class="dropdown-item" href="./ad-passport.html">AD Passport</a></li>
+                          <li><a class="dropdown-item" href="./lnpl.html">Live now, Pay later</a></li>
+                          <li><a class="dropdown-item" href="./consumer-finance.html">Consumer Finance Service</a></li>
                         </ul>
                       </div>
                       <!-- /.column -->
-                      <div>
+                      <!-- <div>
                         <h6 class="dropdown-header">Single Projects</h6>
                         <ul class="list-unstyled">
                           <li><a class="dropdown-item" href="./single-project.html">Single Project I</a></li>
@@ -342,125 +446,155 @@
                           <li><a class="dropdown-item" href="./single-project3.html">Single Project III</a></li>
                           <li><a class="dropdown-item" href="./single-project4.html">Single Project IV</a></li>
                         </ul>
-                      </div>
+                      </div> -->
                       <!-- /.column -->
                     </div>
                     <!-- /auto-column -->
                   </div>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item">
+                  <a class="nav-link" href="./architecture.html">Architecture</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./live-demo.html">Live Demo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./tfa-platform-architecture-green-en.html">Old Template</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
                   <ul class="dropdown-menu">
                     <li class="nav-item"><a class="dropdown-item" href="./blog.html">Blog without Sidebar</a></li>
                     <li class="nav-item"><a class="dropdown-item" href="./blog2.html">Blog with Sidebar</a></li>
                     <li class="nav-item"><a class="dropdown-item" href="./blog3.html">Blog with Left Sidebar</a></li>
-                    <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog Posts</a>
+                    <li class="dropdown dropdown-submenu dropend"><a class="dropdown-item dropdown-toggle" href="#"
+                        data-bs-toggle="dropdown">Blog Posts</a>
                       <ul class="dropdown-menu">
-                        <li class="nav-item"><a class="dropdown-item" href="./blog-post.html">Post without Sidebar</a></li>
-                        <li class="nav-item"><a class="dropdown-item" href="./blog-post2.html">Post with Sidebar</a></li>
-                        <li class="nav-item"><a class="dropdown-item" href="./blog-post3.html">Post with Left Sidebar</a></li>
+                        <li class="nav-item"><a class="dropdown-item" href="./blog-post.html">Post without Sidebar</a>
+                        </li>
+                        <li class="nav-item"><a class="dropdown-item" href="./blog-post2.html">Post with Sidebar</a>
+                        </li>
+                        <li class="nav-item"><a class="dropdown-item" href="./blog-post3.html">Post with Left
+                            Sidebar</a></li>
                       </ul>
                     </li>
                   </ul>
-                </li>
-                <li class="nav-item dropdown dropdown-mega">
+                </li> -->
+                <!-- <li class="nav-item dropdown dropdown-mega">
                   <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blocks</a>
                   <ul class="dropdown-menu mega-menu mega-menu-dark mega-menu-img">
                     <li class="mega-menu-content">
                       <ul class="row row-cols-1 row-cols-lg-6 gx-0 gx-lg-6 gy-lg-4 list-unstyled">
                         <li class="col"><a class="dropdown-item" href="./docs/blocks/about.html">
-                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="./assets/img/demos/block1.svg" alt=""></div>
+                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                src="./assets/img/demos/block1.svg" alt=""></div>
                             <span>About</span>
                           </a>
                         </li>
                         <li class="col"><a class="dropdown-item" href="./docs/blocks/blog.html">
-                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="./assets/img/demos/block2.svg" alt=""></div>
+                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                src="./assets/img/demos/block2.svg" alt=""></div>
                             <span>Blog</span>
                           </a>
                         </li>
                         <li class="col"><a class="dropdown-item" href="./docs/blocks/call-to-action.html">
-                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="./assets/img/demos/block3.svg" alt=""></div>
+                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                src="./assets/img/demos/block3.svg" alt=""></div>
                             <span>Call to Action</span>
                           </a>
                         </li>
                         <li class="col"><a class="dropdown-item" href="./docs/blocks/clients.html">
-                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="./assets/img/demos/block4.svg" alt=""></div>
+                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                src="./assets/img/demos/block4.svg" alt=""></div>
                             <span>Clients</span>
                           </a>
                         </li>
                         <li class="col"><a class="dropdown-item" href="./docs/blocks/contact.html">
-                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="./assets/img/demos/block5.svg" alt=""></div>
+                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                src="./assets/img/demos/block5.svg" alt=""></div>
                             <span>Contact</span>
                           </a>
                         </li>
                         <li class="col"><a class="dropdown-item" href="./docs/blocks/facts.html">
-                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="./assets/img/demos/block6.svg" alt=""></div>
+                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                src="./assets/img/demos/block6.svg" alt=""></div>
                             <span>Facts</span>
                           </a>
                         </li>
                         <li class="col"><a class="dropdown-item" href="./docs/blocks/faq.html">
-                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="./assets/img/demos/block7.svg" alt=""></div>
+                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                src="./assets/img/demos/block7.svg" alt=""></div>
                             <span>FAQ</span>
                           </a>
                         </li>
                         <li class="col"><a class="dropdown-item" href="./docs/blocks/features.html">
-                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="./assets/img/demos/block8.svg" alt=""></div>
+                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                src="./assets/img/demos/block8.svg" alt=""></div>
                             <span>Features</span>
                           </a>
                         </li>
                         <li class="col"><a class="dropdown-item" href="./docs/blocks/footer.html">
-                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="./assets/img/demos/block9.svg" alt=""></div>
+                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                src="./assets/img/demos/block9.svg" alt=""></div>
                             <span>Footer</span>
                           </a>
                         </li>
                         <li class="col"><a class="dropdown-item" href="./docs/blocks/hero.html">
-                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="./assets/img/demos/block10.svg" alt=""></div>
+                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                src="./assets/img/demos/block10.svg" alt=""></div>
                             <span>Hero</span>
                           </a>
                         </li>
                         <li class="col"><a class="dropdown-item" href="./docs/blocks/misc.html">
-                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="./assets/img/demos/block17.svg" alt=""></div>
+                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                src="./assets/img/demos/block17.svg" alt=""></div>
                             <span>Misc</span>
                           </a>
                         </li>
                         <li class="col"><a class="dropdown-item" href="./docs/blocks/navbar.html">
-                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="./assets/img/demos/block11.svg" alt=""></div>
+                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                src="./assets/img/demos/block11.svg" alt=""></div>
                             <span>Navbar</span>
                           </a>
                         </li>
                         <li class="col"><a class="dropdown-item" href="./docs/blocks/portfolio.html">
-                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="./assets/img/demos/block12.svg" alt=""></div>
+                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                src="./assets/img/demos/block12.svg" alt=""></div>
                             <span>Portfolio</span>
                           </a>
                         </li>
                         <li class="col"><a class="dropdown-item" href="./docs/blocks/pricing.html">
-                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="./assets/img/demos/block13.svg" alt=""></div>
+                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                src="./assets/img/demos/block13.svg" alt=""></div>
                             <span>Pricing</span>
                           </a>
                         </li>
                         <li class="col"><a class="dropdown-item" href="./docs/blocks/process.html">
-                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="./assets/img/demos/block14.svg" alt=""></div>
+                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                src="./assets/img/demos/block14.svg" alt=""></div>
                             <span>Process</span>
                           </a>
                         </li>
                         <li class="col"><a class="dropdown-item" href="./docs/blocks/team.html">
-                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="./assets/img/demos/block15.svg" alt=""></div>
+                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                src="./assets/img/demos/block15.svg" alt=""></div>
                             <span>Team</span>
                           </a>
                         </li>
                         <li class="col"><a class="dropdown-item" href="./docs/blocks/testimonials.html">
-                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0" src="./assets/img/demos/block16.svg" alt=""></div>
+                            <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img class="rounded-0"
+                                src="./assets/img/demos/block16.svg" alt=""></div>
                             <span>Testimonials</span>
                           </a>
                         </li>
-                      </ul>
-                      <!--/.row -->
-                    </li>
-                    <!--/.mega-menu-content-->
-                  </ul>
-                  <!--/.dropdown-menu -->
-                </li>
-                <li class="nav-item dropdown dropdown-mega">
+                      </ul> -->
+                <!--/.row -->
+                <!-- </li> -->
+                <!--/.mega-menu-content-->
+              </ul>
+              <!--/.dropdown-menu -->
+              </li>
+              <!-- <li class="nav-item dropdown dropdown-mega">
                   <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Documentation</a>
                   <ul class="dropdown-menu mega-menu">
                     <li class="mega-menu-content">
@@ -480,13 +614,14 @@
                             <li><a class="dropdown-item" href="./docs/styleguide/fonts.html">Fonts</a></li>
                             <li><a class="dropdown-item" href="./docs/styleguide/icons-svg.html">SVG Icons</a></li>
                             <li><a class="dropdown-item" href="./docs/styleguide/icons-font.html">Font Icons</a></li>
-                            <li><a class="dropdown-item" href="./docs/styleguide/illustrations.html">Illustrations</a></li>
+                            <li><a class="dropdown-item" href="./docs/styleguide/illustrations.html">Illustrations</a>
+                            </li>
                             <li><a class="dropdown-item" href="./docs/styleguide/backgrounds.html">Backgrounds</a></li>
                             <li><a class="dropdown-item" href="./docs/styleguide/misc.html">Misc</a></li>
                           </ul>
-                        </div>
-                        <!--/column -->
-                        <div class="col-lg-8">
+                        </div> -->
+              <!--/column -->
+              <!-- <div class="col-lg-8">
                           <h6 class="dropdown-header">Elements</h6>
                           <ul class="list-unstyled cc-3">
                             <li><a class="dropdown-item" href="./docs/elements/accordion.html">Accordion</a></li>
@@ -499,7 +634,8 @@
                             <li><a class="dropdown-item" href="./docs/elements/card.html">Card</a></li>
                             <li><a class="dropdown-item" href="./docs/elements/carousel.html">Carousel</a></li>
                             <li><a class="dropdown-item" href="./docs/elements/dividers.html">Dividers</a></li>
-                            <li><a class="dropdown-item" href="./docs/elements/form-elements.html">Form Elements</a></li>
+                            <li><a class="dropdown-item" href="./docs/elements/form-elements.html">Form Elements</a>
+                            </li>
                             <li><a class="dropdown-item" href="./docs/elements/image-hover.html">Image Hover</a></li>
                             <li><a class="dropdown-item" href="./docs/elements/image-mask.html">Image Mask</a></li>
                             <li><a class="dropdown-item" href="./docs/elements/lightbox.html">Lightbox</a></li>
@@ -511,21 +647,24 @@
                             <li><a class="dropdown-item" href="./docs/elements/shapes.html">Shapes</a></li>
                             <li><a class="dropdown-item" href="./docs/elements/tables.html">Tables</a></li>
                             <li><a class="dropdown-item" href="./docs/elements/tabs.html">Tabs</a></li>
-                            <li><a class="dropdown-item" href="./docs/elements/text-animations.html">Text Animations</a></li>
-                            <li><a class="dropdown-item" href="./docs/elements/text-highlight.html">Text Highlight</a></li>
+                            <li><a class="dropdown-item" href="./docs/elements/text-animations.html">Text Animations</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./docs/elements/text-highlight.html">Text Highlight</a>
+                            </li>
                             <li><a class="dropdown-item" href="./docs/elements/tiles.html">Tiles</a></li>
-                            <li><a class="dropdown-item" href="./docs/elements/tooltips-popovers.html">Tooltips & Popovers</a></li>
+                            <li><a class="dropdown-item" href="./docs/elements/tooltips-popovers.html">Tooltips &
+                                Popovers</a></li>
                             <li><a class="dropdown-item" href="./docs/elements/typography.html">Typography</a></li>
                           </ul>
-                        </div>
-                        <!--/column -->
-                      </div>
-                      <!--/.row -->
-                    </li>
-                    <!--/.mega-menu-content-->
-                  </ul>
-                  <!--/.dropdown-menu -->
-                </li>
+                        </div> -->
+              <!--/column -->
+              <!-- </div> -->
+              <!--/.row -->
+              <!-- </li> -->
+              <!--/.mega-menu-content-->
+              </ul>
+              <!--/.dropdown-menu -->
+              </li>
               </ul>
               <!-- /.navbar-nav -->
               <div class="offcanvas-footer d-lg-none">
@@ -549,9 +688,17 @@
           <!-- /.navbar-collapse -->
           <div class="navbar-other w-100 d-flex ms-auto">
             <ul class="navbar-nav flex-row align-items-center ms-auto">
-              <li class="nav-item d-none d-md-block">
-                <a href="https://1.envato.market/NKGrx2" class="btn btn-primary rounded-xl" target="_blank">Purchase Now</a>
+              <li class="nav-item dropdown language-select text-uppercase">
+                <a class="nav-link dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">En</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="dropdown-item" href="#">En</a></li>
+                  <li class="nav-item"><a class="dropdown-item" href="#">De</a></li>
+                  <li class="nav-item"><a class="dropdown-item" href="#">Es</a></li>
+                </ul>
               </li>
+              <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-info"><i
+                    class="uil uil-info-circle"></i></a></li>
               <li class="nav-item d-lg-none">
                 <button class="hamburger offcanvas-nav-btn"><span></span></button>
               </li>
@@ -563,631 +710,837 @@
         <!-- /.container -->
       </nav>
       <!-- /.navbar -->
+      <div class="offcanvas offcanvas-end text-inverse" id="offcanvas-info" data-bs-scroll="true">
+        <div class="offcanvas-header">
+          <h3 class="text-white fs-30 mb-0">Sandbox</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body pb-6">
+          <div class="widget mb-8">
+            <p>Sandbox is a multipurpose HTML5 template with various layouts which will be a great solution for your
+              business.</p>
+          </div>
+          <!-- /.widget -->
+          <div class="widget mb-8">
+            <h4 class="widget-title text-white mb-3">Contact Info</h4>
+            <address> Moonshine St. 14/05 <br /> Light City, London </address>
+            <a href="mailto:first.last@email.com">info@email.com</a><br /> 00 (123) 456 78 90
+          </div>
+          <!-- /.widget -->
+          <div class="widget mb-8">
+            <h4 class="widget-title text-white mb-3">Learn More</h4>
+            <ul class="list-unstyled">
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+          <div class="widget">
+            <h4 class="widget-title text-white mb-3">Follow Us</h4>
+            <nav class="nav social social-white">
+              <a href="#"><i class="uil uil-twitter"></i></a>
+              <a href="#"><i class="uil uil-facebook-f"></i></a>
+              <a href="#"><i class="uil uil-dribbble"></i></a>
+              <a href="#"><i class="uil uil-instagram"></i></a>
+              <a href="#"><i class="uil uil-youtube"></i></a>
+            </nav>
+            <!-- /.social -->
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /.offcanvas-body -->
+      </div>
+      <!-- /.offcanvas -->
     </header>
     <!-- /header -->
-    <section class="wrapper overflow-hidden">
-      <div class="container pt-19 pt-md-21 pb-16 pb-md-18 text-center position-relative">
-        <div class="position-absolute" style="top: -12%; left: 50%; transform: translateX(-50%);" data-cue="fadeIn"><img src="./assets/img/photos/blurry.png" alt=""></div>
-        <div class="row position-relative">
-          <div class="col-lg-8 col-xxl-7 mx-auto position-relative">
-            <div class="position-absolute shape grape w-5 d-none d-lg-block" style="top: -5%; left: -15%;" data-cue="fadeIn" data-delay="1500"><img src="./assets/img/svg/pie.svg" class="svg-inject icon-svg w-100 h-100" alt="" /></div>
-            <div class="position-absolute shape violet w-10 d-none d-lg-block" style="bottom: 30%; left: -20%;" data-cue="fadeIn" data-delay="1500"><img src="./assets/img/svg/scribble.svg" class="svg-inject icon-svg w-100 h-100" alt="" /></div>
-            <div class="position-absolute shape fuchsia w-6 d-none d-lg-block" style="top: 0%; right: -25%; transform: rotate(70deg);" data-cue="fadeIn" data-delay="1500"><img src="./assets/img/svg/tri.svg" class="svg-inject icon-svg w-100 h-100" alt="" /></div>
-            <div class="position-absolute shape yellow w-6 d-none d-lg-block" style="bottom: 25%; right: -17%;" data-cue="fadeIn" data-delay="1500"><img src="./assets/img/svg/circle.svg" class="svg-inject icon-svg w-100 h-100" alt="" /></div>
-            <div data-cues="slideInDown" data-group="page-title">
-              <h1 class="display-1 fs-64 mb-5 mx-md-10 mx-lg-0">Create a powerful but effortless website for <br /><span class="rotator-fade text-primary">your business.,your portfolio.,your startup.,digital marketing.</span></h1>
-              <p class="lead fs-24 mb-8">You can create your website in minutes with the help of countless amazing features of Sandbox.</p>
-            </div>
-            <div class="d-md-flex justify-content-center" data-cues="slideInDown" data-delay="600">
-              <span><a href="#demos" class="btn btn-lg btn-primary btn-icon btn-icon-end rounded-xl mx-md-1 mb-2 mb-md-0 scroll">See Demo Pages <i class="uil uil-arrow-down-right"></i></a></span>
-              <span><a href="https://1.envato.market/0Jg6NN" class="btn btn-lg btn-fuchsia btn-icon btn-icon-end rounded-xl mx-md-1" target="_blank">Wordpress Version <i class="uil uil-arrow-up-right"></i></a></span>
-            </div>
-            <!-- /div -->
-          </div>
-          <!-- /column -->
-        </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.container -->
-      <div class="swiper-container swiper-auto swiper-auto-xs mb-8" data-margin="40" data-nav="false" data-dots="false" data-centered="true" data-loop="true" data-items-auto="true" data-autoplay="true" data-autoplaytime="1" data-drag="false" data-resizeupdate="false" data-speed="7000">
-        <div class="swiper overflow-visible pe-none">
-          <div class="swiper-wrapper ticker">
-            <div class="swiper-slide">
-              <figure class="rounded-xl shadow-xl"><img src="./assets/img/photos/ma8.jpg" srcset="./assets/img/photos/ma8@2x.jpg 2x" alt="" /></figure>
-            </div>
-            <div class="swiper-slide">
-              <figure class="rounded-xl shadow-xl"><img src="./assets/img/photos/ma9.jpg" srcset="./assets/img/photos/ma9@2x.jpg 2x" alt="" /></figure>
-            </div>
-            <div class="swiper-slide">
-              <figure class="rounded-xl shadow-xl"><img src="./assets/img/photos/ma10.jpg" srcset="./assets/img/photos/ma10@2x.jpg 2x" alt="" /></figure>
-            </div>
-            <div class="swiper-slide">
-              <figure class="rounded-xl shadow-xl"><img src="./assets/img/photos/ma11.jpg" srcset="./assets/img/photos/ma11@2x.jpg 2x" alt="" /></figure>
-            </div>
-            <div class="swiper-slide">
-              <figure class="rounded-xl shadow-xl"><img src="./assets/img/photos/ma12.jpg" srcset="./assets/img/photos/ma12@2x.jpg 2x" alt="" /></figure>
-            </div>
-            <div class="swiper-slide">
-              <figure class="rounded-xl shadow-xl"><img src="./assets/img/photos/ma13.jpg" srcset="./assets/img/photos/ma13@2x.jpg 2x" alt="" /></figure>
-            </div>
-            <div class="swiper-slide">
-              <figure class="rounded-xl shadow-xl"><img src="./assets/img/photos/ma14.jpg" srcset="./assets/img/photos/ma14@2x.jpg 2x" alt="" /></figure>
-            </div>
-          </div>
-          <!--/.swiper-wrapper -->
-        </div>
-        <!-- /.swiper -->
-      </div>
-      <!-- /.swiper-container -->
-      <div class="swiper-container swiper-auto swiper-auto-xs mb-10 mb-md-12" data-margin="40" data-nav="false" data-dots="false" data-centered="true" data-loop="true" data-items-auto="true" data-autoplay="true" data-autoplaytime="1" data-drag="false" data-resizeupdate="false" data-speed="7000">
-        <div class="swiper overflow-visible pe-none" dir="rtl">
-          <div class="swiper-wrapper ticker">
-            <div class="swiper-slide">
-              <figure class="rounded-xl shadow-xl"><img src="./assets/img/photos/ma1.jpg" srcset="./assets/img/photos/ma1@2x.jpg 2x" alt="" /></figure>
-            </div>
-            <div class="swiper-slide">
-              <figure class="rounded-xl shadow-xl"><img src="./assets/img/photos/ma2.jpg" srcset="./assets/img/photos/ma2@2x.jpg 2x" alt="" /></figure>
-            </div>
-            <div class="swiper-slide">
-              <figure class="rounded-xl shadow-xl"><img src="./assets/img/photos/ma3.jpg" srcset="./assets/img/photos/ma3@2x.jpg 2x" alt="" /></figure>
-            </div>
-            <div class="swiper-slide">
-              <figure class="rounded-xl shadow-xl"><img src="./assets/img/photos/ma4.jpg" srcset="./assets/img/photos/ma4@2x.jpg 2x" alt="" /></figure>
-            </div>
-            <div class="swiper-slide">
-              <figure class="rounded-xl shadow-xl"><img src="./assets/img/photos/ma5.jpg" srcset="./assets/img/photos/ma5@2x.jpg 2x" alt="" /></figure>
-            </div>
-            <div class="swiper-slide">
-              <figure class="rounded-xl shadow-xl"><img src="./assets/img/photos/ma6.jpg" srcset="./assets/img/photos/ma6@2x.jpg 2x" alt="" /></figure>
-            </div>
-            <div class="swiper-slide">
-              <figure class="rounded-xl shadow-xl"><img src="./assets/img/photos/ma7.jpg" srcset="./assets/img/photos/ma7@2x.jpg 2x" alt="" /></figure>
-            </div>
-          </div>
-          <!--/.swiper-wrapper -->
-        </div>
-        <!-- /.swiper -->
-      </div>
-      <!-- /.swiper-container -->
+    <!-- START REVOLUTION SLIDER SECTION -->
+    <section class="wrapper">
+
     </section>
     <!-- /section -->
-    <section class="wrapper bg-soft-primary overflow-hidden" id="demos">
-      <div class="container pt-16 pt-mb-18">
-        <div class="row mb-10">
-          <div class="col-md-9 col-lg-8 col-xl-7 col-xxl-6 mx-auto">
-            <div class="counter-wrapper">
-              <h3 class="fs-70 mb-3 text-primary text-center counter">34</h3>
-            </div>
-            <h2 class="display-2 mb-3 text-center mb-0 px-xxl-8">Functional, impressive and rich demos to start with</h2>
-          </div>
-          <!-- /column -->
-        </div>
-        <!-- /.row -->
-        <div class="demos-wrapper text-center mb-16 mb-md-18">
-          <h2 class="fs-17 text-uppercase text-muted mb-6">New Demos</h2>
-          <div class="row mb-10 gx-md-8 gy-12">
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo18.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d18.jpg" srcset="./assets/img/demos/d18@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo18.html" class="link-dark">Layout 18</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo19.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d19.jpg" srcset="./assets/img/demos/d19@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo19.html" class="link-dark">Layout 19</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo20.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d20.jpg" srcset="./assets/img/demos/d20@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo20.html" class="link-dark">Layout 20</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo21.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d21.jpg" srcset="./assets/img/demos/d21@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo21.html" class="link-dark">Layout 21</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo22.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d22.jpg" srcset="./assets/img/demos/d22@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo22.html" class="link-dark">Layout 22</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo23.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d23.jpg" srcset="./assets/img/demos/d23@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo23.html" class="link-dark">Layout 23</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo24.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d24.jpg" srcset="./assets/img/demos/d24@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo24.html" class="link-dark">Layout 24</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo25.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d25.jpg" srcset="./assets/img/demos/d25@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo25.html" class="link-dark">Layout 25</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo26.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d26.jpg" srcset="./assets/img/demos/d26@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo26.html" class="link-dark">Layout 26</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo27.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d27.jpg" srcset="./assets/img/demos/d27@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo27.html" class="link-dark">Layout 27</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo28.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d28.jpg" srcset="./assets/img/demos/d28@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo28.html" class="link-dark">Layout 28</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo29.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d29.jpg" srcset="./assets/img/demos/d29@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo29.html" class="link-dark">Layout 29</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo30.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d30.jpg" srcset="./assets/img/demos/d30@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo30.html" class="link-dark">Layout 30</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo31.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d31.jpg" srcset="./assets/img/demos/d31@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo31.html" class="link-dark">Layout 31</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo32.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d32.jpg" srcset="./assets/img/demos/d32@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo32.html" class="link-dark">Layout 32</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo33.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d33.jpg" srcset="./assets/img/demos/d33@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo33.html" class="link-dark">Layout 33</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo34.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d34.jpg" srcset="./assets/img/demos/d34@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo34.html" class="link-dark">Layout 34</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo35.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d35.jpg" srcset="./assets/img/demos/d35@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo35.html" class="link-dark">Layout 35</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo36.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d36.jpg" srcset="./assets/img/demos/d36@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo36.html" class="link-dark">Layout 36</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4 d-none d-md-flex align-items-center justify-content-center flex-column">
-              <img src="./assets/img/icons/solid/layers.svg" class="svg-inject icon-svg icon-svg-sm solid-duo text-grape-fuchsia mt-md-n10 mb-4" alt="" />
-              <h3 class="fs-17 text-uppercase text-muted mb-4">Scroll for more</h3>
-              <a href="#prev-demos" class="btn btn-lg btn-primary btn-icon btn-icon-end rounded-xl mx-1 scroll">Previous Demos <i class="uil uil-arrow-down-right"></i></a>
-            </div>
-            <!-- /column -->
-          </div>
-          <!-- /.row -->
-          <h2 class="fs-17 text-uppercase text-muted pt-16 mt-n8 mb-6" id="prev-demos">Previous Demos</h2>
-          <div class="row mb-10 gx-md-8 gy-12">
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo1.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d1.jpg" srcset="./assets/img/demos/d1@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo1.html" class="link-dark">Layout 1</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo2.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d2.jpg" srcset="./assets/img/demos/d2@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo2.html" class="link-dark">Layout 2</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo3.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d3.jpg" srcset="./assets/img/demos/d3@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo3.html" class="link-dark">Layout 3</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo4.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d4.jpg" srcset="./assets/img/demos/d4@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo4.html" class="link-dark">Layout 4</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo5.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d5.jpg" srcset="./assets/img/demos/d5@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo5.html" class="link-dark">Layout 5</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo6.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d6.jpg" srcset="./assets/img/demos/d6@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo6.html" class="link-dark">Layout 6</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo7.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d7.jpg" srcset="./assets/img/demos/d7@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo7.html" class="link-dark">Layout 7</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo8.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d8.jpg" srcset="./assets/img/demos/d8@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo8.html" class="link-dark">Layout 8</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo9.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d9.jpg" srcset="./assets/img/demos/d9@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo9.html" class="link-dark">Layout 9</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo10.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d10.jpg" srcset="./assets/img/demos/d10@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo10.html" class="link-dark">Layout 10</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo11.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d11.jpg" srcset="./assets/img/demos/d11@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo11.html" class="link-dark">Layout 11</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo12.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d12.jpg" srcset="./assets/img/demos/d12@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo12.html" class="link-dark">Layout 12</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo13.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d13.jpg" srcset="./assets/img/demos/d13@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo13.html" class="link-dark">Layout 13</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo14.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d14.jpg" srcset="./assets/img/demos/d14@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo14.html" class="link-dark">Layout 14</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo15.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d15.jpg" srcset="./assets/img/demos/d15@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo15.html" class="link-dark">Layout 15</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo16.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d16.jpg" srcset="./assets/img/demos/d16@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo16.html" class="link-dark">Layout 16</a></h2>
-            </div>
-            <!-- /column -->
-            <div class="col-md-6 col-lg-4">
-              <figure class="lift rounded-xl mb-6"><a href="./demo17.html" target="_blank"><img class="shadow-xl" src="./assets/img/demos/d17.jpg" srcset="./assets/img/demos/d17@2x.jpg 2x" alt="" /></a></figure>
-              <h2 class="fs-22 mb-0"><a href="./demo17.html" class="link-dark">Layout 17</a></h2>
-            </div>
-            <!-- /column -->
-          </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.demos-wrapper -->
-        <div class="row mb-8 text-center">
-          <div class="col-md-11 col-lg-10 col-xl-8 col-xxl-7 mx-auto">
-            <h2 class="display-2 mt-3 mb-3 mb-0 px-lg-10 px-xl-0">Save your time and money by choosing Sandbox for your website.</h2>
-          </div>
-          <!-- /column -->
-        </div>
-        <!-- /.row -->
-        <div class="row mb-12 mb-md-14">
-          <div class="col-lg-10 col-xl-8 col-xxl-7 mx-auto">
-            <div class="row align-items-center counter-wrapper gy-6 text-center">
-              <div class="col-md-4">
-                <h3 class="counter fs-50 text-primary mb-1">250+</h3>
-                <p class="fs-18 mb-0">UI elements</p>
-              </div>
-              <!--/column -->
-              <div class="col-md-4">
-                <h3 class="counter fs-50 text-primary mb-1">150+</h3>
-                <p class="fs-18 mb-0">Pre-made blocks</p>
-              </div>
-              <!--/column -->
-              <div class="col-md-4">
-                <h3 class="counter fs-50 text-primary mb-1">100+</h3>
-                <p class="fs-18 mb-0">Neatly coded pages</p>
-              </div>
-              <!--/column -->
-            </div>
-            <!--/.row -->
-          </div>
-          <!-- /column -->
-        </div>
-        <!-- /.row -->
-        <div class="row gx-lg-0 gy-10 align-items-center mb-16 mb-md-18">
-          <div class="col-lg-7 position-relative">
-            <div class="position-absolute" style="top: 50%; left: 50%; width: 140%; height: auto; transform: translate(-50%,-50%); z-index:0"><img class="w-100" src="./assets/img/photos/blurry.png" alt=""></div>
-            <figure class="position-relative" style="z-index: 2;"><img src="./assets/img/photos/mi1.png" srcset="./assets/img/photos/mi1@2x.png 2x" alt="" /></figure>
-          </div>
-          <!--/column -->
-          <div class="col-lg-4 ms-auto">
-            <div class="d-flex flex-row mb-6">
-              <div>
-                <div class="svg-bg bg-white rounded-xl shadow-xl me-5"> <img src="./assets/img/icons/solid/puzzle.svg" class="svg-inject icon-svg solid-duo text-grape-fuchsia" alt="" /> </div>
-              </div>
-              <div>
-                <h4 class="mb-1">Color and Font Options</h4>
-                <p class="mb-0">Easily customize colors and fonts, or choose from provided options.</p>
-              </div>
-            </div>
-            <div class="d-flex flex-row mb-6">
-              <div>
-                <div class="svg-bg bg-white rounded-xl shadow-xl me-5"> <img src="./assets/img/icons/solid/pen-tool.svg" class="svg-inject icon-svg solid-duo text-grape-fuchsia" alt="" /> </div>
-              </div>
-              <div>
-                <h4 class="mb-1">Cool Features & Elements</h4>
-                <p class="mb-0">Equipped with stunning features and elements for designing appealing pages.</p>
-              </div>
-            </div>
-            <div class="d-flex flex-row">
-              <div>
-                <div class="svg-bg bg-white rounded-xl shadow-xl me-5"> <img src="./assets/img/icons/solid/share.svg" class="svg-inject icon-svg solid-duo text-grape-fuchsia" alt="" /> </div>
-              </div>
-              <div>
-                <h4 class="mb-1">Modern Portfolio Layouts</h4>
-                <p class="mb-0">Effortlessly create and maintain a visually stunning and impactful portfolio.</p>
-              </div>
-            </div>
-          </div>
-          <!--/column -->
-        </div>
-        <!--/.row -->
-        <div class="row gx-lg-0 gy-10 align-items-center">
-          <div class="col-lg-7 position-relative order-lg-2">
-            <div class="position-absolute" style="top: 50%; left: 50%; width: 140%; height: auto; transform: translate(-50%,-50%); z-index:0"><img class="w-100" src="./assets/img/photos/blurry.png" alt=""></div>
-            <figure class="position-relative" style="z-index: 2;"><img src="./assets/img/photos/mi2.png" srcset="./assets/img/photos/mi2@2x.png 2x" alt="" /></figure>
-          </div>
-          <!--/column -->
-          <div class="col-lg-4 me-auto">
-            <div class="d-flex flex-row mb-6">
-              <div>
-                <div class="svg-bg bg-white rounded-xl shadow-xl me-5"> <img src="./assets/img/icons/solid/devices.svg" class="svg-inject icon-svg solid-duo text-grape-fuchsia" alt="" /> </div>
-              </div>
-              <div>
-                <h4 class="mb-1">Well-Written Code</h4>
-                <p class="mb-0">Pixel-perfect and easily editable code with comprehensive comments.</p>
-              </div>
-            </div>
-            <div class="d-flex flex-row mb-6">
-              <div>
-                <div class="svg-bg bg-white rounded-xl shadow-xl me-5"> <img src="./assets/img/icons/solid/safe.svg" class="svg-inject icon-svg solid-duo text-grape-fuchsia" alt="" /> </div>
-              </div>
-              <div>
-                <h4 class="mb-1">Gorgeous Shop Layouts</h4>
-                <p class="mb-0">Present your products to your visitors in an efficient and visually appealing manner.</p>
-              </div>
-            </div>
-            <div class="d-flex flex-row">
-              <div>
-                <div class="svg-bg bg-white rounded-xl shadow-xl me-5"> <img src="./assets/img/icons/solid/globe-2.svg" class="svg-inject icon-svg solid-duo text-grape-fuchsia" alt="" /> </div>
-              </div>
-              <div>
-                <h4 class="mb-1">Fully Responsive Layouts</h4>
-                <p class="mb-0">Adjusts to varying screen sizes, ensuring seamless compatibility across all devices.</p>
-              </div>
-            </div>
-          </div>
-          <!--/column -->
-        </div>
-        <!--/.row -->
-        <div class="row mb-8 text-center mt-17 mt-md-19 mb-9 mb-md-11">
-          <div class="col-md-11 col-lg-10 col-xl-8 col-xxl-7 mx-auto">
-            <h2 class="display-2 mb-0 px-lg-10 px-xl-0">Build your website using the powerful features of Sandbox</h2>
-          </div>
-          <!-- /column -->
-        </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.container -->
-      <div class="container-fluid px-xl-0 pb-16 pb-md-18">
-        <div class="swiper-container swiper-auto" data-margin="40" data-nav="false" data-centered="true" data-loop="true" data-items-auto="true">
-          <div class="swiper overflow-visible">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <figure class="rounded-xl shadow-xl"><img src="./assets/img/photos/bp1.jpg" srcset="./assets/img/photos/bp1@2x.jpg 2x" alt="" /></figure>
-              </div>
-              <!--/.swiper-slide -->
-              <div class="swiper-slide">
-                <figure class="rounded-xl shadow-xl"><img src="./assets/img/photos/bp2.jpg" srcset="./assets/img/photos/bp2@2x.jpg 2x" alt="" /></figure>
-              </div>
-              <!--/.swiper-slide -->
-              <div class="swiper-slide">
-                <figure class="rounded-xl shadow-xl"><img src="./assets/img/photos/bp3.jpg" srcset="./assets/img/photos/bp3@2x.jpg 2x" alt="" /></figure>
-              </div>
-              <!--/.swiper-slide -->
-              <div class="swiper-slide">
-                <figure class="rounded-xl shadow-xl"><img src="./assets/img/photos/bp4.jpg" srcset="./assets/img/photos/bp4@2x.jpg 2x" alt="" /></figure>
-              </div>
-              <!--/.swiper-slide -->
-              <div class="swiper-slide">
-                <figure class="rounded-xl shadow-xl"><img src="./assets/img/photos/bp5.jpg" srcset="./assets/img/photos/bp5@2x.jpg 2x" alt="" /></figure>
-              </div>
-              <!--/.swiper-slide -->
-              <div class="swiper-slide">
-                <figure class="rounded-xl shadow-xl"><img src="./assets/img/photos/bp6.jpg" srcset="./assets/img/photos/bp6@2x.jpg 2x" alt="" /></figure>
-              </div>
-              <!--/.swiper-slide -->
-            </div>
-            <!--/.swiper-wrapper -->
-          </div>
-          <!-- /.swiper -->
-        </div>
-        <!-- /.swiper-container -->
-      </div>
-      <!-- /.container -->
-      <div class="container pb-6 pb-md-8">
-        <div class="row row-cols-2 row-cols-md-4 row-cols-lg-5 gx-md-8 gy-10 text-center justify-content-center pb-16 pb-md-18">
-          <div class="col">
-            <img class="mb-4" src="./assets/img/demos/fi1.png" srcset="./assets/img/demos/fi1@2x.png 2x" alt="" />
-            <h4>Built with Sass <br> & Bootstrap 5</h4>
-          </div>
-          <!--/column -->
-          <div class="col">
-            <img class="mb-4" src="./assets/img/demos/fi2.png" srcset="./assets/img/demos/fi2@2x.png 2x" alt="" />
-            <h4>SEO-friendly <br> Coding</h4>
-          </div>
-          <!--/column -->
-          <div class="col">
-            <img class="mb-4" src="./assets/img/demos/fi3.png" srcset="./assets/img/demos/fi3@2x.png 2x" alt="" />
-            <h4>Valid W3C <br> HTML5 & CSS3</h4>
-          </div>
-          <!--/column -->
-          <div class="col">
-            <img class="mb-4" src="./assets/img/demos/fi4.png" srcset="./assets/img/demos/fi4@2x.png 2x" alt="" />
-            <h4>Retina-ready <br> Graphics</h4>
-          </div>
-          <!--/column -->
-          <div class="col">
-            <img class="mb-4" src="./assets/img/demos/fi5.png" srcset="./assets/img/demos/fi5@2x.png 2x" alt="" />
-            <h4>One-page <br> Layout Option</h4>
-          </div>
-          <!--/column -->
-          <div class="col">
-            <img class="mb-4" src="./assets/img/demos/fi6.png" srcset="./assets/img/demos/fi6@2x.png 2x" alt="" />
-            <h4>Isotope <br> Filterable Gallery</h4>
-          </div>
-          <!--/column -->
-          <div class="col">
-            <img class="mb-4" src="./assets/img/demos/fi7.png" srcset="./assets/img/demos/fi7@2x.png 2x" alt="" />
-            <h4>Mailchimp <br> Compatible </h4>
-          </div>
-          <!--/column -->
-          <div class="col">
-            <img class="mb-4" src="./assets/img/demos/fi8.png" srcset="./assets/img/demos/fi8@2x.png 2x" alt="" />
-            <h4>Contact Form <br> w/o Page Refresh</h4>
-          </div>
-          <!--/column -->
-          <div class="col">
-            <img class="mb-4" src="./assets/img/demos/fi9.png" srcset="./assets/img/demos/fi9@2x.png 2x" alt="" />
-            <h4>Animations <br> on Page Scroll</h4>
-          </div>
-          <!--/column -->
-          <div class="col">
-            <img class="mb-4" src="./assets/img/demos/fi10.png" srcset="./assets/img/demos/fi10@2x.png 2x" alt="" />
-            <h4>Top-Notch Support <br> & Free Updates</h4>
-          </div>
-          <!--/column -->
-        </div>
-        <!--/.row -->
+    <section class="wrapper">
+      <div class="container pt-10 pt-md-14 pb-8 text-center">
         <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
-          <div class="col-lg-7 position-relative">
-            <div class="position-absolute" style="top: 50%; left: 50%; width: 130%; height: auto; transform: translate(-50%,-50%); z-index:0"><img class="w-100" src="./assets/img/photos/blurry.png" alt=""></div>
-            <div class="row gx-md-5 gy-5">
-              <div class="col-md-6 col-xl-5 align-self-end">
-                <div class="card shadow-xl rounded-xl">
-                  <div class="card-body">
-                    <blockquote class="icon mb-0">
-                      <p>“Sandbox is really attractive and it saves my time. The support team is really amazing.”</p>
-                      <div class="blockquote-details">
-                        <div class="info p-0">
-                          <h5 class="mb-0">stevenstrange</h5>
-                        </div>
-                      </div>
-                    </blockquote>
-                  </div>
-                  <!--/.card-body -->
-                </div>
-                <!--/.card -->
-              </div>
-              <!--/column -->
-              <div class="col-md-6 align-self-end">
-                <div class="card shadow-xl rounded-xl">
-                  <div class="card-body">
-                    <blockquote class="icon mb-0">
-                      <p>“This is just next level stuff in terms of quality, docs and features. I don't think I'm going to need or tolerate any other template from now on.”</p>
-                      <div class="blockquote-details">
-                        <div class="info p-0">
-                          <h5 class="mb-0">70656e6973</h5>
-                        </div>
-                      </div>
-                    </blockquote>
-                  </div>
-                  <!--/.card-body -->
-                </div>
-                <!--/.card -->
-              </div>
-              <!--/column -->
-              <div class="col-md-6 col-xl-5 offset-xl-1">
-                <div class="card shadow-xl rounded-xl">
-                  <div class="card-body">
-                    <blockquote class="icon mb-0">
-                      <p>“I've been a Themeforest user for almost 10 years and I have purchased well over 100 themes during my time. This theme is amongst the best here.”</p>
-                      <div class="blockquote-details">
-                        <div class="info p-0">
-                          <h5 class="mb-0">bmwe92m3</h5>
-                        </div>
-                      </div>
-                    </blockquote>
-                  </div>
-                  <!--/.card-body -->
-                </div>
-                <!--/.card -->
-              </div>
-              <!--/column -->
-              <div class="col-md-6 align-self-start">
-                <div class="card shadow-xl rounded-xl">
-                  <div class="card-body">
-                    <blockquote class="icon mb-0">
-                      <p>“Simply the best templates that I have bought so far. Super clean code, intuitive documentations, and most important of all the best design.”</p>
-                      <div class="blockquote-details">
-                        <div class="info p-0">
-                          <h5 class="mb-0">oziuji</h5>
-                        </div>
-                      </div>
-                    </blockquote>
-                  </div>
-                  <!--/.card-body -->
-                </div>
-                <!--/.card -->
-              </div>
-              <!--/column -->
-            </div>
-            <!--/.row -->
-          </div>
-          <!--/column -->
-          <div class="col-lg-4">
-            <h2 class="display-2 mb-4 mt-lg-n6">Our top priority is ensuring customer satisfaction.</h2>
-            <p class="lead fs-22 mb-6">Don't take our word for it. Hear from customers about Sandbox.</p>
-            <a href="https://1.envato.market/Rygn0y" class="btn btn-lg btn-primary btn-icon btn-icon-end rounded-xl" target="_blank">All Reviews <i class="uil uil-arrow-up-right"></i></a>
-          </div>
-          <!--/column -->
-        </div>
-        <!--/.row -->
-      </div>
-      <!--/.container -->
-    </section>
-    <!-- /section -->
-    <section class="wrapper overflow-hidden">
-      <div class="container pt-16 pt-md-18 text-center position-relative">
-        <div class="position-absolute" style="top: -7%; left: 50%; transform: translateX(-50%);"><img src="./assets/img/photos/blurry.png" alt=""></div>
-        <div class="row position-relative mb-9 mb-md-11">
-          <div class="col-lg-10 col-xl-9 col-xxl-7 mx-auto">
+          <div class="col-lg-7">
             <div>
-              <img src="./assets/img/demos/icon-grape.png" srcset="./assets/img/demos/icon-grape@2x.png 2x" alt="" />
-              <h1 class="display-1 fs-64 mt-5 mb-5">Think unique and make a difference with Sandbox.</h1>
-              <p class="lead fs-24 mb-8 px-lg-12 px-xl-14 px-xxl-10">We are trusted by thousands of clients. Join them now and easily create your stunning website in no time.</p>
+              <!-- START xamin6 REVOLUTION SLIDER 6.1.0 -->
+              <!-- <p class="rs-p-wp-fix"></p>
+              <rs-module-wrap id="rev_slider_6_1_wrapper" data-alias="xamin6" data-source="gallery"
+                style="background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
+                <rs-module id="rev_slider_6_1" class=" rs-ov-hidden" style="display:none;" data-version="6.1.0">
+                  <rs-slides>
+                    <rs-slide data-key="rs-2" data-title="Slide"
+                      data-anim="ei:d,d,d,d,d,d,d,d,d;eo:d,d,d,d,d,d,d,d,d;s:1000ms,d,d,d,d,d,d,d,d;r:0,0,0,0,0,0,0,0,0;t:fade,grayscale,blurlight,blurstrong,fade,crossfade,fadethroughlight,fadethroughdark,fadethroughtransparent;sl:d,d,d,d,d,d,d,d,d;"
+                      data-firstanim="t:fade;sl:12;">
+                      <img src="./assets/revslider/assets/dummy.png" data-bg="f:100% 100%;" data-parallax="2"
+                        class="rev-slidebg" data-no-retina>
+                      <rs-layer id="slider-2-slide-2-layer-5" data-type="text" data-color="#313e5b" data-rsp_ch="on"
+                        data-xy="xo:594px,433px,326px,203px;y:m;yo:-50px,12px,19px,4px;"
+                        data-text="w:normal;s:16,11,8,16;l:25,18,13,20;fw:700;a:center;"
+                        data-dim="w:45px,32px,23px,30px;h:45px,32px,23px,30px;" data-padding="t:10,7,5,3;b:10,7,5,3;"
+                        data-border="bos:solid;boc:#d4d4d4;bow:1px,1px,1px,1px;bor:90px,90px,90px,90px;"
+                        data-frame_0="sX:0.8;sY:0.8;" data-frame_1="e:Power4.easeOut;st:2000;sp:1000;sR:2000;"
+                        data-frame_999="o:0;st:w;sR:6000;"
+                        style="z-index:20;background-color:#ffffff;font-family:Lato;">2</rs-layer>
+                      <rs-layer id="slider-2-slide-2-layer-6" data-type="text" data-color="#313e5b" data-rsp_ch="on"
+                        data-xy="xo:591px,434px,325px,202px;y:m;yo:-250px,-125px,-79px,-89px;"
+                        data-text="w:normal;s:16,11,8,16;l:25,18,13,20;fw:700;a:center;"
+                        data-dim="w:45px,32px,23px,30px;h:45px,32px,23px,30px;" data-padding="t:10,7,5,3;b:10,7,5,3;"
+                        data-border="bos:solid;boc:#d4d4d4;bow:1px,1px,1px,1px;bor:90px,90px,90px,90px;"
+                        data-frame_0="sX:0.8;sY:0.8;" data-frame_1="e:Power4.easeOut;st:2000;sp:1000;sR:2000;"
+                        data-frame_999="o:0;st:w;sR:6000;"
+                        style="z-index:19;background-color:#ffffff;font-family:Lato;">3</rs-layer>
+                      <rs-layer id="slider-2-slide-2-layer-7" data-type="text" data-color="#313e5b" data-rsp_ch="on"
+                        data-xy="xo:593px,434px,326px,201px;y:m;yo:150px,162px,132px,99px;"
+                        data-text="w:normal;s:16,11,8,16;l:25,18,13,20;fw:700;a:center;"
+                        data-dim="w:45px,32px,23px,30px;h:45px,32px,23px,30px;" data-padding="t:10,7,5,3;b:10,7,5,3;"
+                        data-border="bos:solid;boc:#d4d4d4;bow:1px,1px,1px,1px;bor:90px,90px,90px,90px;"
+                        data-frame_0="x:0,0,0,0px;y:0,0,0,0px;sX:0.8;sY:0.8;"
+                        data-frame_1="x:0,0,0,0px;y:0,0,0,0px;e:Power4.easeOut;st:2000;sp:1000;sR:2000;"
+                        data-frame_999="o:0;st:w;sR:6000;"
+                        style="z-index:17;background-color:#ffffff;font-family:Lato;">1</rs-layer>
+                      <rs-layer id="slider-2-slide-2-layer-8" data-type="text" data-color="#566384" data-rsp_ch="on"
+                        data-xy="x:r;xo:-50px,13px,10px,6px;y:b;yo:125px,92px,52px,32px;"
+                        data-text="w:normal;s:16,16,16,9;l:25,18,13,8;fw:700;a:right;" data-frame_0="sX:0.8;sY:0.8;"
+                        data-frame_1="e:Power4.easeOut;st:2000;sp:1000;sR:2000;" data-frame_999="o:0;st:w;sR:6000;"
+                        style="z-index:22;font-family:Lato;">Low</rs-layer>
+                      <rs-layer id="slider-2-slide-2-layer-9" data-type="text" data-color="#566384" data-rsp_ch="on"
+                        data-xy="x:r;xo:-50px,13px,9px,5px;yo:90px,74px,55px,34px;"
+                        data-text="w:normal;s:16,16,16,9;l:25,18,13,8;fw:700;" data-frame_0="sX:0.8;sY:0.8;"
+                        data-frame_1="e:Power4.easeOut;st:2000;sp:1000;sR:2000;" data-frame_999="o:0;st:w;sR:6000;"
+                        style="z-index:23;font-family:Lato;">High</rs-layer>
+                      <rs-layer id="slider-2-slide-2-layer-18" data-type="shape" data-rsp_ch="on"
+                        data-xy="xo:616px,447px,334px,214px;yo:600px,511px,382px,299px;"
+                        data-text="w:normal;s:20,14,10,6;l:0,18,13,8;"
+                        data-dim="w:200px,146px,109px,68px;h:2px,2px,1px,1px;" data-frame_0="x:-50,-36,-26,-16;"
+                        data-frame_1="st:2200;sp:1000;sR:2200;" data-frame_999="o:0;st:w;sR:5800;"
+                        style="z-index:15;background-color:#4c5871;font-family:Roboto;"></rs-layer>
+                      <rs-layer id="slider-2-slide-2-layer-19" data-type="shape" data-rsp_ch="on"
+                        data-xy="xo:611px,443px,331px,215px;yo:404px,363px,271px,205px;"
+                        data-text="w:normal;s:20,14,10,6;l:0,18,13,8;"
+                        data-dim="w:450px,329px,246px,153px;h:2px,1px,1px,1px;" data-frame_0="x:-50,-36,-26,-16;"
+                        data-frame_1="st:2400;sp:1000;sR:2400;" data-frame_999="o:0;st:w;sR:5600;"
+                        style="z-index:18;background-color:#adb2bd;font-family:Roboto;"></rs-layer>
+                      <rs-layer id="slider-2-slide-2-layer-20" data-type="shape" data-rsp_ch="on"
+                        data-xy="xo:614px,447px,334px,227px;yo:202px,227px,170px,113px;"
+                        data-text="w:normal;s:20,14,10,6;l:0,18,13,8;"
+                        data-dim="w:631px,461px,345px,215px;h:2px,1px,1px,1px;" data-frame_0="x:-50,-36,-26,-16;"
+                        data-frame_1="st:2550;sp:1000;sR:2550;" data-frame_999="o:0;st:w;sR:5450;"
+                        style="z-index:16;background-color:#687187;font-family:Roboto;"></rs-layer>
+                      <rs-layer id="slider-2-slide-2-layer-21" class="rs-pxl-1" data-type="image" data-rsp_ch="on"
+                        data-xy="xo:783px,561px,420px,272px;yo:507px,422px,316px,251px;"
+                        data-text="w:normal;s:20,14,10,6;l:0,18,13,8;"
+                        data-dim="w:219px,160px,119px,90px;h:220px,160px,119px,90px;" data-frame_0="x:-50,-36,-26,-16;"
+                        data-frame_1="st:2300;sp:1000;sR:2300;" data-frame_999="o:0;st:w;sR:5700;"
+                        data-loop_999="rZ:360;sp:20000;" style="z-index:29;font-family:Roboto;"><img
+                          src="./assets/revslider/assets/dummy.png" width="219" height="220"
+                          data-lazyload="./assets/revslider/assets/demo6_revolution_04.png" data-no-retina></rs-layer>
+                      <rs-layer id="slider-2-slide-2-layer-22" class="rs-pxl-1" data-type="text" data-color="#313e5b"
+                        data-rsp_ch="on" data-xy="xo:837px,604px,441px,284px;yo:586px,479px,361px,285px;"
+                        data-text="w:normal;s:24,17,16,14;l:25,18,13,8;fw:900;" data-frame_0="sX:0.8;sY:0.8;"
+                        data-frame_1="e:Power4.easeOut;st:2300;sp:1000;sR:2300;" data-frame_999="o:0;st:w;sR:5700;"
+                        style="z-index:30;font-family:Lato;">650 - 699</rs-layer>
+                      <rs-layer id="slider-2-slide-2-layer-23" class="rs-pxl-1" data-type="text" data-color="#313e5b"
+                        data-rsp_ch="on" data-xy="xo:874px,628px,459px,304px;yo:621px,501px,382px,299px;"
+                        data-text="w:normal;s:16,11,14,12;l:25,18,13,8;fw:700;" data-frame_0="sX:0.8;sY:0.8;"
+                        data-frame_1="e:Power4.easeOut;st:2300;sp:1000;sR:2300;" data-frame_999="o:0;st:w;sR:5700;"
+                        style="z-index:31;font-family:Lato;">Fair</rs-layer>
+                      <rs-layer id="slider-2-slide-2-layer-24" class="rs-pxl-2" data-type="image" data-rsp_ch="on"
+                        data-xy="xo:968px,677px,507px,315px;yo:287px,280px,209px,161px;"
+                        data-text="w:normal;s:20,14,10,6;l:0,18,13,8;"
+                        data-dim="w:238px,174px,130px,87px;h:238px,174px,130px,87px;" data-frame_0="x:-50,-36,-26,-16;"
+                        data-frame_1="st:2400;sp:1000;sR:2400;" data-frame_999="o:0;st:w;sR:5600;" data-tloop="u:true;"
+                        data-loop_999="rZ:360;sp:20000;" style="z-index:32;font-family:Roboto;"><img
+                          src="./assets/revslider/assets/dummy.png" width="50" height="50"
+                          data-lazyload="./assets/revslider/assets/demo6_revolution_05.png" data-no-retina></rs-layer>
+                      <rs-layer id="slider-2-slide-2-layer-25" class="rs-pxl-2" data-type="text" data-color="#313e5b"
+                        data-rsp_ch="on" data-xy="xo:1046px,732px,540px,331px;yo:377px,353px,261px,197px;"
+                        data-text="w:normal;s:24,17,16,14;l:25,18,13,8;fw:900;" data-frame_0="sX:0.8;sY:0.8;"
+                        data-frame_1="e:Power4.easeOut;st:2400;sp:1000;sR:2400;" data-frame_999="o:0;st:w;sR:5600;"
+                        style="z-index:33;font-family:Lato;">700 - 749</rs-layer>
+                      <rs-layer id="slider-2-slide-2-layer-26" class="rs-pxl-2" data-type="text" data-color="#313e5b"
+                        data-rsp_ch="on" data-xy="xo:1070px,750px,557px,345px;yo:412px,377px,280px,213px;"
+                        data-text="w:normal;s:16,11,14,12;l:25,18,13,8;fw:700;" data-frame_0="sX:0.8;sY:0.8;"
+                        data-frame_1="e:Power4.easeOut;st:2400;sp:1000;sR:2400;" data-frame_999="o:0;st:w;sR:5600;"
+                        style="z-index:34;font-family:Lato;">Good</rs-layer>
+                      <rs-layer id="slider-2-slide-2-layer-27" class="rs-pxl-3" data-type="image" data-rsp_ch="on"
+                        data-xy="xo:1135px,796px,596px,346px;yo:70px,129px,96px,55px;"
+                        data-text="w:normal;s:20,14,10,6;l:0,18,13,8;"
+                        data-dim="w:251px,183px,137px,109px;h:251px,183px,137px,109px;"
+                        data-frame_0="x:-50,-36,-26,-16;" data-frame_1="st:2550;sp:1000;sR:2550;"
+                        data-frame_999="o:0;st:w;sR:5450;" data-loop_999="rZ:360deg;sp:20000;"
+                        style="z-index:35;font-family:Roboto;"><img src="./assets/revslider/assets/dummy.png"
+                          width="251" height="251" data-lazyload="./assets/revslider/assets/demo6_revolution_06.png"
+                          data-no-retina></rs-layer>
+                      <rs-layer id="slider-2-slide-2-layer-28" class="rs-pxl-3" data-type="text" data-color="#313e5b"
+                        data-rsp_ch="on" data-xy="xo:1207px,851px,627px,368px;yo:176px,200px,147px,102px;"
+                        data-text="w:normal;s:24,17,16,14;l:25,18,13,8;fw:900;" data-frame_0="sX:0.8;sY:0.8;"
+                        data-frame_1="e:Power4.easeOut;st:2550;sp:1000;sR:2550;" data-frame_999="o:0;st:w;sR:5450;"
+                        style="z-index:36;font-family:Lato;">750 - 850</rs-layer>
+                      <rs-layer id="slider-2-slide-2-layer-29" class="rs-pxl-3" data-type="text" data-color="#313e5b"
+                        data-rsp_ch="on" data-xy="xo:1224px,857px,624px,367px;yo:206px,220px,170px,121px;"
+                        data-text="w:normal;s:16,11,14,12;l:25,18,13,8;fw:700;" data-dim="h:auto,auto,auto,12px;"
+                        data-frame_0="sX:0.8;sY:0.8;" data-frame_1="e:Power4.easeOut;st:2550;sp:1000;sR:2550;"
+                        data-frame_999="o:0;st:w;sR:5450;" style="z-index:37;font-family:Lato;">Excellent</rs-layer>
+                      <rs-layer id="slider-2-slide-2-layer-33" data-type="image" data-rsp_ch="on"
+                        data-xy="x:r;xo:-141px,-103px,-78px,-158px;y:b;yo:100px,73px,33px,23px;"
+                        data-text="w:normal;s:20,14,10,6;l:0,18,13,8;"
+                        data-dim="w:930px,680px,509px,422px;h:783px,572px,428px,355px;"
+                        data-frame_1="e:Power4.easeInOut;st:1800;sp:1000;sR:1800;" data-frame_999="o:0;st:w;sR:6200;"
+                        style="z-index:12;font-family:Roboto;"><img src="./assets/revslider/assets/dummy.png"
+                          width="966" height="813" data-lazyload="./assets/revslider/assets/demo6_revolution_02.png"
+                          data-no-retina></rs-layer>
+                      <rs-layer id="slider-2-slide-2-layer-34" data-type="image" data-rsp_ch="on"
+                        data-xy="x:r;xo:0,-3px,-6px,-82px;y:b;yo:95px,73px,29px,22px;"
+                        data-text="w:normal;s:20,14,10,6;l:0,18,13,8;"
+                        data-dim="w:787px,575px,436px,345px;h:798px,583px,442px,350px;"
+                        data-frame_1="e:Power4.easeInOut;st:1800;sp:1000;sR:1800;" data-frame_999="o:0;st:w;sR:6200;"
+                        data-loop_0="x:-3px;" data-loop_999="x:3px;sp:3000;e:Sine.easeInOut;yym:t;"
+                        style="z-index:13;font-family:Roboto;"><img src="./assets/revslider/assets/dummy.png"
+                          width="791" height="802" data-lazyload="./assets/revslider/assets/demo6_revolution_01.png"
+                          data-no-retina></rs-layer>
+                      <rs-layer id="slider-2-slide-2-layer-35" data-type="text" data-color="#313e5b" data-rsp_ch="on"
+                        data-xy="xo:596px,435px,327px,204px;y:m;yo:343px,274px,213px,170px;"
+                        data-text="w:normal;s:16,11,8,16;l:25,18,13,20;fw:700;a:center;"
+                        data-dim="w:45px,32px,23px,30px;h:45px,32px,23px,30px;" data-padding="t:10,7,5,3;b:10,7,5,3;"
+                        data-border="bos:solid;boc:#d4d4d4;bow:1px,1px,1px,1px;bor:90px,90px,90px,90px;"
+                        data-frame_0="sX:0.8;sY:0.8;" data-frame_1="e:Power4.easeOut;st:2000;sp:1000;sR:2000;"
+                        data-frame_999="o:0;st:w;sR:6000;"
+                        style="z-index:14;background-color:#ffffff;font-family:Lato;">0</rs-layer>
+                    </rs-slide>
+                  </rs-slides>
+                </rs-module>
+              </rs-module-wrap> -->
+              <!-- END REVOLUTION SLIDER -->
+              <div class="xamin-feature-circle wow zoomIn">
+                <div class="xamin-img">
+                  <ul class="list-inline mb-0">
+                    <li class="list-inline-item">
+                      <div class="feature-info">
+                        <div class="feature-img">
+                          <img src="./assets/img/icons/lineal/calculator.svg"
+                            class="svg-inject icon-svg icon-svg-md text-dark-green" alt="Analytics">
+                        </div>
+                        <h6>Credit Scoring</h6>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="feature-info">
+                        <div class="feature-img">
+                          <img src="./assets/img/icons/lineal/profits.svg"
+                            class="svg-inject icon-svg icon-svg-md text-dark-green" alt="Target">
+                        </div>
+                        <h6>AI Credit Score Upgrade Advisor</h6>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="feature-info">
+                        <div class="feature-img">
+                          <img src="./assets/img/icons/lineal/analytics.svg"
+                            class="svg-inject icon-svg icon-svg-md text-dark-green" alt="Strategy">
+                        </div>
+                        <h6>xAI-AI Credit Score Explaination</h6>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="feature-info">
+                        <div class="feature-img">
+                          <img src="./assets/img/icons/lineal/shield.svg"
+                            class="svg-inject icon-svg icon-svg-md text-dark-green" alt="Performance">
+                        </div>
+                        <h6>AI Risk Predictor</h6>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="feature-info">
+                        <div class="feature-img">
+                          <img src="./assets/img/icons/lineal/statistics.svg"
+                            class="svg-inject icon-svg icon-svg-md text-dark-green" alt="Customers">
+                        </div>
+                        <h6>Early Fraud Detection</h6>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="feature-info">
+                        <div class="feature-img">
+                          <img src="./assets/img/icons/lineal/refresh.svg"
+                            class="svg-inject icon-svg icon-svg-md text-dark-green" alt="Insights">
+                        </div>
+                        <h6>MLOps-Continuous model monitoring and update</h6>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="feature-info">
+                        <div class="feature-img">
+                          <img src="./assets/img/icons/lineal/home.svg"
+                            class="svg-inject icon-svg icon-svg-md text-dark-green" alt="Trends">
+                        </div>
+                        <h6>Ad-Housing</h6>
+                      </div>
+                    </li>
+                    <li class="list-inline-item">
+                      <div class="feature-info">
+                        <div class="feature-img">
+                          <img src="./assets/img/icons/lineal/smartphone-3.svg"
+                            class="svg-inject icon-svg icon-svg-md text-dark-green" alt="Validation">
+                        </div>
+                        <h6>Smart eKYC</h6>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="dot-circle">
+                    <div class="effect-circle"></div>
+                  </div>
+                  <div class="main-circle">
+                    <div class="circle-bg">
+                      <img src="./assets/img/Logo TFA - Final-08.png" alt="TFA AI">
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="d-flex justify-content-center">
-              <span><a href="https://1.envato.market/NKGrx2" class="btn btn-lg btn-primary btn-icon btn-icon-end rounded-xl" target="_blank">Buy Sandbox <i class="uil uil-arrow-up-right"></i></a></span>
-            </div>
-            <!-- /div -->
+          </div>
+          <!-- /column -->
+          <div class="col-md-10 offset-md-1 offset-lg-0 col-lg-5 text-center text-lg-start">
+            <h1 class="display-1 mb-5 mx-md-n5 mx-lg-0 hero-title">True & Fair. Always</h1>
+            <p class="lead fs-lg mb-7">TFA is an AI company that applies AI and machine learning to perform scoring
+              based on alternative data.
+              We redefine the world with alternative data</p>
+            <a href="./services.html" class="cta-button">Explore Services</a>
           </div>
           <!-- /column -->
         </div>
         <!-- /.row -->
       </div>
       <!-- /.container -->
-      <div class="container text-center">
-        <img class="img-fluid position-relative" style="z-index: 2;" src="./assets/img/demos/f1.png" srcset="./assets/img/demos/f1@2x.png 2x" alt="" />
-      </div>
     </section>
+    <section class="wrapper">
+      <div class="container pt-14 pt-md-17">
+        <div class="row text-center">
+          <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+            <h2 class="fs-16 text-uppercase text-muted mb-3">Our Features</h2>
+            <h3 class="display-4 mb-10 px-xl-11 section-title">The service we offer is specifically designed to meet
+              your
+              needs.</h3>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+        <div class="row gy-8 mb-17">
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex flex-row">
+              <div>
+                <img src="./assets/img/icons/solid/bar-chart.svg"
+                  class="svg-inject icon-svg icon-svg-sm solid-duo text-dark-green-lime-green me-4" alt="" />
+              </div>
+              <div>
+                <h3 class="fs-22 mb-1">Alternative Data Scoring Engine</h3>
+                <p class="mb-0">A scoring system based on alternative data sources (telco, e-commerce, e-wallets, bills,
+                  user behavior) – expanding credit assessment capabilities for thin-file and no-file users.</p>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex flex-row">
+              <div>
+                <img src="./assets/img/icons/solid/gears.svg"
+                  class="svg-inject icon-svg icon-svg-sm solid-duo text-dark-green-lime-green me-4" alt="" />
+              </div>
+              <div>
+                <h3 class="fs-22 mb-1">AI-driven Feature Engineering</h3>
+                <p class="mb-0">TFA uses machine learning to extract risk-related features from unstructured data
+                  (emails, spending behavior, payment logs…) → generating high-predictive risk signals.</p>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex flex-row">
+              <div>
+                <img src="./assets/img/icons/solid/rocket.svg"
+                  class="svg-inject icon-svg icon-svg-sm solid-duo text-dark-green-lime-green me-4" alt="" />
+              </div>
+              <div>
+                <h3 class="fs-22 mb-1">Real-time Decisioning</h3>
+                <p class="mb-0">Infrastructure architecture enables data processing and scoring in under 200ms, ensuring
+                  real-time responsiveness for BNPL, consumer finance, and telco lending systems.</p>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex flex-row">
+              <div>
+                <img src="./assets/img/icons/solid/bulb.svg"
+                  class="svg-inject icon-svg icon-svg-sm solid-duo text-dark-green-lime-green me-4" alt="" />
+              </div>
+              <div>
+                <h3 class="fs-22 mb-1">Explainable AI (XAI)</h3>
+                <p class="mb-0">Each score comes with detailed explanations and recommendations to help users understand
+                  the reasoning and improve their financial behavior.
+                  TFA complies with transparency and fairness standards (Fair & Transparent AI) required by Japanese
+                  financial institutions.</p>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex flex-row">
+              <div>
+                <img src="./assets/img/icons/solid/rotary.svg"
+                  class="svg-inject icon-svg icon-svg-sm solid-duo text-dark-green-lime-green me-4" alt="" />
+              </div>
+              <div>
+                <h3 class="fs-22 mb-1">Continuous Learning & Model Governance</h3>
+                <p class="mb-0">Models are continuously retrained based on real-world data, accurately reflecting
+                  emerging market behaviors.
+                  Governance processes ensure control over bias, drift, and compliance with legal regulations.</p>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex flex-row">
+              <div>
+                <img src="./assets/img/icons/solid/cloud-network.svg"
+                  class="svg-inject icon-svg icon-svg-sm solid-duo text-dark-green-lime-green me-4" alt="" />
+              </div>
+              <div>
+                <h3 class="fs-22 mb-1">API-first Integration & Scalability</h3>
+                <p class="mb-0">TFA is designed with an API-first philosophy, making it easy to integrate with
+                  merchants, banks, telcos, and existing financial systems.
+                  Cloud-native, scalable infrastructure allows flexible expansion to handle millions of applications per
+                  day.</p>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <section class="wrapper">
+      <div class="container pt-14 pt-md-16">
+        <div class="row text-center">
+          <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+            <h2 class="fs-16 text-uppercase text-muted mb-3">Alternative Data</h2>
+            <h3 class="display-4 mb-3 px-xl-10 section-title">
+              Importance of Alternative Data for Thin-file Users
+            </h3>
+            <h2 class="lead fs-lg text-muted px-md-10 px-lg-15 px-xl-18 mb-10">Thin-file users are almost in the "blind
+              spot of credit information" within CIC or JICC. By
+              utilizing alternative data, it becomes possible to evaluate real-life payments and consumer
+              behavior, enabling fairer credit scoring.</h2>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+        <div class="position-relative">
+          <div class="shape rounded-circle bg-soft-blue rellax w-16 h-16" data-rellax-speed="1"
+            style="bottom: -0.5rem; right: -2.2rem; z-index: 0;"></div>
+          <div class="shape bg-dot primary rellax w-16 h-17" data-rellax-speed="1"
+            style="top: -0.5rem; left: -2.5rem; z-index: 0;"></div>
+          <div class="row gx-md-5 gy-5 text-center">
+            <div class="col-md-6 col-xl-4">
+              <div class="card shadow-lg">
+                <div class="card-body">
+                  <img src="./assets/img/icons/solid/bulb.svg"
+                    class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green mb-3" alt="" />
+                  <h4>Utility Bill Payment History</h4>
+                  <p class="mb-2">Electricity, Water, Gas</p>
+                </div>
+                <!--/.card-body -->
+              </div>
+              <!--/.card -->
+            </div>
+            <!--/column -->
+            <div class="col-md-6 col-xl-4">
+              <div class="card shadow-lg">
+                <div class="card-body">
+                  <img src="./assets/img/icons/solid/devices.svg"
+                    class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green mb-3" alt="" />
+                  <h4>Mobile Phone Data Plan Payment</h4>
+                  <p class="mb-2">Postpaid usage, on‑time payments</p>
+                </div>
+                <!--/.card-body -->
+              </div>
+              <!--/.card -->
+            </div>
+            <!--/column -->
+            <div class="col-md-6 col-xl-4">
+              <div class="card shadow-lg">
+                <div class="card-body">
+                  <img src="./assets/img/icons/solid/currency.svg"
+                    class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green mb-3" alt="" />
+                  <h4>E‑wallet Transactions</h4>
+                  <p class="mb-2">PayPay, LinePay, Rakuten Pay, etc</p>
+                </div>
+                <!--/.card-body -->
+              </div>
+              <!--/.card -->
+            </div>
+            <!--/column -->
+            <div class="col-md-6 col-xl-4">
+              <div class="card shadow-lg">
+                <div class="card-body">
+                  <img src="./assets/img/icons/solid/push-cart.svg"
+                    class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green mb-3" alt="" />
+                  <h4>E‑commerce Purchase History</h4>
+                  <p class="mb-2">Frequency, category mix, refund behavior</p>
+                </div>
+                <!--/.card-body -->
+              </div>
+              <!--/.card -->
+            </div>
+            <!--/column -->
+            <div class="col-md-6 col-xl-4">
+              <div class="card shadow-lg">
+                <div class="card-body">
+                  <img src="./assets/img/icons/solid/building.svg"
+                    class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green mb-3" alt="" />
+                  <h4>Rent Payments & Subscriptions</h4>
+                  <p class="mb-2">Netflix, gym memberships, etc</p>
+                </div>
+                <!--/.card-body -->
+              </div>
+              <!--/.card -->
+            </div>
+            <!--/column -->
+          </div>
+          <!--/.row -->
+        </div>
+        <!-- /.position-relative -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <!-- Use Cases Section -->
+    <section class="wrapper">
+      <div class="container py-14 py-md-16">
+        <div class="section-header">
+          <div class="section-badge">Use Cases</div>
+          <h2 class="section-title display-4 mb-3">Real-world Use Cases</h2>
+          <p class="lead fs-lg text-muted px-md-10 px-lg-15 px-xl-18">
+            See how TFA AI Platform solves specific business problems
+          </p>
+        </div>
+
+        <div class="use-cases-grid">
+          <!-- Use Case 1 -->
+          <div class="use-case-card">
+            <div class="use-case-header">
+              <div class="use-case-icon">
+                <img src="./assets/img/icons/solid/globe-2.svg"
+                  class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green mb-3" alt="" />
+              </div>
+              <h3 class="use-case-title">Cross-Border Scoring – New Foreigner in Vietnam</h3>
+            </div>
+            <p style="color: #6c757d;">
+              Raji Kumar, an Indian IT engineer who moved to Japan two months ago, was evaluated by TFA Score using
+              alternative data. His creditworthiness was assessed based on rental and SIM payments, over 400 ride
+              histories, mobile usage, and a verified LinkedIn profile showing 8 years of experience and a reputable
+              job.
+            </p>
+            <div class="use-case-metrics">
+              <div class="metric-box">
+                <div class="metric-value">595</div>
+                <div class="metric-label">TFA Score</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-value">¥350K</div>
+                <div class="metric-label">Approved loan</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Use Case 2 -->
+          <div class="use-case-card">
+            <div class="use-case-header">
+              <div class="use-case-icon">
+                <img src="./assets/img/icons/solid/briefcase.svg"
+                  class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green mb-3" alt="" />
+              </div>
+              <h3 class="use-case-title">Career Transition – Rebuilding Credit</h3>
+            </div>
+            <p style="color: #6c757d;">
+              Naoki Takagi, 35, recently transitioned from an office employee to a small business owner. With an
+              inactive credit history, he was assessed by TFA's alternative data scoring, including six months of
+              healthy financial activity, 100% on-time bill payments, regular savings deposits of ¥50,000, completion of
+              professional training courses, and a stable LinkedIn network.
+            </p>
+            <div class="use-case-metrics">
+              <div class="metric-box">
+                <div class="metric-value">590</div>
+                <div class="metric-label">TFA Score</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-value">¥1M</div>
+                <div class="metric-label">Approved loan</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Use Case 3 -->
+          <div class="use-case-card">
+            <div class="use-case-header">
+              <div class="use-case-icon">
+                <img src="./assets/img/icons/solid/building.svg"
+                  class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green mb-3" alt="" />
+              </div>
+              <h3 class="use-case-title">First-Time Home Buyer – Young Family</h3>
+            </div>
+            <p style="color: #6c757d;">
+              Shou and Miki, both 28, are a young couple renting an apartment and planning to buy their first home.
+              Evaluated by TFA Score using alternative data, their financial stability was assessed through regular
+              monthly savings of ¥200,000 for 3 years, 36 months of on-time rent payments, 5 years of continuous social
+              insurance enrollment, no outstanding debts, and disciplined spending within their income.
+            </p>
+            <div class="use-case-metrics">
+              <div class="metric-box">
+                <div class="metric-value">640</div>
+                <div class="metric-label">TFA Score</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-value">¥20M</div>
+                <div class="metric-label">Approved mortgage</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Use Case 4 -->
+          <div class="use-case-card">
+            <div class="use-case-header">
+              <div class="use-case-icon">
+                <img src="./assets/img/icons/solid/conference.svg"
+                  class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green mb-3" alt="" />
+              </div>
+              <h3 class="use-case-title">Fresh Graduate - Full Alternative Data</h3>
+            </div>
+            <p style="color: #6c757d;">
+              Sakura Satō, 23, is a recent university graduate with no bank account or credit card, making her invisible
+              to traditional credit bureaus. Using TFA’s alternative data scoring, her creditworthiness was evaluated
+              based on 24 months of on-time utility payments, 18 months of consistent purchase history on Rakuten and
+              Amazon, average monthly spending of ¥30,000 via PayPay and LINE Pay, a stable LinkedIn network, and four
+              years of on-time tuition payments.
+            </p>
+            <div class="use-case-metrics">
+              <div class="metric-box">
+                <div class="metric-value">580</div>
+                <div class="metric-label">TFA Score</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-value">¥300K</div>
+                <div class="metric-label">Approved loan</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Use Case 5 -->
+          <div class="use-case-card">
+            <div class="use-case-header">
+              <div class="use-case-icon">
+                <img src="./assets/img/icons/solid/computer.svg"
+                  class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green mb-3" alt="" />
+              </div>
+              <h3 class="use-case-title">Freelancer - Gig Economy Worker</h3>
+            </div>
+            <p style="color: #6c757d;">
+              Ryō Koike, 28, is a freelance designer earning between ¥150,000 and ¥250,000 monthly, without formal
+              employment documents. TFA Score evaluated his financial stability using alternative data, including 18
+              months of consistent income from Upwork and Fiverr, 2 years of stable PayPal and Payoneer transactions, a
+              4.9/5 rating from over 150 clients, regular bill payments, and a steadily growing savings balance.
+            </p>
+            <div class="use-case-metrics">
+              <div class="metric-box">
+                <div class="metric-value">620</div>
+                <div class="metric-label">TFA Score</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-value">¥490K</div>
+                <div class="metric-label">Credit limit</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Use Case 6 -->
+          <div class="use-case-card">
+            <div class="use-case-header">
+              <div class="use-case-icon">
+                <img src="./assets/img/icons/solid/e-commerce.svg"
+                  class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green mb-3" alt="" />
+              </div>
+              <h3 class="use-case-title">E-Commerce Entrepreneur</h3>
+            </div>
+            <p style="color: #6c757d;">
+              Misaki Koizumi, 26, runs an online fashion store and applied for a business loan to expand operations.
+              Evaluated by TFA Score using alternative data, her business performance was assessed through monthly sales
+              of ¥2–3 million on Rakuten and Mercari, a 4.8/5 shop rating from over 5,000 reviews, a 98.5% order
+              completion rate, 30% monthly growth in order volume, and on-time supplier payments.
+            </p>
+            <div class="use-case-metrics">
+              <div class="metric-box">
+                <div class="metric-value">650</div>
+                <div class="metric-label">TFA Score</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-value">¥2M</div>
+                <div class="metric-label">Business loan</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <section class="wrapper">
+      <div class="container py-16 py-md-18">
+        <div class="row gx-lg-8 gx-xl-12 gy-10 mb-8 analyze-now-spacing">
+          <div class="col-lg-5 order-lg-2">
+          </div>
+          <!--/column -->
+          <div class="col-lg-5">
+            <h2 class="fs-16 text-uppercase text-muted mb-3">Easy Integration</h2>
+            <h3 class="display-4 mb-5 section-title">Connect with all systems</h3>
+            <p class="mb-7">TFA Platform seamlessly integrates with C-NOAH and existing core banking systems</p>
+            <div class="row">
+              <div class="col-lg-9">
+                <form action="#">
+                  <div class="form-floating input-group">
+                    <input type="url" class="form-control" placeholder="Enter Website URL" id="seo-check">
+                    <label for="seo-check">Enter Website URL</label>
+                    <button class="btn btn-primary" type="button">Check</button>
+                  </div>
+                </form>
+              </div>
+              <!-- /column -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+
     <!-- /section -->
   </div>
   <!-- /.content-wrapper -->
+  <footer class="bg-light">
+    <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
+      <div class="d-lg-flex flex-row align-items-lg-center">
+        <h3 class="display-4 mb-6 mb-lg-0 pe-lg-20 pe-xl-22 pe-xxl-25">Join our community by using our services and grow
+          your business.</h3>
+        <a href="#" class="btn btn-primary rounded-pill mb-0 text-nowrap">Try It For Free</a>
+      </div>
+      <!--/div -->
+      <hr class="mt-11 mb-12" />
+      <div class="row gy-6 gy-lg-0">
+        <div class="col-md-4 col-lg-3">
+          <div class="widget">
+            <img class="mb-4" src="./assets/img/logo-light.png" srcset="./assets/img/logo-light@2x.png 2x" alt="" />
+            <p class="mb-4">©
+              <script>
+                document.write(new Date().getUTCFullYear());
+              </script> Sandbox. <br class="d-none d-lg-block" />All rights reserved.
+            </p>
+            <nav class="nav social">
+              <a href="#"><i class="uil uil-twitter"></i></a>
+              <a href="#"><i class="uil uil-facebook-f"></i></a>
+              <a href="#"><i class="uil uil-dribbble"></i></a>
+              <a href="#"><i class="uil uil-instagram"></i></a>
+              <a href="#"><i class="uil uil-youtube"></i></a>
+            </nav>
+            <!-- /.social -->
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /column -->
+        <div class="col-md-4 col-lg-3">
+          <div class="widget">
+            <h4 class="widget-title text-white mb-3">Get in Touch</h4>
+            <address class="pe-xl-15 pe-xxl-17">Moonshine St. 14/05 Light City, London, United Kingdom</address>
+            <a href="mailto:#">info@email.com</a><br /> 00 (123) 456 78 90
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /column -->
+        <div class="col-md-4 col-lg-3">
+          <div class="widget">
+            <h4 class="widget-title text-white mb-3">Learn More</h4>
+            <ul class="list-unstyled  mb-0">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /column -->
+        <div class="col-md-12 col-lg-3">
+          <div class="widget">
+            <h4 class="widget-title text-white mb-3">Our Newsletter</h4>
+            <p class="mb-5">Subscribe to our newsletter to get our news & deals delivered to you.</p>
+            <div class="newsletter-wrapper">
+              <!-- Begin Mailchimp Signup Form -->
+              <div id="mc_embed_signup2">
+                <form
+                  action="https://elemisfreebies.us20.list-manage.com/subscribe/post?u=aa4947f70a475ce162057838d&amp;id=b49ef47a9a"
+                  method="post" id="mc-embedded-subscribe-form2" name="mc-embedded-subscribe-form"
+                  class="validate dark-fields" target="_blank" novalidate>
+                  <div id="mc_embed_signup_scroll2">
+                    <div class="mc-field-group input-group form-floating">
+                      <input type="email" value="" name="EMAIL" class="required email form-control"
+                        placeholder="Email Address" id="mce-EMAIL2">
+                      <label for="mce-EMAIL2">Email Address</label>
+                      <input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe2"
+                        class="btn btn-primary ">
+                    </div>
+                    <div id="mce-responses2" class="clear">
+                      <div class="response" id="mce-error-response2" style="display:none"></div>
+                      <div class="response" id="mce-success-response2" style="display:none"></div>
+                    </div>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                        name="b_ddc180777a163e0f9f66ee014_4b1bcfa0bc" tabindex="-1" value=""></div>
+                    <div class="clear"></div>
+                  </div>
+                </form>
+              </div>
+              <!--End mc_embed_signup-->
+            </div>
+            <!-- /.newsletter-wrapper -->
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /column -->
+      </div>
+      <!--/.row -->
+    </div>
+    <!-- /.container -->
+  </footer>
   <div class="progress-wrap">
     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
     </svg>
   </div>
+  <!-- jQuery CDN - Required for Revolution Slider -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="./assets/js/plugins.js"></script>
   <script src="./assets/js/theme.js"></script>
+  <!-- REVOLUTION SLIDER JS -->
+  <script src="./assets/revslider/js/revolution.tools.min.js"></script>
+  <script src="./assets/revslider/js/rs6.min.js"></script>
+  <script src="./assets/js/revslider-custom.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
