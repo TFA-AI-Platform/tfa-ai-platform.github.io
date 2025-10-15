@@ -10,7 +10,14 @@
     content="bootstrap 5, business, corporate, creative, gulp, marketing, minimal, modern, multipurpose, one page, responsive, saas, sass, seo, startup, html5 template, site template">
   <meta name="author" content="elemis">
   <title>Sandbox - Modern & Multipurpose Bootstrap 5 Template</title>
+  
+  <!-- Performance optimizations -->
+  <link rel="preconnect" href="https://code.jquery.com" crossorigin>
+  <link rel="dns-prefetch" href="https://code.jquery.com">
+  
   <link rel="shortcut icon" href="./assets/img/favicon.png">
+  <link rel="preload" href="./assets/css/style.css" as="style">
+  <link rel="preload" href="./assets/js/script.js" as="script">
   <link rel="stylesheet" href="./assets/css/plugins.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <!-- REVOLUTION SLIDER CSS -->
@@ -408,7 +415,7 @@
                   </ul>
                 </li> -->
                 <li class="nav-item">
-                  <a class="nav-link" href="./demo1.html">Home</a>
+                  <a class="nav-link" href="./index.html">Home</a>
                 </li>
                 <!-- <li class="nav-item">
                   <a class="nav-link" href="./about.html">About</a>
@@ -1533,13 +1540,14 @@
     </svg>
   </div>
   <!-- jQuery CDN - Required for Revolution Slider -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="./assets/js/plugins.js"></script>
-  <script src="./assets/js/theme.js"></script>
-  <!-- REVOLUTION SLIDER JS -->
-  <script src="./assets/revslider/js/revolution.tools.min.js"></script>
-  <script src="./assets/revslider/js/rs6.min.js"></script>
-  <script src="./assets/js/revslider-custom.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+  <script src="./assets/js/plugins.js" defer></script>
+  <script src="./assets/js/theme.js" defer></script>
+  <!-- REVOLUTION SLIDER JS - Defer loading as it's not critical -->
+  <script src="./assets/revslider/js/revolution.tools.min.js" defer></script>
+  <script src="./assets/revslider/js/rs6.min.js" defer></script>
+  <script src="./assets/js/revslider-custom.js" defer></script>
+  <!-- Critical script - loads first -->
   <script src="./assets/js/script.js"></script>
 </body>
 

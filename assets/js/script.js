@@ -72,10 +72,28 @@ class ParticleBackground {
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', function () {
         new ParticleBackground();
+        initLazyLoading();
     });
 } else {
     // DOM is already ready
     new ParticleBackground();
+    initLazyLoading();
+}
+
+// Lazy loading for images - improves initial page load
+function initLazyLoading() {
+    // Use native lazy loading for images
+    const images = document.querySelectorAll('img[src*="/assets/img/"]');
+    images.forEach(img => {
+        // Skip images that are above the fold or critical
+        const rect = img.getBoundingClientRect();
+        const isAboveFold = rect.top < window.innerHeight;
+        const isCritical = img.closest('.navbar') || img.classList.contains('navbar-logo');
+        
+        if (!isAboveFold && !isCritical && !img.loading) {
+            img.loading = 'lazy';
+        }
+    });
 }
 
 // Ant Design inspired slider functionality
@@ -242,7 +260,7 @@ function calculateScore() {
 
         if (baseScore >= 750) {
             risk = '非常に低い';
-            riskColor = '#10b981';
+            riskColor = '#4CAF50';
         } else if (baseScore >= 700) {
             risk = '低い';
             riskColor = '#3b82f6';
@@ -253,7 +271,7 @@ function calculateScore() {
 
         if (baseScore >= 650) {
             eligibility = '条件満たし';
-            eligibilityColor = '#10b981';
+            eligibilityColor = '#4CAF50';
         } else if (baseScore >= 550) {
             eligibility = '条件付き検討';
             eligibilityColor = '#f59e0b';
@@ -265,7 +283,7 @@ function calculateScore() {
 
         if (baseScore >= 750) {
             risk = 'Very Low';
-            riskColor = '#10b981';
+            riskColor = '#4CAF50';
         } else if (baseScore >= 700) {
             risk = 'Low';
             riskColor = '#3b82f6';
@@ -276,7 +294,7 @@ function calculateScore() {
 
         if (baseScore >= 650) {
             eligibility = 'Eligible';
-            eligibilityColor = '#10b981';
+            eligibilityColor = '#4CAF50';
         } else if (baseScore >= 550) {
             eligibility = 'Conditional Review';
             eligibilityColor = '#f59e0b';

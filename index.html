@@ -10,7 +10,15 @@
     content="bootstrap 5, business, corporate, creative, gulp, marketing, minimal, modern, multipurpose, one page, responsive, saas, sass, seo, startup, html5 template, site template">
   <meta name="author" content="elemis">
   <title>Sandbox - Modern & Multipurpose Bootstrap 5 Template</title>
+  
+  <!-- Performance optimizations -->
+  <link rel="preconnect" href="https://code.jquery.com" crossorigin>
+  <link rel="dns-prefetch" href="https://code.jquery.com">
+  <link rel="dns-prefetch" href="https://elemisfreebies.us20.list-manage.com">
+  
   <link rel="shortcut icon" href="./assets/img/favicon.png">
+  <link rel="preload" href="./assets/css/style.css" as="style">
+  <link rel="preload" href="./assets/js/script.js" as="script">
   <link rel="stylesheet" href="./assets/css/plugins.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <!-- REVOLUTION SLIDER CSS -->
@@ -408,11 +416,14 @@
                   </ul>
                 </li> -->
                 <li class="nav-item">
-                  <a class="nav-link" href="./demo1.html">Home</a>
+                  <a class="nav-link" href="./index.html">Home</a>
                 </li>
                 <!-- <li class="nav-item">
                   <a class="nav-link" href="./about.html">About</a>
                 </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./services.html">Services</a>
                 </li>
@@ -921,8 +932,8 @@
                     <li class="list-inline-item">
                       <div class="feature-info">
                         <div class="feature-img">
-                          <img src="./assets/img/icons/lineal/calculator.svg"
-                            class="svg-inject icon-svg icon-svg-md text-dark-green" alt="Analytics">
+                          <img src="./assets/img/icons/solid/edit-2.svg"
+                            class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green" alt="Analytics">
                         </div>
                         <h6>Credit Scoring</h6>
                       </div>
@@ -930,8 +941,8 @@
                     <li class="list-inline-item">
                       <div class="feature-info">
                         <div class="feature-img">
-                          <img src="./assets/img/icons/lineal/profits.svg"
-                            class="svg-inject icon-svg icon-svg-md text-dark-green" alt="Target">
+                          <img src="./assets/img/icons/solid/bar-chart.svg"
+                            class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green" alt="Target">
                         </div>
                         <h6>AI Credit Score Upgrade Advisor</h6>
                       </div>
@@ -939,8 +950,8 @@
                     <li class="list-inline-item">
                       <div class="feature-info">
                         <div class="feature-img">
-                          <img src="./assets/img/icons/lineal/analytics.svg"
-                            class="svg-inject icon-svg icon-svg-md text-dark-green" alt="Strategy">
+                          <img src="./assets/img/icons/solid/search.svg"
+                            class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green" alt="Strategy">
                         </div>
                         <h6>xAI-AI Credit Score Explaination</h6>
                       </div>
@@ -948,8 +959,8 @@
                     <li class="list-inline-item">
                       <div class="feature-info">
                         <div class="feature-img">
-                          <img src="./assets/img/icons/lineal/shield.svg"
-                            class="svg-inject icon-svg icon-svg-md text-dark-green" alt="Performance">
+                          <img src="./assets/img/icons/solid/verify.svg"
+                            class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green" alt="Performance">
                         </div>
                         <h6>AI Risk Predictor</h6>
                       </div>
@@ -957,8 +968,8 @@
                     <li class="list-inline-item">
                       <div class="feature-info">
                         <div class="feature-img">
-                          <img src="./assets/img/icons/lineal/statistics.svg"
-                            class="svg-inject icon-svg icon-svg-md text-dark-green" alt="Customers">
+                          <img src="./assets/img/icons/solid/secure.svg"
+                            class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green" alt="Customers">
                         </div>
                         <h6>Early Fraud Detection</h6>
                       </div>
@@ -966,8 +977,8 @@
                     <li class="list-inline-item">
                       <div class="feature-info">
                         <div class="feature-img">
-                          <img src="./assets/img/icons/lineal/refresh.svg"
-                            class="svg-inject icon-svg icon-svg-md text-dark-green" alt="Insights">
+                          <img src="./assets/img/icons/solid/checked.svg"
+                            class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green" alt="Insights">
                         </div>
                         <h6>MLOps-Continuous model monitoring and update</h6>
                       </div>
@@ -975,8 +986,8 @@
                     <li class="list-inline-item">
                       <div class="feature-info">
                         <div class="feature-img">
-                          <img src="./assets/img/icons/lineal/home.svg"
-                            class="svg-inject icon-svg icon-svg-md text-dark-green" alt="Trends">
+                          <img src="./assets/img/icons/solid/building.svg"
+                            class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green" alt="Trends">
                         </div>
                         <h6>Ad-Housing</h6>
                       </div>
@@ -984,8 +995,8 @@
                     <li class="list-inline-item">
                       <div class="feature-info">
                         <div class="feature-img">
-                          <img src="./assets/img/icons/lineal/smartphone-3.svg"
-                            class="svg-inject icon-svg icon-svg-md text-dark-green" alt="Validation">
+                          <img src="./assets/img/icons/solid/devices.svg"
+                            class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green" alt="Validation">
                         </div>
                         <h6>Smart eKYC</h6>
                       </div>
@@ -1533,13 +1544,14 @@
     </svg>
   </div>
   <!-- jQuery CDN - Required for Revolution Slider -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="./assets/js/plugins.js"></script>
-  <script src="./assets/js/theme.js"></script>
-  <!-- REVOLUTION SLIDER JS -->
-  <script src="./assets/revslider/js/revolution.tools.min.js"></script>
-  <script src="./assets/revslider/js/rs6.min.js"></script>
-  <script src="./assets/js/revslider-custom.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+  <script src="./assets/js/plugins.js" defer></script>
+  <script src="./assets/js/theme.js" defer></script>
+  <!-- REVOLUTION SLIDER JS - Defer loading as it's not critical -->
+  <script src="./assets/revslider/js/revolution.tools.min.js" defer></script>
+  <script src="./assets/revslider/js/rs6.min.js" defer></script>
+  <script src="./assets/js/revslider-custom.js" defer></script>
+  <!-- Critical script - loads first -->
   <script src="./assets/js/script.js"></script>
 </body>
 

@@ -10,6 +10,11 @@
         content="architecture, microservices, cloud-native, MLOps, AI platform, technology stack, security compliance">
     <meta name="author" content="TFA AI Platform">
     <title>Platform Architecture - Technology Stack | TFA AI Platform</title>
+    
+    <!-- Performance optimizations -->
+    <link rel="preload" href="./assets/css/style.css" as="style">
+    <link rel="preload" href="./assets/js/script.js" as="script">
+    
     <link rel="shortcut icon" href="./assets/img/favicon.png">
     <link rel="stylesheet" href="./assets/css/plugins.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -380,11 +385,14 @@
                           </ul>
                         </li> -->
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./demo1.html">Home</a>
+                                    <a class="nav-link" href="./index.html">Home</a>
                                 </li>
                                 <!-- <li class="nav-item">
                           <a class="nav-link" href="./about.html">About</a>
                         </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./about.html">About</a>
+                                </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="./services.html">Services</a>
                                 </li>
@@ -434,6 +442,9 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="./live-demo.html">Live Demo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./tfa-platform-architecture-green-en.html">Old Template</a>
                                 </li>
                                 <!-- <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
@@ -756,8 +767,8 @@
             <div class="container py-14 py-md-10">
                 <div class="row mb-10">
                     <div class="col-md-10 col-xl-9 col-xxl-7 mx-auto text-center">
-                        <img src="./assets/img/icons/lineal/cloud-computing.svg"
-                            class="svg-inject icon-svg icon-svg-md mb-4" alt="" />
+                        <img src="./assets/img/icons/solid/cloud-network.svg"
+                            class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green mb-4" alt="" />
                         <h2 class="display-4 mb-3 px-lg-14 section-title">Architecture Layers</h2>
                         <p class="lead fs-lg">Four core layers powering our AI platform</p>
                     </div>
@@ -771,8 +782,8 @@
                             <div class="card-body p-6">
                                 <div class="d-flex flex-row mb-4">
                                     <div>
-                                        <img src="./assets/img/icons/lineal/analytics.svg"
-                                            class="svg-inject icon-svg icon-svg-lg text-lime-green me-4" alt="" />
+                                        <img src="./assets/img/icons/solid/analytics.svg"
+                                            class="svg-inject icon-svg icon-svg-lg solid-duo text-dark-green-lime-green me-4" alt="" />
                                     </div>
                                     <div>
                                         <h3 class="mb-2">Data Collection Layer</h3>
@@ -800,8 +811,8 @@
                             <div class="card-body p-6">
                                 <div class="d-flex flex-row mb-4">
                                     <div>
-                                        <img src="./assets/img/icons/lineal/light-bulb.svg"
-                                            class="svg-inject icon-svg icon-svg-lg text-lime-green me-4" alt="" />
+                                        <img src="./assets/img/icons/solid/bulb.svg"
+                                            class="svg-inject icon-svg icon-svg-lg solid-duo text-dark-green-lime-green me-4" alt="" />
                                     </div>
                                     <div>
                                         <h3 class="mb-2">AI/ML Core Platform</h3>
@@ -829,8 +840,8 @@
                             <div class="card-body p-6">
                                 <div class="d-flex flex-row mb-4">
                                     <div>
-                                        <img src="./assets/img/icons/lineal/networking.svg"
-                                            class="svg-inject icon-svg icon-svg-lg text-lime-green me-4" alt="" />
+                                        <img src="./assets/img/icons/solid/network.svg"
+                                            class="svg-inject icon-svg icon-svg-lg solid-duo text-dark-green-lime-green me-4" alt="" />
                                     </div>
                                     <div>
                                         <h3 class="mb-2">AI Services Layer</h3>
@@ -858,8 +869,8 @@
                             <div class="card-body p-6">
                                 <div class="d-flex flex-row mb-4">
                                     <div>
-                                        <img src="./assets/img/icons/lineal/padlock.svg"
-                                            class="svg-inject icon-svg icon-svg-lg text-lime-green me-4" alt="" />
+                                        <img src="./assets/img/icons/solid/padlock.svg"
+                                            class="svg-inject icon-svg icon-svg-lg solid-duo text-dark-green-lime-green me-4" alt="" />
                                     </div>
                                     <div>
                                         <h3 class="mb-2">Security & Compliance</h3>
@@ -892,7 +903,7 @@
             <div class="container py-14 py-md-16">
                 <div class="row mb-10">
                     <div class="col-md-10 col-xl-9 col-xxl-7 mx-auto text-center">
-                        <img src="./assets/img/icons/lineal/settings.svg" class="svg-inject icon-svg icon-svg-md mb-4"
+                        <img src="./assets/img/icons/solid/gears.svg" class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green mb-4"
                             alt="" />
                         <h2 class="display-4 mb-3 px-lg-14 section-title">Core Technology Stack</h2>
                         <p class="lead fs-lg">5-layer technology infrastructure for enterprise-grade AI</p>
@@ -1081,9 +1092,9 @@
         </svg>
     </div>
 
-    <script src="./assets/js/plugins.js"></script>
-    <script src="./assets/js/theme.js"></script>
-    <script src="./assets/js/revslider-custom.js"></script>
+    <script src="./assets/js/plugins.js" defer></script>
+    <script src="./assets/js/theme.js" defer></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

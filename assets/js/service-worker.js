@@ -1,9 +1,9 @@
-const CACHE_NAME = 'tfa-cache-v2';
-const STATIC_CACHE = 'tfa-static-v2';
-const DYNAMIC_CACHE = 'tfa-dynamic-v2';
+const CACHE_NAME = 'tfa-cache-v3';
+const STATIC_CACHE = 'tfa-static-v3';
+const DYNAMIC_CACHE = 'tfa-dynamic-v3';
 
-// Cache essential files and all icons on install
-const urlsToCache = [
+// Essential files only - cache immediately for instant page load
+const criticalAssets = [
   '/',
   '/index.html',
   '/assets/css/style.css',
@@ -11,7 +11,11 @@ const urlsToCache = [
   '/assets/js/script.js',
   '/assets/js/theme.js',
   '/assets/js/plugins.js',
-  '/public/images/Logo TFA - Final-08.png',
+  '/public/images/Logo TFA - Final-08.png'
+];
+
+// Icons to cache in background - won't block initial page load
+const iconAssets = [
   // Lineal Icons
   '/assets/img/icons/lineal/adjust.svg',
   '/assets/img/icons/lineal/agenda.svg',
@@ -306,19 +310,47 @@ const urlsToCache = [
   '/assets/img/icons/solid/videocall.svg',
   '/assets/img/icons/solid/wallet.svg',
   '/assets/img/icons/solid/web-browser.svg',
-  '/assets/img/icons/solid/web-programming.svg'
+  '/assets/img/icons/solid/web-programming.svg',
+  // New custom icons
+  '/assets/img/icons/solid/analytics.svg',
+  '/assets/img/icons/solid/microphone.svg',
+  '/assets/img/icons/solid/padlock.svg',
+  '/assets/img/icons/solid/id-card.svg',
+  '/assets/img/icons/solid/chat-2.svg',
+  '/assets/img/icons/solid/globe-2.svg'
 ];
 
-// Install event – cache essential files
+// Install event – cache critical files first, then icons in background
 self.addEventListener('install', event => {
   console.log('[ServiceWorker] Installing...');
+  
+  // Cache critical files immediately (non-blocking)
   event.waitUntil(
     caches.open(STATIC_CACHE)
       .then(cache => {
-        console.log('[ServiceWorker] Caching essential files');
-        return cache.addAll(urlsToCache);
+        console.log('[ServiceWorker] Caching critical files');
+        return cache.addAll(criticalAssets);
       })
-      .then(() => self.skipWaiting())
+      .then(() => {
+        console.log('[ServiceWorker] Critical files cached, activating...');
+        return self.skipWaiting();
+      })
+      .then(() => {
+        // Cache icons in background after activation (non-blocking)
+        console.log('[ServiceWorker] Caching icons in background...');
+        caches.open(STATIC_CACHE).then(cache => {
+          // Cache icons in batches to avoid overwhelming the browser
+          const batchSize = 20;
+          for (let i = 0; i < iconAssets.length; i += batchSize) {
+            const batch = iconAssets.slice(i, i + batchSize);
+            batch.forEach(url => {
+              cache.add(url).catch(err => {
+                console.warn(`[ServiceWorker] Failed to cache ${url}:`, err);
+              });
+            });
+          }
+        });
+      })
   );
 });
 
@@ -339,7 +371,7 @@ self.addEventListener('activate', event => {
   );
 });
 
-// Fetch event – Cache strategy: Cache first, then network
+// Fetch event – Optimized caching strategy
 self.addEventListener('fetch', event => {
   const { request } = event;
   const url = new URL(request.url);
@@ -354,36 +386,69 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  event.respondWith(
-    caches.match(request).then(cachedResponse => {
-      // Return cached version if available
-      if (cachedResponse) {
-        return cachedResponse;
-      }
+  // Skip external domains (like CDNs)
+  if (url.origin !== location.origin) {
+    return;
+  }
 
-      // Otherwise fetch from network
-      return fetch(request).then(networkResponse => {
-        // Don't cache if not a success response
-        if (!networkResponse || networkResponse.status !== 200 || networkResponse.type === 'error') {
+  // Different strategies for different asset types
+  
+  // Critical assets: Cache first (HTML, CSS, JS)
+  if (request.url.match(/\.(html|css|js)$/i)) {
+    event.respondWith(
+      caches.match(request).then(cachedResponse => {
+        return cachedResponse || fetch(request).then(networkResponse => {
+          if (networkResponse && networkResponse.status === 200) {
+            const responseToCache = networkResponse.clone();
+            caches.open(STATIC_CACHE).then(cache => {
+              cache.put(request, responseToCache);
+            });
+          }
           return networkResponse;
-        }
+        });
+      })
+    );
+    return;
+  }
 
-        // Cache images, fonts, CSS, and JS files dynamically
-        if (
-          request.url.match(/\.(jpg|jpeg|png|gif|svg|webp|woff|woff2|ttf|eot|css|js)$/i)
-        ) {
+  // Icons & Fonts: Cache first, fallback to network
+  if (request.url.match(/\.(svg|woff|woff2|ttf|eot)$/i)) {
+    event.respondWith(
+      caches.match(request).then(cachedResponse => {
+        return cachedResponse || fetch(request).then(networkResponse => {
+          if (networkResponse && networkResponse.status === 200) {
+            const responseToCache = networkResponse.clone();
+            caches.open(STATIC_CACHE).then(cache => {
+              cache.put(request, responseToCache);
+            });
+          }
+          return networkResponse;
+        }).catch(() => cachedResponse);
+      })
+    );
+    return;
+  }
+
+  // Images: Network first with cache fallback (ensures fresh content)
+  if (request.url.match(/\.(jpg|jpeg|png|gif|webp)$/i)) {
+    event.respondWith(
+      fetch(request).then(networkResponse => {
+        if (networkResponse && networkResponse.status === 200) {
           const responseToCache = networkResponse.clone();
           caches.open(DYNAMIC_CACHE).then(cache => {
             cache.put(request, responseToCache);
           });
         }
-
         return networkResponse;
-      }).catch(error => {
-        console.error('[ServiceWorker] Fetch failed:', error);
-        // Return a custom offline page or message if you have one
-        throw error;
-      });
-    })
+      }).catch(() => {
+        return caches.match(request);
+      })
+    );
+    return;
+  }
+
+  // Default: Network first, fallback to cache
+  event.respondWith(
+    fetch(request).catch(() => caches.match(request))
   );
 });
