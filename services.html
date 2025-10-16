@@ -10,11 +10,11 @@
     content="AI services, credit scoring, fraud detection, financial technology, TFA, alternative data, machine learning">
   <meta name="author" content="TFA">
   <title>TFA AI Services - Advanced Financial AI Solutions</title>
-  
+
   <!-- Performance optimizations -->
   <link rel="preload" href="./assets/css/style.css" as="style">
   <link rel="preload" href="./assets/js/script.js" as="script">
-  
+
   <link rel="shortcut icon" href="./assets/img/favicon.png">
   <link rel="stylesheet" href="./assets/css/plugins.css">
   <link rel="stylesheet" href="./assets/css/style.css">
@@ -373,36 +373,42 @@
                   </ul>
                 </li> -->
                 <li class="nav-item">
-                  <a class="nav-link" href="./index.html">Home</a>
+                  <a class="nav-link" href="./index.html" data-i18n="nav.home">Home</a>
                 </li>
                 <!-- <li class="nav-item">
                   <a class="nav-link" href="./about.html">About</a>
                 </li> -->
                 <li class="nav-item">
-                  <a class="nav-link" href="./about.html">About</a>
+                  <a class="nav-link" href="./about.html" data-i18n="nav.about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./services.html">Services</a>
+                  <a class="nav-link" href="./services.html" data-i18n="nav.services">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./tfa-scoring.html">TFA Scoring</a>
+                  <a class="nav-link" href="./tfa-scoring.html" data-i18n="nav.tfa_scoring">TFA Scoring</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                    data-i18n="nav.products">Products</a>
                   <div class="dropdown-menu dropdown-lg">
                     <div class="dropdown-lg-content">
                       <div>
-                        <h6 class="dropdown-header">Product Pages</h6>
+                        <h6 class="dropdown-header" data-i18n="nav.product_pages">Product Pages</h6>
                         <ul class="list-unstyled">
                           <!-- <li><a class="dropdown-item" href="./projects.html">Projects I</a></li> -->
                           <!-- <li><a class="dropdown-item" href="./projects2.html">Projects II</a></li> -->
                           <!-- <li><a class="dropdown-item" href="./projects3.html">Projects III</a></li> -->
                           <!-- <li><a class="dropdown-item" href="./projects4.html">Projects IV</a></li> -->
-                          <li><a class="dropdown-item" href="./atobar-ai.html">Atobar AI</a></li>
-                          <li><a class="dropdown-item" href="./ad-housing.html">AD Housing</a></li>
-                          <li><a class="dropdown-item" href="./ad-passport.html">AD Passport</a></li>
-                          <li><a class="dropdown-item" href="./lnpl.html">Live now, Pay later</a></li>
-                          <li><a class="dropdown-item" href="./consumer-finance.html">Consumer Finance Service</a></li>
+                          <li><a class="dropdown-item" href="./atobar-ai.html" data-i18n="nav.atobar_ai">Atobar AI</a>
+                          </li>
+                          <li><a class="dropdown-item" href="./ad-housing.html" data-i18n="nav.ad_housing">AD
+                              Housing</a></li>
+                          <li><a class="dropdown-item" href="./ad-passport.html" data-i18n="nav.ad_passport">AD
+                              Passport</a></li>
+                          <li><a class="dropdown-item" href="./lnpl.html" data-i18n="nav.lnpl">Live now, Pay later</a>
+                          </li>
+                          <li><a class="dropdown-item" href="./consumer-finance.html"
+                              data-i18n="nav.consumer_finance">Consumer Finance Service</a></li>
                         </ul>
                       </div>
                       <!-- /.column -->
@@ -421,13 +427,14 @@
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./architecture.html">Architecture</a>
+                  <a class="nav-link" href="./architecture.html" data-i18n="nav.architecture">Architecture</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./live-demo.html">Live Demo</a>
+                  <a class="nav-link" href="./live-demo.html" data-i18n="nav.live_demo">Live Demo</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./tfa-platform-architecture-green-en.html">Old Template</a>
+                  <a class="nav-link" href="./tfa-platform-architecture-green-en.html" data-i18n="nav.old_template">Old
+                    Template</a>
                 </li>
                 <!-- <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
@@ -658,11 +665,11 @@
             <ul class="navbar-nav flex-row align-items-center ms-auto">
               <li class="nav-item dropdown language-select text-uppercase">
                 <a class="nav-link dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">En</a>
+                  aria-haspopup="true" aria-expanded="false" id="language-switcher"
+                  data-i18n="nav.language-select">En</a>
                 <ul class="dropdown-menu">
-                  <li class="nav-item"><a class="dropdown-item" href="#">En</a></li>
-                  <li class="nav-item"><a class="dropdown-item" href="#">De</a></li>
-                  <li class="nav-item"><a class="dropdown-item" href="#">Es</a></li>
+                  <li class="nav-item"><a class="dropdown-item" href="#" data-lang="en">En</a></li>
+                  <li class="nav-item"><a class="dropdown-item" href="#" data-lang="ja">日本語</a></li>
                 </ul>
               </li>
               <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-info"><i
@@ -732,9 +739,9 @@
       <div class="container pt-14 pt-md-16">
         <div class="row text-center">
           <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-            <div class="section-badge">12 Specialized AI Services</div>
-            <h2 class="display-4 mb-3 px-xl-10 section-title">Why Using TFA Scoring</h2>
-            <p class="lead fs-lg text-muted px-md-10 px-lg-15 px-xl-18 mb-10">
+            <div class="section-badge" data-i18n="services.hero.badge">12 Specialized AI Services</div>
+            <h2 class="display-4 mb-3 px-xl-10 section-title" data-i18n="services.hero.title">Why Using TFA Scoring</h2>
+            <p class="lead fs-lg text-muted px-md-10 px-lg-15 px-xl-18 mb-10" data-i18n="services.hero.description">
               TFA SCORING applies Alternative Data and advanced AI for ~95% accuracy
               and real-time decisions, expanding fair access for thin-file users.
               <br>
@@ -763,28 +770,30 @@
               <div class="service-item">
                 <img src="./assets/img/icons/solid/lamp.svg"
                   class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green mb-3" alt="" />
-                <h4>AI Credit Advisor</h4>
-                <p class="mb-2">Intelligent credit advisory AI Agent, automatically analyzes applications and provides
+                <h4 data-i18n="services.ai_advisor.title">AI Credit Advisor</h4>
+                <p class="mb-2" data-i18n="services.ai_advisor.description">Intelligent credit advisory AI Agent,
+                  automatically analyzes applications and provides
                   suitable product recommendations within 30 seconds. Increases conversion rate by 40%.</p>
                 <div class="service-features">
-                  <span class="service-tag">24/7 Advisory</span>
-                  <span class="service-tag">Personalized</span>
-                  <span class="service-tag">Multi-language</span>
+                  <span class="service-tag" data-i18n="services.ai_advisor.feature1">24/7 Advisory</span>
+                  <span class="service-tag" data-i18n="services.ai_advisor.feature2">Personalized</span>
+                  <span class="service-tag" data-i18n="services.ai_advisor.feature3">Multi-language</span>
                 </div>
               </div>
             </div>
             <!--/column -->
             <div class="col-md-6 col-xl-4">
               <div class="service-item lift">
-                <img src="./assets/img/icons/solid/analytics.svg" class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green mb-3"
-                  alt="" />
-                <h4>AI Risk Predictor</h4>
-                <p class="mb-2">Risk prediction with Explainable AI, providing probability of default (PD) and clear
+                <img src="./assets/img/icons/solid/analytics.svg"
+                  class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green mb-3" alt="" />
+                <h4 data-i18n="services.risk_predictor.title">AI Risk Predictor</h4>
+                <p class="mb-2" data-i18n="services.risk_predictor.description">Risk prediction with Explainable AI,
+                  providing probability of default (PD) and clear
                   explanation of influencing factors. Accuracy >95%.</p>
                 <div class="service-features">
-                  <span class="service-tag">Real-time</span>
-                  <span class="service-tag">Explainable AI</span>
-                  <span class="service-tag">Stress Testing</span>
+                  <span class="service-tag" data-i18n="services.risk_predictor.feature1">Real-time</span>
+                  <span class="service-tag" data-i18n="services.risk_predictor.feature2">Explainable AI</span>
+                  <span class="service-tag" data-i18n="services.risk_predictor.feature3">Stress Testing</span>
                 </div>
               </div>
             </div>
@@ -793,28 +802,30 @@
               <div class="service-item lift">
                 <img src="./assets/img/icons/solid/microphone.svg"
                   class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green mb-3" alt="" />
-                <h4>Voice Banking Agent</h4>
-                <p class="mb-2">Natural voice banking transactions with multi-language support. Complete transactions in
+                <h4 data-i18n="services.voice_banking.title">Voice Banking Agent</h4>
+                <p class="mb-2" data-i18n="services.voice_banking.description">Natural voice banking transactions with
+                  multi-language support. Complete transactions in
                   45 seconds with 89% success rate.</p>
                 <div class="service-features">
-                  <span class="service-tag">Voice Biometric</span>
-                  <span class="service-tag">Multi-dialect</span>
-                  <span class="service-tag">Hands-free</span>
+                  <span class="service-tag" data-i18n="services.voice_banking.feature1">Voice Biometric</span>
+                  <span class="service-tag" data-i18n="services.voice_banking.feature2">Multi-dialect</span>
+                  <span class="service-tag" data-i18n="services.voice_banking.feature3">Hands-free</span>
                 </div>
               </div>
             </div>
             <!--/column -->
             <div class="col-md-6 col-xl-4">
               <div class="service-item lift">
-                <img src="./assets/img/icons/solid/padlock.svg" class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green mb-3"
-                  alt="" />
-                <h4>Fraud Detection Pro</h4>
-                <p class="mb-2">Advanced ML/DL fraud detection with >95% accuracy, reducing 60% false positives.
+                <img src="./assets/img/icons/solid/padlock.svg"
+                  class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green mb-3" alt="" />
+                <h4 data-i18n="services.fraud_detection.title">Fraud Detection Pro</h4>
+                <p class="mb-2" data-i18n="services.fraud_detection.description">Advanced ML/DL fraud detection with
+                  >95% accuracy, reducing 60% false positives.
                   Real-time protection for every transaction.</p>
                 <div class="service-features">
-                  <span class="service-tag">Real-time</span>
-                  <span class="service-tag">Graph Analytics</span>
-                  <span class="service-tag">Anomaly Detection</span>
+                  <span class="service-tag" data-i18n="services.fraud_detection.feature1">Real-time</span>
+                  <span class="service-tag" data-i18n="services.fraud_detection.feature2">Graph Analytics</span>
+                  <span class="service-tag" data-i18n="services.fraud_detection.feature3">Anomaly Detection</span>
                 </div>
               </div>
             </div>
@@ -823,28 +834,30 @@
               <div class="service-item lift">
                 <img src="./assets/img/icons/solid/id-card.svg"
                   class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green mb-3" alt="" />
-                <h4>Smart KYC Suite</h4>
-                <p class="mb-2">eKYC with Deepfake Detection technology, secure remote identity verification. Reduces
+                <h4 data-i18n="services.smart_kyc.title">Smart KYC Suite</h4>
+                <p class="mb-2" data-i18n="services.smart_kyc.description">eKYC with Deepfake Detection technology,
+                  secure remote identity verification. Reduces
                   onboarding time from 60 minutes to <5 minutes.</p>
                     <div class="service-features">
-                      <span class="service-tag">Deepfake Detection</span>
-                      <span class="service-tag">Liveness Check</span>
-                      <span class="service-tag">OCR + AI</span>
+                      <span class="service-tag" data-i18n="services.smart_kyc.feature1">Deepfake Detection</span>
+                      <span class="service-tag" data-i18n="services.smart_kyc.feature2">Liveness Check</span>
+                      <span class="service-tag" data-i18n="services.smart_kyc.feature3">OCR + AI</span>
                     </div>
               </div>
             </div>
             <!--/column -->
             <div class="col-md-6 col-xl-4">
               <div class="service-item lift">
-                <img src="./assets/img/icons/solid/chatting-2.svg" class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green mb-3"
-                  alt="" />
-                <h4>Conversational AI</h4>
-                <p class="mb-2">Smart chatbot with LLM + RAG, understands context and provides accurate responses. 24/7
+                <img src="./assets/img/icons/solid/chatting-2.svg"
+                  class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green mb-3" alt="" />
+                <h4 data-i18n="services.conversational_ai.title">Conversational AI</h4>
+                <p class="mb-2" data-i18n="services.conversational_ai.description">Smart chatbot with LLM + RAG,
+                  understands context and provides accurate responses. 24/7
                   customer support with 95% satisfaction rate.</p>
                 <div class="service-features">
-                  <span class="service-tag">GPT-4/Claude</span>
-                  <span class="service-tag">Context-aware</span>
-                  <span class="service-tag">Multi-channel</span>
+                  <span class="service-tag" data-i18n="services.conversational_ai.feature1">GPT-4/Claude</span>
+                  <span class="service-tag" data-i18n="services.conversational_ai.feature2">Context-aware</span>
+                  <span class="service-tag" data-i18n="services.conversational_ai.feature3">Multi-channel</span>
                 </div>
               </div>
             </div>
@@ -863,28 +876,33 @@
       <div class="container py-14 pt-md-17 pb-md-0">
         <div class="row gx-md-8 gx-xl-12 gy-10 mb-14 mb-md-18 align-items-center">
           <div class="col-lg-6">
-            <h2 class="fs-16 text-uppercase text-muted mb-3">Advanced AI Services</h2>
-            <h3 class="display-4 mb-5 section-title">Here are our 3 core advanced AI services that power the TFA
+            <h2 class="fs-16 text-uppercase text-muted mb-3" data-i18n="services.advanced.badge">Advanced AI Services
+            </h2>
+            <h3 class="display-4 mb-5 section-title" data-i18n="services.advanced.title">Here are our 3 core advanced AI
+              services that power the TFA
               platform.</h3>
-            <p>Our advanced AI services combine cutting-edge machine learning with practical business applications. Each
+            <p data-i18n="services.advanced.description1">Our advanced AI services combine cutting-edge machine learning
+              with practical business applications. Each
               service is designed to solve specific challenges in financial technology and alternative data analysis.
             </p>
-            <p class="mb-6">From document processing to personalized recommendations, our AI services deliver measurable
+            <p class="mb-6" data-i18n="services.advanced.description2">From document processing to personalized
+              recommendations, our AI services deliver measurable
               results and drive business growth for our clients.</p>
-            <a href="#" class="btn btn-primary rounded-pill mb-0">Learn More</a>
+            <a href="#" class="btn btn-primary rounded-pill mb-0" data-i18n="services.advanced.button">Learn More</a>
           </div>
           <!--/column -->
           <div class="col-lg-6 order-lg-2">
             <div class="numbered-service me-lg-6 lift">
               <div class="service-number">01</div>
               <div class="service-content">
-                <h4>Document Intelligence</h4>
-                <p>Intelligent document processing with Computer Vision + NLP + OCR. Automatically extracts and analyzes
+                <h4 data-i18n="services.document_intelligence.title">Document Intelligence</h4>
+                <p data-i18n="services.document_intelligence.description">Intelligent document processing with Computer
+                  Vision + NLP + OCR. Automatically extracts and analyzes
                   information with 98% accuracy.</p>
                 <div class="service-features">
-                  <span class="service-tag">Multi-format</span>
-                  <span class="service-tag">Auto-extraction</span>
-                  <span class="service-tag">Validation</span>
+                  <span class="service-tag" data-i18n="services.document_intelligence.feature1">Multi-format</span>
+                  <span class="service-tag" data-i18n="services.document_intelligence.feature2">Auto-extraction</span>
+                  <span class="service-tag" data-i18n="services.document_intelligence.feature3">Validation</span>
                 </div>
               </div>
             </div>
@@ -892,13 +910,14 @@
             <div class="numbered-service ms-lg-13 mt-6 lift">
               <div class="service-number">02</div>
               <div class="service-content">
-                <h4>AI Personalization</h4>
-                <p>Personalizes financial products based on customer behavior and needs. Increases offer acceptance rate
+                <h4 data-i18n="services.ai_personalization.title">AI Personalization</h4>
+                <p data-i18n="services.ai_personalization.description">Personalizes financial products based on customer
+                  behavior and needs. Increases offer acceptance rate
                   from 5% to 15%.</p>
                 <div class="service-features">
-                  <span class="service-tag">360° View</span>
-                  <span class="service-tag">Next Best Action</span>
-                  <span class="service-tag">A/B Testing</span>
+                  <span class="service-tag" data-i18n="services.ai_personalization.feature1">360° View</span>
+                  <span class="service-tag" data-i18n="services.ai_personalization.feature2">Next Best Action</span>
+                  <span class="service-tag" data-i18n="services.ai_personalization.feature3">A/B Testing</span>
                 </div>
               </div>
             </div>
@@ -906,13 +925,14 @@
             <div class="numbered-service mx-lg-6 mt-6 lift">
               <div class="service-number">03</div>
               <div class="service-content">
-                <h4>TFA Scoring Engine</h4>
-                <p>AI-native credit scoring system with 5 specialized products. Analyzes 600+ variables, delivering
+                <h4 data-i18n="services.tfa_scoring_engine.title">TFA Scoring Engine</h4>
+                <p data-i18n="services.tfa_scoring_engine.description">AI-native credit scoring system with 5
+                  specialized products. Analyzes 600+ variables, delivering
                   results in <200ms.< /p>
                     <div class="service-features">
-                      <span class="service-tag">300-850 Score</span>
-                      <span class="service-tag">Multi-source</span>
-                      <span class="service-tag">Explainable</span>
+                      <span class="service-tag" data-i18n="services.tfa_scoring_engine.feature1">300-850 Score</span>
+                      <span class="service-tag" data-i18n="services.tfa_scoring_engine.feature2">Multi-source</span>
+                      <span class="service-tag" data-i18n="services.tfa_scoring_engine.feature3">Explainable</span>
                     </div>
               </div>
             </div>
@@ -936,26 +956,29 @@
           </div>
           <!--/column -->
           <div class="col-lg-5">
-            <h2 class="fs-16 text-uppercase text-muted mb-3">Platform Services</h2>
-            <h3 class="display-4 mb-5 section-title">Specialized platforms for specific business needs.</h3>
-            <p class="mb-6">Our platform services are designed to solve specific industry challenges with advanced AI
+            <h2 class="fs-16 text-uppercase text-muted mb-3" data-i18n="services.platform.badge">Platform Services</h2>
+            <h3 class="display-4 mb-5 section-title" data-i18n="services.platform.title">Specialized platforms for
+              specific business needs.</h3>
+            <p class="mb-6" data-i18n="services.platform.description">Our platform services are designed to solve
+              specific industry challenges with advanced AI
               and alternative data.</p>
 
             <div class="d-flex flex-row mb-5 platform-service-item lift">
               <div>
                 <div class="platform-icon">
-                  <img src="./assets/img/icons/solid/coin.svg" class="svg-inject icon-svg icon-svg-sm solid-duo text-dark-green-lime-green"
-                    alt="" />
+                  <img src="./assets/img/icons/solid/coin.svg"
+                    class="svg-inject icon-svg icon-svg-sm solid-duo text-dark-green-lime-green" alt="" />
                 </div>
               </div>
               <div>
-                <h4 class="mb-2">Atobar.ai - BNPL Intelligence</h4>
-                <p class="mb-2">Smart Buy Now Pay Later management platform with Alternative Data Scoring, solving
+                <h4 class="mb-2" data-i18n="services.atobar.title">Atobar.ai - BNPL Intelligence</h4>
+                <p class="mb-2" data-i18n="services.atobar.description">Smart Buy Now Pay Later management platform with
+                  Alternative Data Scoring, solving
                   thin-file and loan stacking issues. Seamless e-commerce integration.</p>
                 <div class="service-features">
-                  <span class="service-tag">Alternative Scoring</span>
-                  <span class="service-tag">BNPL Management</span>
-                  <span class="service-tag">Fraud Control</span>
+                  <span class="service-tag" data-i18n="services.atobar.feature1">Alternative Scoring</span>
+                  <span class="service-tag" data-i18n="services.atobar.feature2">BNPL Management</span>
+                  <span class="service-tag" data-i18n="services.atobar.feature3">Fraud Control</span>
                 </div>
               </div>
             </div>
@@ -963,18 +986,19 @@
             <div class="d-flex flex-row mb-5 platform-service-item lift">
               <div>
                 <div class="platform-icon">
-                  <img src="./assets/img/icons/solid/building.svg" class="svg-inject icon-svg icon-svg-sm solid-duo text-dark-green-lime-green"
-                    alt="" />
+                  <img src="./assets/img/icons/solid/building.svg"
+                    class="svg-inject icon-svg icon-svg-sm solid-duo text-dark-green-lime-green" alt="" />
                 </div>
               </div>
               <div>
-                <h4 class="mb-2">AD Housing - Housing Affordability</h4>
-                <p class="mb-2">Housing affordability assessment platform with Alternative Data. Helps guarantee
+                <h4 class="mb-2" data-i18n="services.ad_housing.title">AD Housing - Housing Affordability</h4>
+                <p class="mb-2" data-i18n="services.ad_housing.description">Housing affordability assessment platform
+                  with Alternative Data. Helps guarantee
                   companies and LNPL providers reduce risk by 75%.</p>
                 <div class="service-features">
-                  <span class="service-tag">92% Accuracy</span>
-                  <span class="service-tag">30s Processing</span>
-                  <span class="service-tag">20+ Data Sources</span>
+                  <span class="service-tag" data-i18n="services.ad_housing.feature1">92% Accuracy</span>
+                  <span class="service-tag" data-i18n="services.ad_housing.feature2">30s Processing</span>
+                  <span class="service-tag" data-i18n="services.ad_housing.feature3">20+ Data Sources</span>
                 </div>
               </div>
             </div>
@@ -982,18 +1006,19 @@
             <div class="d-flex flex-row platform-service-item lift">
               <div>
                 <div class="platform-icon">
-                  <img src="./assets/img/icons/solid/globe-2.svg" class="svg-inject icon-svg icon-svg-sm solid-duo text-dark-green-lime-green"
-                    alt="" />
+                  <img src="./assets/img/icons/solid/globe-2.svg"
+                    class="svg-inject icon-svg icon-svg-sm solid-duo text-dark-green-lime-green" alt="" />
                 </div>
               </div>
               <div>
-                <h4 class="mb-2">AD Passport - Immigration Assessment</h4>
-                <p class="mb-2">Comprehensive immigrant assessment with 30+ international data sources. Supports
+                <h4 class="mb-2" data-i18n="services.ad_passport.title">AD Passport - Immigration Assessment</h4>
+                <p class="mb-2" data-i18n="services.ad_passport.description">Comprehensive immigrant assessment with 30+
+                  international data sources. Supports
                   businesses and agencies in making accurate decisions.</p>
                 <div class="service-features">
-                  <span class="service-tag">94% Reliability</span>
-                  <span class="service-tag">60s Processing</span>
-                  <span class="service-tag">Global Data</span>
+                  <span class="service-tag" data-i18n="services.ad_passport.feature1">94% Reliability</span>
+                  <span class="service-tag" data-i18n="services.ad_passport.feature2">60s Processing</span>
+                  <span class="service-tag" data-i18n="services.ad_passport.feature3">Global Data</span>
                 </div>
               </div>
             </div>
@@ -1010,10 +1035,9 @@
     <footer class="bg-light">
       <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
         <div class="d-lg-flex flex-row align-items-lg-center">
-          <h3 class="display-4 mb-6 mb-lg-0 pe-lg-20 pe-xl-22 pe-xxl-25">Join our community by using our services and
-            grow
-            your business.</h3>
-          <a href="#" class="btn btn-primary rounded-pill mb-0 text-nowrap">Try It For Free</a>
+          <h3 class="display-4 mb-6 mb-lg-0 pe-lg-20 pe-xl-22 pe-xxl-25">Ready to Unlock Thin-File Users with
+            Alternative Data Scoring?</h3>
+          <a href="#" class="btn btn-primary rounded-pill mb-0 text-nowrap">Schedule Consultation</a>
         </div>
         <!--/div -->
         <hr class="mt-11 mb-12" />
@@ -1024,7 +1048,7 @@
               <p class="mb-4">©
                 <script>
                   document.write(new Date().getUTCFullYear());
-                </script> Sandbox. <br class="d-none d-lg-block" />All rights reserved.
+                </script> TFA AI Platform. <br class="d-none d-lg-block" />All rights reserved.
               </p>
               <nav class="nav social">
                 <a href="#"><i class="uil uil-twitter"></i></a>
@@ -1040,16 +1064,16 @@
           <!-- /column -->
           <div class="col-md-4 col-lg-3">
             <div class="widget">
-              <h4 class="widget-title text-white mb-3">Get in Touch</h4>
-              <address class="pe-xl-15 pe-xxl-17">Moonshine St. 14/05 Light City, London, United Kingdom</address>
-              <a href="mailto:#">info@email.com</a><br /> 00 (123) 456 78 90
+              <h4 class="widget-title mb-3">Get in Touch</h4>
+              <a href="mailto:contact@reactplus.com">contact@reactplus.com</a><br /> +81 70 8988 6363
+              <address class="pe-xl-15 pe-xxl-17">Hanoi, Vietnam <br /> Tokyo, Japan</address>
             </div>
             <!-- /.widget -->
           </div>
           <!-- /column -->
           <div class="col-md-4 col-lg-3">
             <div class="widget">
-              <h4 class="widget-title text-white mb-3">Learn More</h4>
+              <h4 class="widget-title mb-3">Learn More</h4>
               <ul class="list-unstyled  mb-0">
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Our Story</a></li>
@@ -1063,7 +1087,7 @@
           <!-- /column -->
           <div class="col-md-12 col-lg-3">
             <div class="widget">
-              <h4 class="widget-title text-white mb-3">Our Newsletter</h4>
+              <h4 class="widget-title mb-3">Our Newsletter</h4>
               <p class="mb-5">Subscribe to our newsletter to get our news & deals delivered to you.</p>
               <div class="newsletter-wrapper">
                 <!-- Begin Mailchimp Signup Form -->
@@ -1113,6 +1137,9 @@
   </div>
   <script src="./assets/js/plugins.js" defer></script>
   <script src="./assets/js/theme.js" defer></script>
+  <!-- Multilingual Support -->
+  <script src="./assets/js/translations.js"></script>
+  <script src="./assets/js/i18n.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
 

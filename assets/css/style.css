@@ -49952,6 +49952,106 @@ footer.bg-dark.angled.upper-start:before {
   height: 30%;
 }
 
+/* Alternative Data Clean List Layout */
+.alt-data-section {
+  height: 100%;
+}
+
+.alt-data-section .section-header {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.alt-data-section .section-header h4 {
+  color: #2c3e50;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.alt-data-section .section-header p {
+  color: #6c757d;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* Data Sources List Styling */
+.data-sources-list .data-source-item h6 {
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.data-sources-list .data-source-item small {
+  color: #6c757d;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Process Steps List Styling */
+.process-steps-list .process-step-item h5 {
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.process-steps-list .process-step-item p {
+  color: #6c757d;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* Results List Styling */
+.results-list .result-item h5 {
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.results-list .result-item p {
+  color: #6c757d;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* Icon Styling - Clean and Simple */
+.alt-data-section .icon {
+  background: transparent;
+  color: #15c35a;
+  border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .alt-data-section .section-header {
+    min-height: 140px;
+  }
+  
+  .alt-data-section .section-header h4 {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .alt-data-section .section-header {
+    min-height: 120px;
+  }
+  
+  .alt-data-section .section-header h4 {
+    font-size: 1rem;
+  }
+}
+
+
 .hero-title {
   font-size: 4rem;
   font-weight: 800;
@@ -50248,7 +50348,7 @@ footer.bg-dark.angled.upper-start:before {
 
 .xamin-feature-circle .xamin-img ul li:nth-child(5) .feature-info {
   top: 44%;
-  left: -18%;
+  left: -15%;
 }
 
 .xamin-feature-circle .xamin-img ul li:nth-child(6) .feature-info {

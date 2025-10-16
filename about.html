@@ -10,11 +10,11 @@
         content="TFA AI Platform, alternative data, AI, fintech, credit scoring, machine learning, about us">
     <meta name="author" content="TFA AI Platform">
     <title>About Us - TFA AI Platform</title>
-    
+
     <!-- Performance optimizations -->
     <link rel="preload" href="./assets/css/style.css" as="style">
     <link rel="preload" href="./assets/js/script.js" as="script">
-    
+
     <link rel="shortcut icon" href="./assets/img/favicon.png">
     <link rel="stylesheet" href="./assets/css/plugins.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -60,47 +60,58 @@
                         <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./index.html">Home</a>
+                                    <a class="nav-link" href="./index.html" data-i18n="nav.home">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./about.html">About</a>
+                                    <a class="nav-link" href="./about.html" data-i18n="nav.about">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./services.html">Services</a>
+                                    <a class="nav-link" href="./services.html" data-i18n="nav.services">Services</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./tfa-scoring.html">TFA Scoring</a>
+                                    <a class="nav-link" href="./tfa-scoring.html" data-i18n="nav.tfa_scoring">TFA
+                                        Scoring</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                        data-i18n="nav.products">Products</a>
                                     <div class="dropdown-menu dropdown-lg">
                                         <div class="dropdown-lg-content">
                                             <div>
-                                                <h6 class="dropdown-header">Product Pages</h6>
+                                                <h6 class="dropdown-header" data-i18n="nav.product_pages">Product Pages
+                                                </h6>
                                                 <ul class="list-unstyled">
-                                                    <li><a class="dropdown-item" href="./atobar-ai.html">Atobar AI</a>
+                                                    <li><a class="dropdown-item" href="./atobar-ai.html"
+                                                            data-i18n="nav.atobar_ai">Atobar AI</a>
                                                     </li>
-                                                    <li><a class="dropdown-item" href="./ad-housing.html">AD Housing</a>
-                                                    </li>
-                                                    <li><a class="dropdown-item" href="./ad-passport.html">AD
+                                                    <li><a class="dropdown-item" href="./ad-housing.html"
+                                                            data-i18n="nav.ad_housing">AD
+                                                            Housing</a></li>
+                                                    <li><a class="dropdown-item" href="./ad-passport.html"
+                                                            data-i18n="nav.ad_passport">AD
                                                             Passport</a></li>
-                                                    <li><a class="dropdown-item" href="./lnpl.html">Live now, Pay
-                                                            later</a></li>
-                                                    <li><a class="dropdown-item" href="./consumer-finance.html">Consumer
-                                                            Finance Service</a></li>
+                                                    <li><a class="dropdown-item" href="./lnpl.html"
+                                                            data-i18n="nav.lnpl">Live now, Pay later</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="./consumer-finance.html"
+                                                            data-i18n="nav.consumer_finance">Consumer Finance
+                                                            Service</a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./architecture.html">Architecture</a>
+                                    <a class="nav-link" href="./architecture.html"
+                                        data-i18n="nav.architecture">Architecture</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./live-demo.html">Live Demo</a>
+                                    <a class="nav-link" href="./live-demo.html" data-i18n="nav.live_demo">Live Demo</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./tfa-platform-architecture-green-en.html">Old Template</a>
+                                    <a class="nav-link" href="./tfa-platform-architecture-green-en.html"
+                                        data-i18n="nav.old_template">Old
+                                        Template</a>
                                 </li>
                             </ul>
                             <!-- /.navbar-nav -->
@@ -127,11 +138,11 @@
                         <ul class="navbar-nav flex-row align-items-center ms-auto">
                             <li class="nav-item dropdown language-select text-uppercase">
                                 <a class="nav-link dropdown-item dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">En</a>
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    id="language-switcher" data-i18n="nav.language-select">En</a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="dropdown-item" href="#">En</a></li>
-                                    <li class="nav-item"><a class="dropdown-item" href="#">De</a></li>
-                                    <li class="nav-item"><a class="dropdown-item" href="#">Es</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="#" data-lang="en">En</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="#" data-lang="ja">日本語</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas"
@@ -196,8 +207,9 @@
             <div class="container pt-10 pt-md-14 text-center">
                 <div class="row">
                     <div class="col-xl-6 mx-auto">
-                        <h1 class="display-1 mb-4">About TFA AI Platform</h1>
-                        <p class="lead fs-lg mb-0">A company turning ideas into beautiful things.</p>
+                        <h1 class="display-1 mb-4" data-i18n="about.hero.title">About TFA AI Platform</h1>
+                        <p class="lead fs-lg mb-0" data-i18n="about.hero.subtitle">A company turning ideas into
+                            beautiful things.</p>
                     </div>
                     <!-- /column -->
                 </div>
@@ -229,27 +241,34 @@
                     <div class="col-lg-6">
                         <img src="./assets/img/icons/solid/lamp.svg"
                             class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green mb-4" alt="" />
-                        <h2 class="display-4 mb-3">Who Are We?</h2>
-                        <p class="lead fs-lg">We are a pioneering AI platform that believes in the power of alternative
+                        <h2 class="display-4 mb-3" data-i18n="about.who_are_we.title">Who Are We?</h2>
+                        <p class="lead fs-lg" data-i18n="about.who_are_we.subtitle">We are a pioneering AI platform that
+                            believes in the power of alternative
                             data and advanced technology to democratize financial services.</p>
-                        <p class="mb-6">TFA AI Platform is revolutionizing credit assessment by leveraging alternative
-                            data sources and cutting-edge machine learning. We're bringing fair financial opportunities to
+                        <p class="mb-6" data-i18n="about.who_are_we.description">TFA AI Platform is revolutionizing
+                            credit assessment by leveraging alternative
+                            data sources and cutting-edge machine learning. We're bringing fair financial opportunities
+                            to
                             millions of thin-file customers across Asia.</p>
                         <div class="row gy-3 gx-xl-8">
                             <div class="col-xl-6">
                                 <ul class="icon-list bullet-bg bullet-soft-green mb-0">
-                                    <li><span><i class="uil uil-check"></i></span><span>Innovation leader in alternative
+                                    <li><span><i class="uil uil-check"></i></span><span
+                                            data-i18n="about.who_are_we.feature1">Innovation leader in alternative
                                             data credit scoring.</span></li>
-                                    <li class="mt-3"><span><i class="uil uil-check"></i></span><span>95% accuracy with
+                                    <li class="mt-3"><span><i class="uil uil-check"></i></span><span
+                                            data-i18n="about.who_are_we.feature2">95% accuracy with
                                             AI-powered assessment models.</span></li>
                                 </ul>
                             </div>
                             <!--/column -->
                             <div class="col-xl-6">
                                 <ul class="icon-list bullet-bg bullet-soft-green mb-0">
-                                    <li><span><i class="uil uil-check"></i></span><span>Enterprise-grade security and
+                                    <li><span><i class="uil uil-check"></i></span><span
+                                            data-i18n="about.who_are_we.feature3">Enterprise-grade security and
                                             regulatory compliance.</span></li>
-                                    <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Serving 30M+ customers
+                                    <li class="mt-3"><span><i class="uil uil-check"></i></span><span
+                                            data-i18n="about.who_are_we.feature4">Serving 30M+ customers
                                             with fair credit access.</span></li>
                                 </ul>
                             </div>
@@ -264,7 +283,8 @@
                     <div class="col-md-10 col-xl-8 col-xxl-7 mx-auto text-center">
                         <img src="./assets/img/icons/solid/list.svg"
                             class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green mb-4" alt="" />
-                        <h2 class="display-4 mb-4 px-lg-14">Here are 3 working steps to organize our business projects.
+                        <h2 class="display-4 mb-4 px-lg-14" data-i18n="about.working_steps.title">Here are 3 working
+                            steps to organize our business projects.
                         </h2>
                     </div>
                     <!-- /column -->
@@ -280,8 +300,9 @@
                                                 class="number">01</span></span>
                                     </div>
                                     <div>
-                                        <h4 class="mb-1">Collect Ideas</h4>
-                                        <p class="mb-0">Understand client needs and identify optimal alternative data
+                                        <h4 class="mb-1" data-i18n="about.step1.title">Collect Ideas</h4>
+                                        <p class="mb-0" data-i18n="about.step1.description">Understand client needs and
+                                            identify optimal alternative data
                                             sources.</p>
                                     </div>
                                 </div>
@@ -297,8 +318,9 @@
                                                 class="number">02</span></span>
                                     </div>
                                     <div>
-                                        <h4 class="mb-1">Data Analysis</h4>
-                                        <p class="mb-0">Process and analyze data with advanced AI/ML algorithms.</p>
+                                        <h4 class="mb-1" data-i18n="about.step2.title">Data Analysis</h4>
+                                        <p class="mb-0" data-i18n="about.step2.description">Process and analyze data
+                                            with advanced AI/ML algorithms.</p>
                                     </div>
                                 </div>
                             </div>
@@ -313,8 +335,9 @@
                                                 class="number">03</span></span>
                                     </div>
                                     <div>
-                                        <h4 class="mb-1">Finalize Product</h4>
-                                        <p class="mb-0">Deploy production-ready solutions with continuous monitoring.</p>
+                                        <h4 class="mb-1" data-i18n="about.step3.title">Finalize Product</h4>
+                                        <p class="mb-0" data-i18n="about.step3.description">Deploy production-ready
+                                            solutions with continuous monitoring.</p>
                                     </div>
                                 </div>
                             </div>
@@ -324,15 +347,19 @@
                     </div>
                     <!--/column -->
                     <div class="col-lg-6">
-                        <h2 class="display-6 mb-3">How It Works?</h2>
-                        <p class="lead fs-lg pe-lg-5">Find out everything you need to know about how we create our
+                        <h2 class="display-6 mb-3" data-i18n="about.how_it_works.title">How It Works?</h2>
+                        <p class="lead fs-lg pe-lg-5" data-i18n="about.how_it_works.subtitle">Find out everything you
+                            need to know about how we create our
                             AI-powered financial solutions.</p>
-                        <p>TFA AI Platform combines cutting-edge technology with deep financial expertise. Our systematic
+                        <p data-i18n="about.how_it_works.description1">TFA AI Platform combines cutting-edge technology
+                            with deep financial expertise. Our systematic
                             approach ensures accurate, fast, and secure credit assessment for millions of customers.</p>
-                        <p class="mb-6">From data collection to model deployment, every step is optimized for performance
+                        <p class="mb-6" data-i18n="about.how_it_works.description2">From data collection to model
+                            deployment, every step is optimized for performance
                             and compliance. We partner with leading financial institutions to deliver world-class
                             solutions.</p>
-                        <a href="#" class="btn btn-primary rounded-pill mb-0">Learn More</a>
+                        <a href="#" class="btn btn-primary rounded-pill mb-0"
+                            data-i18n="about.how_it_works.button">Learn More</a>
                     </div>
                     <!--/column -->
                 </div>
@@ -344,7 +371,8 @@
         <section class="wrapper">
             <div class="container pt-16 pb-14 pb-md-0">
                 <div class="row gx-lg-8 gx-xl-0 align-items-center">
-                    <div class="col-md-5 col-lg-5 col-xl-4 offset-xl-1 d-none d-md-flex position-relative align-self-end">
+                    <div
+                        class="col-md-5 col-lg-5 col-xl-4 offset-xl-1 d-none d-md-flex position-relative align-self-end">
                         <div class="shape rounded-circle bg-soft-green rellax w-21 h-21 d-md-none d-lg-block"
                             data-rellax-speed="1" style="top: 7rem; left: 1rem"></div>
                         <figure><img src="./assets/img/photos/co1.png" srcset="./assets/img/photos/co1@2x.png 2x"
@@ -358,13 +386,17 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <blockquote class="icon fs-lg">
-                                            <p>"TFA AI Platform has revolutionized our credit assessment process. The
-                                                alternative data insights and 95% accuracy have significantly improved our
+                                            <p data-i18n="about.testimonial1">"TFA AI Platform has revolutionized our
+                                                credit assessment process. The
+                                                alternative data insights and 95% accuracy have significantly improved
+                                                our
                                                 risk management."</p>
                                             <div class="blockquote-details">
                                                 <div class="info ps-0">
-                                                    <h5 class="mb-1">Coriss Ambady</h5>
-                                                    <p class="mb-0">Chief Risk Officer</p>
+                                                    <h5 class="mb-1" data-i18n="about.testimonial1.author">Coriss Ambady
+                                                    </h5>
+                                                    <p class="mb-0" data-i18n="about.testimonial1.role">Chief Risk
+                                                        Officer</p>
                                                 </div>
                                             </div>
                                         </blockquote>
@@ -372,12 +404,16 @@
                                     <!--/.swiper-slide -->
                                     <div class="swiper-slide">
                                         <blockquote class="icon fs-lg">
-                                            <p>"The real-time processing and comprehensive data integration have transformed
-                                                how we serve thin-file customers. Outstanding platform and support team."</p>
+                                            <p data-i18n="about.testimonial2">"The real-time processing and
+                                                comprehensive data integration have transformed
+                                                how we serve thin-file customers. Outstanding platform and support
+                                                team."</p>
                                             <div class="blockquote-details">
                                                 <div class="info ps-0">
-                                                    <h5 class="mb-1">Cory Zamora</h5>
-                                                    <p class="mb-0">Head of Digital Lending</p>
+                                                    <h5 class="mb-1" data-i18n="about.testimonial2.author">Cory Zamora
+                                                    </h5>
+                                                    <p class="mb-0" data-i18n="about.testimonial2.role">Head of Digital
+                                                        Lending</p>
                                                 </div>
                                             </div>
                                         </blockquote>
@@ -385,13 +421,16 @@
                                     <!--/.swiper-slide -->
                                     <div class="swiper-slide">
                                         <blockquote class="icon fs-lg">
-                                            <p>"Best-in-class AI technology with exceptional accuracy. The explainable AI
+                                            <p data-i18n="about.testimonial3">"Best-in-class AI technology with
+                                                exceptional accuracy. The explainable AI
                                                 features help us maintain regulatory compliance while improving approval
                                                 rates."</p>
                                             <div class="blockquote-details">
                                                 <div class="info ps-0">
-                                                    <h5 class="mb-1">Nikolas Brooten</h5>
-                                                    <p class="mb-0">VP of Technology</p>
+                                                    <h5 class="mb-1" data-i18n="about.testimonial3.author">Nikolas
+                                                        Brooten</h5>
+                                                    <p class="mb-0" data-i18n="about.testimonial3.role">VP of Technology
+                                                    </p>
                                                 </div>
                                             </div>
                                         </blockquote>
@@ -418,30 +457,34 @@
                         <div class="row align-items-center counter-wrapper gy-6 text-center">
                             <div class="col-md-3">
                                 <img src="./assets/img/icons/solid/checked.svg"
-                                    class="svg-inject icon-svg icon-svg-lg solid-duo text-dark-green-lime-green mb-3" alt="" />
+                                    class="svg-inject icon-svg icon-svg-lg solid-duo text-dark-green-lime-green mb-3"
+                                    alt="" />
                                 <h3 class="counter">7518</h3>
-                                <p>Completed Projects</p>
+                                <p data-i18n="about.stats.projects">Completed Projects</p>
                             </div>
                             <!--/column -->
                             <div class="col-md-3">
                                 <img src="./assets/img/icons/solid/audience.svg"
-                                    class="svg-inject icon-svg icon-svg-lg solid-duo text-dark-green-lime-green mb-3" alt="" />
+                                    class="svg-inject icon-svg icon-svg-lg solid-duo text-dark-green-lime-green mb-3"
+                                    alt="" />
                                 <h3 class="counter">3472</h3>
-                                <p>Satisfied Customers</p>
+                                <p data-i18n="about.stats.customers">Satisfied Customers</p>
                             </div>
                             <!--/column -->
                             <div class="col-md-3">
                                 <img src="./assets/img/icons/solid/team.svg"
-                                    class="svg-inject icon-svg icon-svg-lg solid-duo text-dark-green-lime-green mb-3" alt="" />
+                                    class="svg-inject icon-svg icon-svg-lg solid-duo text-dark-green-lime-green mb-3"
+                                    alt="" />
                                 <h3 class="counter">2184</h3>
-                                <p>Expert Employees</p>
+                                <p data-i18n="about.stats.employees">Expert Employees</p>
                             </div>
                             <!--/column -->
                             <div class="col-md-3">
                                 <img src="./assets/img/icons/solid/medal.svg"
-                                    class="svg-inject icon-svg icon-svg-lg solid-duo text-dark-green-lime-green mb-3" alt="" />
+                                    class="svg-inject icon-svg icon-svg-lg solid-duo text-dark-green-lime-green mb-3"
+                                    alt="" />
                                 <h3 class="counter">4523</h3>
-                                <p>Awards Won</p>
+                                <p data-i18n="about.stats.awards">Awards Won</p>
                             </div>
                             <!--/column -->
                         </div>
@@ -460,7 +503,8 @@
                     <div class="col-md-10 col-xl-9 col-xxl-7 mx-auto text-center">
                         <img src="./assets/img/icons/solid/employees.svg"
                             class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green mb-4" alt="" />
-                        <h2 class="display-4 mb-3 px-lg-14">Save your time and money by choosing our professional team.
+                        <h2 class="display-4 mb-3 px-lg-14" data-i18n="about.team.title">Save your time and money by
+                            choosing our professional team.
                         </h2>
                     </div>
                     <!--/column -->
@@ -481,9 +525,11 @@
                                             <div class="card-body">
                                                 <img class="rounded-circle w-15 mb-4" src="./assets/img/avatars/te1.jpg"
                                                     srcset="./assets/img/avatars/te1@2x.jpg 2x" alt="" />
-                                                <h4 class="mb-1">Coriss Ambady</h4>
-                                                <div class="meta mb-2">Chief AI Officer</div>
-                                                <p class="mb-2">Leading AI research and development with 15+ years in
+                                                <h4 class="mb-1" data-i18n="about.team.member1.name">Coriss Ambady</h4>
+                                                <div class="meta mb-2" data-i18n="about.team.member1.role">Chief AI
+                                                    Officer</div>
+                                                <p class="mb-2" data-i18n="about.team.member1.description">Leading AI
+                                                    research and development with 15+ years in
                                                     machine learning and fintech.</p>
                                                 <nav class="nav social mb-0">
                                                     <a href="#"><i class="uil uil-twitter"></i></a>
@@ -505,9 +551,11 @@
                                             <div class="card-body">
                                                 <img class="rounded-circle w-15 mb-4" src="./assets/img/avatars/te2.jpg"
                                                     srcset="./assets/img/avatars/te2@2x.jpg 2x" alt="" />
-                                                <h4 class="mb-1">Cory Zamora</h4>
-                                                <div class="meta mb-2">Head of Product</div>
-                                                <p class="mb-2">Expert in fintech product strategy and user experience
+                                                <h4 class="mb-1" data-i18n="about.team.member2.name">Cory Zamora</h4>
+                                                <div class="meta mb-2" data-i18n="about.team.member2.role">Head of
+                                                    Product</div>
+                                                <p class="mb-2" data-i18n="about.team.member2.description">Expert in
+                                                    fintech product strategy and user experience
                                                     design for financial platforms.</p>
                                                 <nav class="nav social mb-0">
                                                     <a href="#"><i class="uil uil-twitter"></i></a>
@@ -529,9 +577,12 @@
                                             <div class="card-body">
                                                 <img class="rounded-circle w-15 mb-4" src="./assets/img/avatars/te3.jpg"
                                                     srcset="./assets/img/avatars/te3@2x.jpg 2x" alt="" />
-                                                <h4 class="mb-1">Nikolas Brooten</h4>
-                                                <div class="meta mb-2">Chief Technology Officer</div>
-                                                <p class="mb-2">Building scalable infrastructure and leading engineering
+                                                <h4 class="mb-1" data-i18n="about.team.member3.name">Nikolas Brooten
+                                                </h4>
+                                                <div class="meta mb-2" data-i18n="about.team.member3.role">Chief
+                                                    Technology Officer</div>
+                                                <p class="mb-2" data-i18n="about.team.member3.description">Building
+                                                    scalable infrastructure and leading engineering
                                                     excellence for AI systems.</p>
                                                 <nav class="nav social mb-0">
                                                     <a href="#"><i class="uil uil-twitter"></i></a>
@@ -553,9 +604,11 @@
                                             <div class="card-body">
                                                 <img class="rounded-circle w-15 mb-4" src="./assets/img/avatars/te4.jpg"
                                                     srcset="./assets/img/avatars/te4@2x.jpg 2x" alt="" />
-                                                <h4 class="mb-1">Jackie Sanders</h4>
-                                                <div class="meta mb-2">VP of Business Development</div>
-                                                <p class="mb-2">Driving partnerships and expanding market presence across
+                                                <h4 class="mb-1" data-i18n="about.team.member4.name">Jackie Sanders</h4>
+                                                <div class="meta mb-2" data-i18n="about.team.member4.role">VP of
+                                                    Business Development</div>
+                                                <p class="mb-2" data-i18n="about.team.member4.description">Driving
+                                                    partnerships and expanding market presence across
                                                     Asia-Pacific region.</p>
                                                 <nav class="nav social mb-0">
                                                     <a href="#"><i class="uil uil-twitter"></i></a>
@@ -577,9 +630,11 @@
                                             <div class="card-body">
                                                 <img class="rounded-circle w-15 mb-4" src="./assets/img/avatars/te5.jpg"
                                                     srcset="./assets/img/avatars/te5@2x.jpg 2x" alt="" />
-                                                <h4 class="mb-1">Laura Widerski</h4>
-                                                <div class="meta mb-2">Head of Data Science</div>
-                                                <p class="mb-2">Leading data science initiatives and developing advanced ML
+                                                <h4 class="mb-1" data-i18n="about.team.member5.name">Laura Widerski</h4>
+                                                <div class="meta mb-2" data-i18n="about.team.member5.role">Head of Data
+                                                    Science</div>
+                                                <p class="mb-2" data-i18n="about.team.member5.description">Leading data
+                                                    science initiatives and developing advanced ML
                                                     models for credit assessment.</p>
                                                 <nav class="nav social mb-0">
                                                     <a href="#"><i class="uil uil-twitter"></i></a>
@@ -601,9 +656,11 @@
                                             <div class="card-body">
                                                 <img class="rounded-circle w-15 mb-4" src="./assets/img/avatars/te6.jpg"
                                                     srcset="./assets/img/avatars/te6@2x.jpg 2x" alt="" />
-                                                <h4 class="mb-1">Tina Geller</h4>
-                                                <div class="meta mb-2">Head of Compliance</div>
-                                                <p class="mb-2">Ensuring regulatory compliance and data security across all
+                                                <h4 class="mb-1" data-i18n="about.team.member6.name">Tina Geller</h4>
+                                                <div class="meta mb-2" data-i18n="about.team.member6.role">Head of
+                                                    Compliance</div>
+                                                <p class="mb-2" data-i18n="about.team.member6.description">Ensuring
+                                                    regulatory compliance and data security across all
                                                     platform operations.</p>
                                                 <nav class="nav social mb-0">
                                                     <a href="#"><i class="uil uil-twitter"></i></a>
@@ -644,14 +701,16 @@
                     <div class="col-lg-6">
                         <img src="./assets/img/icons/solid/chatting.svg"
                             class="svg-inject icon-svg icon-svg-md solid-duo text-dark-green-lime-green mb-4" alt="" />
-                        <h2 class="display-4 mb-8">Convinced yet? Let's make something great together.</h2>
+                        <h2 class="display-4 mb-8" data-i18n="about.contact.title">Convinced yet? Let's make something
+                            great together.</h2>
                         <div class="d-flex flex-row">
                             <div>
-                                <div class="icon text-primary fs-28 me-6 mt-n1"> <i class="uil uil-location-pin-alt"></i>
+                                <div class="icon text-primary fs-28 me-6 mt-n1"> <i
+                                        class="uil uil-location-pin-alt"></i>
                                 </div>
                             </div>
                             <div>
-                                <h5 class="mb-1">Address</h5>
+                                <h5 class="mb-1" data-i18n="about.contact.address_title">Address</h5>
                                 <address>Moonshine St. 14/05 Light City, <br class="d-none d-md-block" />London, United
                                     Kingdom</address>
                             </div>
@@ -662,7 +721,7 @@
                                 </div>
                             </div>
                             <div>
-                                <h5 class="mb-1">Phone</h5>
+                                <h5 class="mb-1" data-i18n="about.contact.phone_title">Phone</h5>
                                 <p>00 (123) 456 78 90</p>
                             </div>
                         </div>
@@ -671,7 +730,7 @@
                                 <div class="icon text-primary fs-28 me-6 mt-n1"> <i class="uil uil-envelope"></i> </div>
                             </div>
                             <div>
-                                <h5 class="mb-1">E-mail</h5>
+                                <h5 class="mb-1" data-i18n="about.contact.email_title">E-mail</h5>
                                 <p class="mb-0"><a href="mailto:info@email.com" class="link-body">info@email.com</a></p>
                             </div>
                         </div>
@@ -689,9 +748,9 @@
     <footer class="bg-light">
         <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
             <div class="d-lg-flex flex-row align-items-lg-center">
-                <h3 class="display-4 mb-6 mb-lg-0 pe-lg-20 pe-xl-22 pe-xxl-25">Join our community by using our services
-                    and grow your business.</h3>
-                <a href="#" class="btn btn-primary rounded-pill mb-0 text-nowrap">Try It For Free</a>
+                <h3 class="display-4 mb-6 mb-lg-0 pe-lg-20 pe-xl-22 pe-xxl-25">Ready to Unlock Thin-File Users with
+                    Alternative Data Scoring?</h3>
+                <a href="#" class="btn btn-primary rounded-pill mb-0 text-nowrap">Schedule Consultation</a>
             </div>
             <!--/div -->
             <hr class="mt-11 mb-12" />
@@ -719,17 +778,16 @@
                 <!-- /column -->
                 <div class="col-md-4 col-lg-3">
                     <div class="widget">
-                        <h4 class="widget-title text-white mb-3">Get in Touch</h4>
-                        <address class="pe-xl-15 pe-xxl-17">Moonshine St. 14/05 Light City, London, United Kingdom
-                        </address>
-                        <a href="mailto:info@email.com">info@email.com</a><br /> 00 (123) 456 78 90
+                        <h4 class="widget-title mb-3">Get in Touch</h4>
+                        <a href="mailto:contact@reactplus.com">contact@reactplus.com</a><br /> +81 70 8988 6363
+                        <address class="pe-xl-15 pe-xxl-17">Hanoi, Vietnam <br /> Tokyo, Japan</address>
                     </div>
                     <!-- /.widget -->
                 </div>
                 <!-- /column -->
                 <div class="col-md-4 col-lg-3">
                     <div class="widget">
-                        <h4 class="widget-title text-white mb-3">Learn More</h4>
+                        <h4 class="widget-title mb-3">Learn More</h4>
                         <ul class="list-unstyled  mb-0">
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Our Story</a></li>
@@ -743,7 +801,7 @@
                 <!-- /column -->
                 <div class="col-md-12 col-lg-3">
                     <div class="widget">
-                        <h4 class="widget-title text-white mb-3">Our Newsletter</h4>
+                        <h4 class="widget-title mb-3">Our Newsletter</h4>
                         <p class="mb-5">Subscribe to our newsletter to get our news & deals delivered to you.</p>
                         <div class="newsletter-wrapper">
                             <!-- Begin Mailchimp Signup Form -->
@@ -794,6 +852,9 @@
 
     <script src="./assets/js/plugins.js" defer></script>
     <script src="./assets/js/theme.js" defer></script>
+    <!-- Multilingual Support -->
+    <script src="./assets/js/translations.js"></script>
+    <script src="./assets/js/i18n.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
