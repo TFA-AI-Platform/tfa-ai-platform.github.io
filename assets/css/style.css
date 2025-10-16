@@ -5,6 +5,84 @@ Theme URI:	https://sandbox.elemisthemes.com/
 Version:	3.4.1
 Author:		elemis
 */
+
+/* Alternative Data Section Styles */
+.ad-importance {
+  margin-bottom: 2rem;
+}
+
+.ad-banner {
+  background: #046836;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  text-align: start;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.ad-banner .muted {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+}
+
+/* Specific styling for How and Results sections only */
+.alt-data-section:nth-of-type(2) .ad-banner,
+.alt-data-section:nth-of-type(3) .ad-banner {
+  background: #ffffff;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.alt-data-section:nth-of-type(2) .ad-banner::before,
+.alt-data-section:nth-of-type(3) .ad-banner::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, #2E7D32 0%, #4CAF50 100%);
+  border-radius: 12px 0 0 12px;
+}
+
+.alt-data-section:nth-of-type(2) .ad-banner .muted,
+.alt-data-section:nth-of-type(3) .ad-banner .muted {
+  color: #374151;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-left: 16px;
+}
+
+/* Add spacing between subtitle and content for How and Results sections */
+.alt-data-section:nth-of-type(2) .ad-banner {
+  margin-bottom: 3rem;
+}
+
+.alt-data-section:nth-of-type(3) .ad-banner {
+  margin-bottom: 3rem;
+}
+
+.ad-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.ad-note {
+  color: #6c757d;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.ad-note .highlight {
+  font-weight: 600;
+}
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700");
 
 :root,
@@ -50326,44 +50404,84 @@ footer.bg-dark.angled.upper-start:before {
   word-wrap: break-word;
 }
 
-.xamin-feature-circle .xamin-img ul li:nth-child(1) .feature-info {
+[lang="en"] .xamin-feature-circle .xamin-img ul li:nth-child(1) .feature-info {
   top: -8%;
-  right: 40%;
+  right: 38%;
 }
 
-.xamin-feature-circle .xamin-img ul li:nth-child(2) .feature-info {
+[lang="en"] .xamin-feature-circle .xamin-img ul li:nth-child(2) .feature-info {
   top: 10%;
-  left: -10%;
+  left: 2%;
 }
 
-.xamin-feature-circle .xamin-img ul li:nth-child(3) .feature-info {
+[lang="en"] .xamin-feature-circle .xamin-img ul li:nth-child(3) .feature-info {
   top: 10%;
-  right: -10%;
+  right: 5%;
 }
 
-.xamin-feature-circle .xamin-img ul li:nth-child(4) .feature-info {
+[lang="en"] .xamin-feature-circle .xamin-img ul li:nth-child(4) .feature-info {
   top: 44%;
-  right: -12%;
+  right: -18%;
 }
 
-.xamin-feature-circle .xamin-img ul li:nth-child(5) .feature-info {
+[lang="en"] .xamin-feature-circle .xamin-img ul li:nth-child(5) .feature-info {
   top: 44%;
-  left: -15%;
+  left: -12%;
 }
 
-.xamin-feature-circle .xamin-img ul li:nth-child(6) .feature-info {
+[lang="en"] .xamin-feature-circle .xamin-img ul li:nth-child(6) .feature-info {
   top: 73%;
-  left: -10%;
+  left: 3%;
 }
 
-.xamin-feature-circle .xamin-img ul li:nth-child(7) .feature-info {
+[lang="en"] .xamin-feature-circle .xamin-img ul li:nth-child(7) .feature-info {
   top: 73%;
   right: 0%;
 }
 
-.xamin-feature-circle .xamin-img ul li:nth-child(8) .feature-info {
-  bottom: -10%;
-  left: 40%;
+[lang="en"] .xamin-feature-circle .xamin-img ul li:nth-child(8) .feature-info {
+  bottom: -12%;
+  left: 30%;
+}
+
+[lang="ja"] .xamin-feature-circle .xamin-img ul li:nth-child(1) .feature-info {
+  top: -8%;
+  right: 42.5%;
+}
+
+[lang="ja"] .xamin-feature-circle .xamin-img ul li:nth-child(2) .feature-info {
+  top: 10%;
+  left: -1%;
+}
+
+[lang="ja"] .xamin-feature-circle .xamin-img ul li:nth-child(3) .feature-info {
+  top: 10%;
+  right: 5%;
+}
+
+[lang="ja"] .xamin-feature-circle .xamin-img ul li:nth-child(4) .feature-info {
+  top: 44%;
+  right: -18%;
+}
+
+[lang="ja"] .xamin-feature-circle .xamin-img ul li:nth-child(5) .feature-info {
+  top: 44%;
+  left: -6%;
+}
+
+[lang="ja"] .xamin-feature-circle .xamin-img ul li:nth-child(6) .feature-info {
+  top: 73%;
+  left: 3%;
+}
+
+[lang="ja"] .xamin-feature-circle .xamin-img ul li:nth-child(7) .feature-info {
+  top: 73%;
+  right: -5%;
+}
+
+[lang="ja"] .xamin-feature-circle .xamin-img ul li:nth-child(8) .feature-info {
+  bottom: -16%;
+  left: 29%;
 }
 
 @keyframes rotate-center {
@@ -50570,48 +50688,84 @@ footer.bg-dark.angled.upper-start:before {
   }
 
   /* Small mobile positioning for icons on dotted line */
-  .xamin-feature-circle .xamin-img ul li:nth-child(1) .feature-info {
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
+  [lang="en"] .xamin-feature-circle .xamin-img ul li:nth-child(1) .feature-info {
+    top: -8%;
+    right: 30%;
   }
-
-  .xamin-feature-circle .xamin-img ul li:nth-child(2) .feature-info {
-    top: 7%;
-    left: 7%;
+  
+  [lang="en"] .xamin-feature-circle .xamin-img ul li:nth-child(2) .feature-info {
+    top: 10%;
+    left: 2%;
   }
-
-  .xamin-feature-circle .xamin-img ul li:nth-child(3) .feature-info {
-    top: 7%;
-    right: 7%;
+  
+  [lang="en"] .xamin-feature-circle .xamin-img ul li:nth-child(3) .feature-info {
+    top: 10%;
+    right: 5%;
   }
-
-  .xamin-feature-circle .xamin-img ul li:nth-child(4) .feature-info {
+  
+  [lang="en"] .xamin-feature-circle .xamin-img ul li:nth-child(4) .feature-info {
     top: 50%;
-    right: -20px;
-    transform: translateY(-50%);
+    right: -7%;
   }
-
-  .xamin-feature-circle .xamin-img ul li:nth-child(5) .feature-info {
+  
+  [lang="en"] .xamin-feature-circle .xamin-img ul li:nth-child(5) .feature-info {
     top: 50%;
-    left: -20px;
-    transform: translateY(-50%);
+    left: -8%;
   }
-
-  .xamin-feature-circle .xamin-img ul li:nth-child(6) .feature-info {
-    bottom: 7%;
-    left: 7%;
+  
+  [lang="en"] .xamin-feature-circle .xamin-img ul li:nth-child(6) .feature-info {
+    top: 73%;
+    left: 3%;
   }
-
-  .xamin-feature-circle .xamin-img ul li:nth-child(7) .feature-info {
-    bottom: 7%;
-    right: 7%;
+  
+  [lang="en"] .xamin-feature-circle .xamin-img ul li:nth-child(7) .feature-info {
+    top: 73%;
+    right: 5%;
   }
-
-  .xamin-feature-circle .xamin-img ul li:nth-child(8) .feature-info {
-    bottom: -25px;
+  
+  [lang="en"] .xamin-feature-circle .xamin-img ul li:nth-child(8) .feature-info {
+    bottom: -10%;
     left: 50%;
-    transform: translateX(-50%);
+  }
+  
+  [lang="ja"] .xamin-feature-circle .xamin-img ul li:nth-child(1) .feature-info {
+    top: -8%;
+    right: 30%;
+  }
+  
+  [lang="ja"] .xamin-feature-circle .xamin-img ul li:nth-child(2) .feature-info {
+    top: 10%;
+    left: 2%;
+  }
+  
+  [lang="ja"] .xamin-feature-circle .xamin-img ul li:nth-child(3) .feature-info {
+    top: 10%;
+    right: 5%;
+  }
+  
+  [lang="ja"] .xamin-feature-circle .xamin-img ul li:nth-child(4) .feature-info {
+    top: 50%;
+    right: -7%;
+  }
+  
+  [lang="ja"] .xamin-feature-circle .xamin-img ul li:nth-child(5) .feature-info {
+    top: 50%;
+    left: -8%;
+  }
+  
+  [lang="ja"] .xamin-feature-circle .xamin-img ul li:nth-child(6) .feature-info {
+    top: 73%;
+    left: 3%;
+  }
+  
+  [lang="ja"] .xamin-feature-circle .xamin-img ul li:nth-child(7) .feature-info {
+    top: 73%;
+    right: 5%;
+  }
+  
+  [lang="ja"] .xamin-feature-circle .xamin-img ul li:nth-child(8) .feature-info {
+    bottom: -10%;
+    left: 50%;
   }
 }
 
@@ -50870,17 +51024,8 @@ footer.bg-dark.angled.upper-start:before {
   height: 100%;
 }
 
-.score-product:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-}
-
 .score-product .icon-svg {
-  transition: transform 0.3s ease;
-}
-
-.score-product:hover .icon-svg {
-  transform: scale(1.15) rotate(5deg);
+  transition: none;
 }
 
 .score-product-name {
